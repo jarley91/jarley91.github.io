@@ -25,11 +25,9 @@
 var NAVTREE =
 [
   [ "DeliGran", "index.html", [
-    [ "DeliGranREST", "index.html", [
-      [ "Lo implementado:", "index.html#autotoc_md1", null ],
-      [ "A implementar:", "index.html#autotoc_md2", null ],
-      [ "Empecemos:", "index.html#autotoc_md3", null ]
-    ] ],
+    [ "Lo implementado:", "index.html#autotoc_md1", null ],
+    [ "A implementar:", "index.html#autotoc_md2", null ],
+    [ "Empecemos:", "index.html#autotoc_md3", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],

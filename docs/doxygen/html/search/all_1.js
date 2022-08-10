@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['deligranrest_0',['DeliGranRest',['../a00091.html',1,'']]],
-  ['deligranrest_1',['DeliGranREST',['../index.html',1,'']]],
+  ['deligran_0',['DeliGran',['../index.html',1,'']]],
+  ['deligranrest_1',['DeliGranRest',['../a00091.html',1,'']]],
   ['deligranrestentity_2',['DeliGranRestEntity',['../a00095.html',1,'']]],
   ['destroy_3',['destroy',['../a00187.html#aaf8ee3747abf146df7af7749f8d56ad3',1,'DGUStringEntity']]],
   ['dgdbcontrollerentity_4',['DGDBControllerEntity',['../a00075.html',1,'']]],
