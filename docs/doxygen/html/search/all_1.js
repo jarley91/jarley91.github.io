@@ -36,12 +36,15 @@ var searchData=
   ['dgulog_2eh_33',['DGULog.h',['../a00062.html',1,'']]],
   ['dgulogentity_34',['DGULogEntity',['../a00171.html',1,'']]],
   ['dgulogleves_35',['DGULogLeves',['../a00167.html',1,'DGULogLeves'],['../a00062.html#af445597323dea71576b4ffc2e5f49ce8',1,'DGULogLeves():&#160;DGULog.h']]],
-  ['dgulogtypes_36',['DGULogTypes',['../a00062.html#a91493469dea20260e15028811619da10',1,'DGULogTypes():&#160;DGULog.h'],['../a00163.html',1,'DGULogTypes']]],
-  ['dgumarkupentity_37',['DGUMarkupEntity',['../a00179.html',1,'']]],
-  ['dgumemoryentity_38',['DGUMemoryEntity',['../a00183.html',1,'']]],
-  ['dgumuformats_39',['DGUMUFormats',['../a00175.html',1,'']]],
-  ['dgustring_2eh_40',['DGUString.h',['../a00059.html',1,'']]],
-  ['dgustringentity_41',['DGUStringEntity',['../a00187.html',1,'']]],
-  ['dguthreadmutexentity_42',['DGUThreadMutexEntity',['../a00195.html',1,'']]],
-  ['dguthreadmutextypes_43',['DGUThreadMutexTypes',['../a00191.html',1,'']]]
+  ['dgulogtypes_36',['DGULogTypes',['../a00163.html',1,'DGULogTypes'],['../a00062.html#a91493469dea20260e15028811619da10',1,'DGULogTypes():&#160;DGULog.h']]],
+  ['dgumarkup_2eh_37',['DGUMarkup.h',['../a00053.html',1,'']]],
+  ['dgumarkupentity_38',['DGUMarkupEntity',['../a00179.html',1,'']]],
+  ['dgumemory_2eh_39',['DGUMemory.h',['../a00056.html',1,'']]],
+  ['dgumemoryentity_40',['DGUMemoryEntity',['../a00183.html',1,'']]],
+  ['dgumuformats_41',['DGUMUFormats',['../a00175.html',1,'']]],
+  ['dgustring_2eh_42',['DGUString.h',['../a00059.html',1,'']]],
+  ['dgustringentity_43',['DGUStringEntity',['../a00187.html',1,'']]],
+  ['dguthreadmutex_2eh_44',['DGUThreadMutex.h',['../a00050.html',1,'']]],
+  ['dguthreadmutexentity_45',['DGUThreadMutexEntity',['../a00195.html',1,'']]],
+  ['dguthreadmutextypes_46',['DGUThreadMutexTypes',['../a00191.html',1,'']]]
 ];
