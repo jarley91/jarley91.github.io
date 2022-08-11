@@ -1,0 +1,62 @@
+\hypertarget{a00047}{}\doxysection{DGUHash\+Table.\+h File Reference}
+\label{a00047}\index{DGUHashTable.h@{DGUHashTable.h}}
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}DGUString.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{a00159}{DGUHash\+Table\+Entity}}
+\begin{DoxyCompactList}\small\item\em Hash table entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef bool($\ast$ \mbox{\hyperlink{a00047_a957757aa7ef735b7a3e9df10f094e600}{for\+Each\+Item\+Function\+DGUHash\+Table}}) (int index, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} key, void $\ast$value, void $\ast$user\+Data)
+\begin{DoxyCompactList}\small\item\em Function for items iteration. \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHash\+Table}} \mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHash\+Table}}
+\begin{DoxyCompactList}\small\item\em Hash table. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{a00047_ad8d20f754e7b1f188d6f309725eee60b}\label{a00047_ad8d20f754e7b1f188d6f309725eee60b}} 
+struct \mbox{\hyperlink{a00159}{DGUHash\+Table\+Entity}} {\bfseries DGUHash\+Table\+Entity}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Jarley Vargas Damian (\href{mailto:jarley91@gmail.com}{\texttt{ jarley91@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2022-\/08-\/10
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{a00047_a9c2ffdd83eb554a97e47af406b7cf903}\label{a00047_a9c2ffdd83eb554a97e47af406b7cf903}} 
+\index{DGUHashTable.h@{DGUHashTable.h}!DGUHashTable@{DGUHashTable}}
+\index{DGUHashTable@{DGUHashTable}!DGUHashTable.h@{DGUHashTable.h}}
+\doxysubsubsection{\texorpdfstring{DGUHashTable}{DGUHashTable}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHash\+Table}} \mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHash\+Table}}}
+
+
+
+Hash table. 
+
+Type definition for Hash table \mbox{\Hypertarget{a00047_a957757aa7ef735b7a3e9df10f094e600}\label{a00047_a957757aa7ef735b7a3e9df10f094e600}} 
+\index{DGUHashTable.h@{DGUHashTable.h}!forEachItemFunctionDGUHashTable@{forEachItemFunctionDGUHashTable}}
+\index{forEachItemFunctionDGUHashTable@{forEachItemFunctionDGUHashTable}!DGUHashTable.h@{DGUHashTable.h}}
+\doxysubsubsection{\texorpdfstring{forEachItemFunctionDGUHashTable}{forEachItemFunctionDGUHashTable}}
+{\footnotesize\ttfamily typedef bool($\ast$ for\+Each\+Item\+Function\+DGUHash\+Table) (int index, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} key, void $\ast$value, void $\ast$user\+Data)}
+
+
+
+Function for items iteration. 
+
+Function definition for iteration with all items from a Hash table ~\newline
+ When the function returns false, the iteration stops 

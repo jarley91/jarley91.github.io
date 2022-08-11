@@ -123,8 +123,8 @@ $(document).ready(function(){initNavTree('a00053_source.html',''); initResizable
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">  #include &quot;<a class="code" href="a00059.html">DGUString.h</a>&quot;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">  #include &quot;DGUMarkup.h&quot;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">  #include &quot;DGULog.h&quot;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">  #include &quot;DGUHashTable.h&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">  #include &quot;<a class="code" href="a00062.html">DGULog.h</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">  #include &quot;<a class="code" href="a00047.html">DGUHashTable.h</a>&quot;</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="a00175.html">   16</a></span>  <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="a00175.html">DGUMUFormats</a> {</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">string</span> YAML;</div>
@@ -140,7 +140,7 @@ $(document).ready(function(){initNavTree('a00053_source.html',''); initResizable
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <span class="keyword">typedef</span> <span class="keyword">struct </span>DGUMarkup DGUMarkup;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="a00179.html">   29</a></span>  <span class="keyword">extern</span> <span class="keyword">struct </span><a class="code hl_struct" href="a00179.html">DGUMarkupEntity</a> {</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    void (*setLogger)(DGUMarkup *oDGUMarkup, DGULog *oDGULog);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    void (*setLogger)(DGUMarkup *oDGUMarkup, <a class="code hl_typedef" href="a00062.html#aaa6a2ab602733132b5a14993305b0625">DGULog</a> *oDGULog);</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    void (*destroy)(DGUMarkup *oDGUMarkup);</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    DGUMarkup *(*new)(void);</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    void (*setPathFileDocument)(DGUMarkup *oDGUMarkup, <span class="keywordtype">string</span> pathFileDocument);</div>
@@ -171,8 +171,11 @@ $(document).ready(function(){initNavTree('a00053_source.html',''); initResizable
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#endif </span><span class="comment">//DGU_Markup_H</span></div>
+<div class="ttc" id="aa00047_html"><div class="ttname"><a href="a00047.html">DGUHashTable.h</a></div></div>
 <div class="ttc" id="aa00059_html"><div class="ttname"><a href="a00059.html">DGUString.h</a></div></div>
-<div class="ttc" id="aa00059_html_a398c94ef2be132b6d19e77d12415e9f3"><div class="ttname"><a href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a></div><div class="ttdeci">sds string</div><div class="ttdoc">Abstract type sds for one familiar global type</div><div class="ttdef"><b>Definition:</b> DGUString.h:32</div></div>
+<div class="ttc" id="aa00059_html_a398c94ef2be132b6d19e77d12415e9f3"><div class="ttname"><a href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a></div><div class="ttdeci">sds string</div><div class="ttdoc">String</div><div class="ttdef"><b>Definition:</b> DGUString.h:38</div></div>
+<div class="ttc" id="aa00062_html"><div class="ttname"><a href="a00062.html">DGULog.h</a></div></div>
+<div class="ttc" id="aa00062_html_aaa6a2ab602733132b5a14993305b0625"><div class="ttname"><a href="a00062.html#aaa6a2ab602733132b5a14993305b0625">DGULog</a></div><div class="ttdeci">struct DGULog DGULog</div><div class="ttdoc">Log.</div><div class="ttdef"><b>Definition:</b> DGULog.h:78</div></div>
 <div class="ttc" id="aa00175_html"><div class="ttname"><a href="a00175.html">DGUMUFormats</a></div><div class="ttdef"><b>Definition:</b> DGUMarkup.h:16</div></div>
 <div class="ttc" id="aa00179_html"><div class="ttname"><a href="a00179.html">DGUMarkupEntity</a></div><div class="ttdef"><b>Definition:</b> DGUMarkup.h:29</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -180,7 +183,7 @@ $(document).ready(function(){initNavTree('a00053_source.html',''); initResizable
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_e64df8b9c1f4c17f30f42818af0e0d6d.html">bins</a></li><li class="navelem"><a class="el" href="dir_2d178ba13de16da8adfbb9417f94d59c.html">macOS</a></li><li class="navelem"><a class="el" href="dir_71acbcf58eadc949a2e23f1977368bc9.html">debug</a></li><li class="navelem"><a class="el" href="dir_676b8323458b869fdc514fbb723a092c.html">DeliGran</a></li><li class="navelem"><a class="el" href="dir_df9c427dd44554ed73b860ee17c29a6a.html">include</a></li><li class="navelem"><a class="el" href="dir_9b43912ee00ded4b8816b3eebc3f6f45.html">DeliGranUtils</a></li><li class="navelem"><a class="el" href="dir_ca05907a7119554fd7d6b801cd48d596.html">lib</a></li><li class="navelem"><a class="el" href="dir_a40ac7d156fc0acb77c7090d0bf59f32.html">entities</a></li><li class="navelem"><b>DGUMarkup.h</b></li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_3f25cfb800acbf742fb9d9d77f0f82c1.html">DeliGranUtils</a></li><li class="navelem"><a class="el" href="dir_892dcff09258e537a675047f727ecd9c.html">lib</a></li><li class="navelem"><a class="el" href="dir_52149c8f4233f9aa4d75c7d111929223.html">entities</a></li><li class="navelem"><b>DGUMarkup.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

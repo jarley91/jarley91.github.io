@@ -1,34 +1,240 @@
 \hypertarget{a00159}{}\doxysection{DGUHash\+Table\+Entity Struct Reference}
 \label{a00159}\index{DGUHashTableEntity@{DGUHashTableEntity}}
+
+
+Hash table entity.  
+
+
+
+
+{\ttfamily \#include $<$DGUHash\+Table.\+h$>$}
+
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHash\+Table}} $\ast$($\ast$ \mbox{\hyperlink{a00159_ae14b0e2ce7b1740877f24f2fccb0a73c}{new}} )(unsigned int initial\+Size)
+\begin{DoxyCompactList}\small\item\em New Hash table. \end{DoxyCompactList}\item 
+void($\ast$ \mbox{\hyperlink{a00159_a5d1c2eb5c0d2d1b8f7ba8c9a782026e4}{destroy}} )(\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHash\+Table}} $\ast$o\+DGUHash\+Table)
+\begin{DoxyCompactList}\small\item\em Destroy Hash table. \end{DoxyCompactList}\item 
+void($\ast$ \mbox{\hyperlink{a00159_ad5dda05d374bcfc6d0219191f7800514}{insert}} )(\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHash\+Table}} $\ast$o\+DGUHash\+Table, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} key, void $\ast$value)
+\begin{DoxyCompactList}\small\item\em Insert item. \end{DoxyCompactList}\item 
+void($\ast$ \mbox{\hyperlink{a00159_a37b9081def1beacd628024ccdd0a0d43}{delete}} )(\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHash\+Table}} $\ast$o\+DGUHash\+Table, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} key)
+\begin{DoxyCompactList}\small\item\em Delete item. \end{DoxyCompactList}\item 
+bool($\ast$ \mbox{\hyperlink{a00159_a67405c097cde499f80519f60845be3ab}{item\+Exist}} )(\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHash\+Table}} $\ast$o\+DGUHash\+Table, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} key)
+\begin{DoxyCompactList}\small\item\em Exist item. \end{DoxyCompactList}\item 
+void $\ast$($\ast$ \mbox{\hyperlink{a00159_a47532617148849cf71242eb886dc9cd7}{get\+Value}} )(\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHash\+Table}} $\ast$o\+DGUHash\+Table, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} key)
+\begin{DoxyCompactList}\small\item\em Get item value. \end{DoxyCompactList}\item 
+int($\ast$ \mbox{\hyperlink{a00159_ac29bbccdb710b0b9cb43fed3029d5b58}{get\+Total\+Items}} )(\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHash\+Table}} $\ast$o\+DGUHash\+Table)
+\begin{DoxyCompactList}\small\item\em Get total items. \end{DoxyCompactList}\item 
+void($\ast$ \mbox{\hyperlink{a00159_a9f2280391861034487e975b2f76d1e09}{for\+Each\+Item}} )(\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHash\+Table}} $\ast$o\+DGUHash\+Table, \mbox{\hyperlink{a00047_a957757aa7ef735b7a3e9df10f094e600}{for\+Each\+Item\+Function\+DGUHash\+Table}} for\+Each\+Item\+Function, void $\ast$user\+Data)
+\begin{DoxyCompactList}\small\item\em For each item. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Hash table entity. 
+
+Entity for Hash table 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{a00159_a37b9081def1beacd628024ccdd0a0d43}\label{a00159_a37b9081def1beacd628024ccdd0a0d43}} 
+\index{DGUHashTableEntity@{DGUHashTableEntity}!delete@{delete}}
+\index{delete@{delete}!DGUHashTableEntity@{DGUHashTableEntity}}
+\doxysubsubsection{\texorpdfstring{delete}{delete}}
+{\footnotesize\ttfamily void($\ast$ DGUHash\+Table\+Entity\+::delete) (\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHash\+Table}} $\ast$o\+DGUHash\+Table, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} key)}
+
+
+
+Delete item. 
+
+Delete a item on Hash table
+
+Example\+: 
+
+\mbox{\hyperlink{a00159_a37b9081def1beacd628024ccdd0a0d43}{DGUHash\+Table\+Entity.\+delete}}(o\+DGUHash\+Table, \char`\"{}key\char`\"{});
+
+
+\begin{DoxyParams}{Parameters}
+{\em o\+DGUHash\+Table} & Hash table where the item will be deleted \\
+\hline
+{\em key} & Item key \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{a00159_a5d1c2eb5c0d2d1b8f7ba8c9a782026e4}\label{a00159_a5d1c2eb5c0d2d1b8f7ba8c9a782026e4}} 
+\index{DGUHashTableEntity@{DGUHashTableEntity}!destroy@{destroy}}
+\index{destroy@{destroy}!DGUHashTableEntity@{DGUHashTableEntity}}
+\doxysubsubsection{\texorpdfstring{destroy}{destroy}}
+{\footnotesize\ttfamily void($\ast$ DGUHash\+Table\+Entity\+::destroy) (\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHash\+Table}} $\ast$o\+DGUHash\+Table)}
+
+
+
+Destroy Hash table. 
+
+Destroy a Hash table
+
+Example\+: 
+
+DGUHash\+Table\+Entity.\+destroy(\&o\+DGUHash\+Table);
+
+
+\begin{DoxyParams}{Parameters}
+{\em o\+DGUHash\+Table} & Hash table to destroy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{a00159_a9f2280391861034487e975b2f76d1e09}\label{a00159_a9f2280391861034487e975b2f76d1e09}} 
+\index{DGUHashTableEntity@{DGUHashTableEntity}!forEachItem@{forEachItem}}
+\index{forEachItem@{forEachItem}!DGUHashTableEntity@{DGUHashTableEntity}}
+\doxysubsubsection{\texorpdfstring{forEachItem}{forEachItem}}
+{\footnotesize\ttfamily void($\ast$ DGUHash\+Table\+Entity\+::for\+Each\+Item) (\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHash\+Table}} $\ast$o\+DGUHash\+Table, \mbox{\hyperlink{a00047_a957757aa7ef735b7a3e9df10f094e600}{for\+Each\+Item\+Function\+DGUHash\+Table}} for\+Each\+Item\+Function, void $\ast$user\+Data)}
+
+
+
+For each item. 
+
+Iteration for each item in a Hash table
+
+Example\+: 
+
+DGUHash\+Table\+Entity.\+for\+Each\+Item(o\+DGUHash\+Table, for\+Each\+Item\+Function, user\+Data);
+
+
+\begin{DoxyParams}{Parameters}
+{\em o\+DGUHash\+Table} & Hash table where to iterate each item \\
+\hline
+{\em for\+Each\+Item\+Function} & Function for iteration with each item \\
+\hline
+{\em user\+Data} & User data to use on the function for iteration with each item \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{a00159_ac29bbccdb710b0b9cb43fed3029d5b58}\label{a00159_ac29bbccdb710b0b9cb43fed3029d5b58}} 
+\index{DGUHashTableEntity@{DGUHashTableEntity}!getTotalItems@{getTotalItems}}
+\index{getTotalItems@{getTotalItems}!DGUHashTableEntity@{DGUHashTableEntity}}
+\doxysubsubsection{\texorpdfstring{getTotalItems}{getTotalItems}}
+{\footnotesize\ttfamily int($\ast$ DGUHash\+Table\+Entity\+::get\+Total\+Items) (\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHash\+Table}} $\ast$o\+DGUHash\+Table)}
+
+
+
+Get total items. 
+
+Get the total of items in a Hash table
+
+Example\+: 
+
+int $\ast$total\+Items = DGUHash\+Table\+Entity.\+get\+Total\+Items(o\+DGUHash\+Table);
+
+
+\begin{DoxyParams}{Parameters}
+{\em o\+DGUHash\+Table} & Hash table where get the total items\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The total items 
+\end{DoxyReturn}
+\mbox{\Hypertarget{a00159_a47532617148849cf71242eb886dc9cd7}\label{a00159_a47532617148849cf71242eb886dc9cd7}} 
+\index{DGUHashTableEntity@{DGUHashTableEntity}!getValue@{getValue}}
+\index{getValue@{getValue}!DGUHashTableEntity@{DGUHashTableEntity}}
+\doxysubsubsection{\texorpdfstring{getValue}{getValue}}
+{\footnotesize\ttfamily void $\ast$($\ast$ DGUHash\+Table\+Entity\+::get\+Value) (\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHash\+Table}} $\ast$o\+DGUHash\+Table, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} key)}
+
+
+
+Get item value. 
+
+Get the value of an item in a Hash table
+
+Example\+: 
+
+type\+Struct $\ast$o\+Type\+Struct = \mbox{\hyperlink{a00159_a47532617148849cf71242eb886dc9cd7}{DGUHash\+Table\+Entity.\+get\+Value}}(o\+DGUHash\+Table, \char`\"{}key\char`\"{});
+
+
+\begin{DoxyParams}{Parameters}
+{\em o\+DGUHash\+Table} & Hash table where get item value \\
+\hline
+{\em key} & Item key\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The item value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{a00159_ad5dda05d374bcfc6d0219191f7800514}\label{a00159_ad5dda05d374bcfc6d0219191f7800514}} 
+\index{DGUHashTableEntity@{DGUHashTableEntity}!insert@{insert}}
+\index{insert@{insert}!DGUHashTableEntity@{DGUHashTableEntity}}
+\doxysubsubsection{\texorpdfstring{insert}{insert}}
+{\footnotesize\ttfamily void($\ast$ DGUHash\+Table\+Entity\+::insert) (\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHash\+Table}} $\ast$o\+DGUHash\+Table, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} key, void $\ast$value)}
+
+
+
+Insert item. 
+
+Insert a item to Hash table
+
+Example\+: 
+
+\mbox{\hyperlink{a00159_ad5dda05d374bcfc6d0219191f7800514}{DGUHash\+Table\+Entity.\+insert}}(o\+DGUHash\+Table, \char`\"{}key\char`\"{}, value);
+
+
+\begin{DoxyParams}{Parameters}
+{\em o\+DGUHash\+Table} & Hash table where the item will be inserted \\
+\hline
+{\em key} & Item key \\
+\hline
+{\em value} & Item value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{a00159_a67405c097cde499f80519f60845be3ab}\label{a00159_a67405c097cde499f80519f60845be3ab}} 
+\index{DGUHashTableEntity@{DGUHashTableEntity}!itemExist@{itemExist}}
+\index{itemExist@{itemExist}!DGUHashTableEntity@{DGUHashTableEntity}}
+\doxysubsubsection{\texorpdfstring{itemExist}{itemExist}}
+{\footnotesize\ttfamily bool($\ast$ DGUHash\+Table\+Entity\+::item\+Exist) (\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHash\+Table}} $\ast$o\+DGUHash\+Table, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} key)}
+
+
+
+Exist item. 
+
+Check if an item exists
+
+Example\+: 
+
+\mbox{\hyperlink{a00159_a67405c097cde499f80519f60845be3ab}{DGUHash\+Table\+Entity.\+item\+Exist}}(o\+DGUHash\+Table, \char`\"{}key\char`\"{});
+
+
+\begin{DoxyParams}{Parameters}
+{\em o\+DGUHash\+Table} & Hash table where check if an item exists \\
+\hline
+{\em key} & Item key\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True or false 
+\end{DoxyReturn}
 \mbox{\Hypertarget{a00159_ae14b0e2ce7b1740877f24f2fccb0a73c}\label{a00159_ae14b0e2ce7b1740877f24f2fccb0a73c}} 
-DGUHash\+Table $\ast$($\ast$ {\bfseries new} )(unsigned int initial\+Size)
-\item 
-\mbox{\Hypertarget{a00159_afa8a25490d86560e2c6e43ece8f710ed}\label{a00159_afa8a25490d86560e2c6e43ece8f710ed}} 
-void($\ast$ {\bfseries destroy} )(DGUHash\+Table $\ast$table)
-\item 
-\mbox{\Hypertarget{a00159_a4bb0531b9f45baf4df75e71e11776032}\label{a00159_a4bb0531b9f45baf4df75e71e11776032}} 
-void($\ast$ {\bfseries insert} )(DGUHash\+Table $\ast$table, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} key, void $\ast$value)
-\item 
-\mbox{\Hypertarget{a00159_af51a81959984b83aab62e1a0fad88a84}\label{a00159_af51a81959984b83aab62e1a0fad88a84}} 
-void($\ast$ {\bfseries delete} )(DGUHash\+Table $\ast$table, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} key)
-\item 
-\mbox{\Hypertarget{a00159_ac7bdfbd3a75e562ecb99e2c0e8768553}\label{a00159_ac7bdfbd3a75e562ecb99e2c0e8768553}} 
-bool($\ast$ {\bfseries exist} )(DGUHash\+Table $\ast$table, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} key)
-\item 
-\mbox{\Hypertarget{a00159_a485181cb077036eb214e06709841e5dd}\label{a00159_a485181cb077036eb214e06709841e5dd}} 
-void $\ast$($\ast$ {\bfseries get\+Value} )(DGUHash\+Table $\ast$table, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} key)
-\item 
-\mbox{\Hypertarget{a00159_aa8b279c82bb894123d51e06f98ee0928}\label{a00159_aa8b279c82bb894123d51e06f98ee0928}} 
-int($\ast$ {\bfseries get\+Count} )(DGUHash\+Table $\ast$table)
-\item 
-\mbox{\Hypertarget{a00159_af148630082e8dd889c7e5bc9658e3aee}\label{a00159_af148630082e8dd889c7e5bc9658e3aee}} 
-void($\ast$ {\bfseries for\+Each} )(DGUHash\+Table $\ast$table, for\+Each\+Item\+Function\+DGUHash\+Table for\+Each\+Function, void $\ast$user\+Data)
-\end{DoxyCompactItemize}
+\index{DGUHashTableEntity@{DGUHashTableEntity}!new@{new}}
+\index{new@{new}!DGUHashTableEntity@{DGUHashTableEntity}}
+\doxysubsubsection{\texorpdfstring{new}{new}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHash\+Table}} $\ast$($\ast$ DGUHash\+Table\+Entity\+::new) (unsigned int initial\+Size)}
+
+
+
+New Hash table. 
+
+Create a new Hash table
+
+Example\+: 
+
+DGUHash\+Table $\ast$o\+DGUHash\+Table = DGUHash\+Table\+Entity.\+new(0);
+
+
+\begin{DoxyParams}{Parameters}
+{\em initial\+Size} & Initial size items, set 0 for auto increment size\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+New Hash table
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+You should always destroy return value to avoid memory leaks 
+\end{DoxyNote}
 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-DGUHash\+Table.\+h\end{DoxyCompactItemize}
+\mbox{\hyperlink{a00047}{DGUHash\+Table.\+h}}\end{DoxyCompactItemize}

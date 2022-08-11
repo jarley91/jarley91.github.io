@@ -2,7 +2,7 @@
 \label{a00187}\index{DGUStringEntity@{DGUStringEntity}}
 
 
-String functions.  
+String entity.  
 
 
 
@@ -36,16 +36,16 @@ bool($\ast$ \mbox{\hyperlink{a00187_aad2e1d24524c1ac66d853ae5b3a56f79}{is\+Equal
 \begin{DoxyCompactList}\small\item\em Compare strings. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}}($\ast$ \mbox{\hyperlink{a00187_a27dafdcb67390b12b88cdb036790fd22}{replace}} )(\mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} string\+Source, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} string\+Old, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} string\+New)
 \begin{DoxyCompactList}\small\item\em Replace value. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}}($\ast$ \mbox{\hyperlink{a00187_ad5b3f6b13488d0624405e2ef56ab7e9f}{get\+Date\+Time\+To\+String}} )(\mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} format\+Date\+Time)
+\mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}}($\ast$ \mbox{\hyperlink{a00187_a0580f30a1a938ed470c05c3f7cd6afe7}{get\+Date\+Time\+To\+String}} )(\mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} date\+Time\+Format)
 \begin{DoxyCompactList}\small\item\em String value of date and time. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}}($\ast$ \mbox{\hyperlink{a00187_ab4fcc5bfc61c109fef9a03618cd0a86e}{copy\+Length}} )(\mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} source, int \mbox{\hyperlink{a00187_a493a0878cf8327ccfd3d9a8f9d9922a1}{length}})
-\begin{DoxyCompactList}\small\item\em Replace value. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Copy value by length. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}}($\ast$ \mbox{\hyperlink{a00187_aed4903c031df6a6bfc128f79907166f9}{get\+UUIDRandom}} )(void)
 \begin{DoxyCompactList}\small\item\em Random uuid. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-String functions. 
+String entity. 
 
 Entity for string functions 
 
@@ -62,8 +62,7 @@ Concatenate strings.
 
 Concatenate two strings
 
-string new\+Value = \mbox{\hyperlink{a00187_af238a20bdc3df4497c43f38059765786}{DGUString\+Entity.\+concat}}(\char`\"{}\+Hola\char`\"{}, \char`\"{}mundo\char`\"{}); ~\newline
- DGUString\+Entity.\+destroy(\&new\+Value);
+string new\+Value = \mbox{\hyperlink{a00187_af238a20bdc3df4497c43f38059765786}{DGUString\+Entity.\+concat}}(\char`\"{}\+Hola\char`\"{}, \char`\"{}mundo\char`\"{});
 
 
 \begin{DoxyParams}{Parameters}
@@ -86,12 +85,11 @@ You should always destroy return value to avoid memory leaks
 
 
 
-Replace value. 
+Copy value by length. 
 
 Copies the string value with the specified length, from the start of the string
 
-string new\+Value = \mbox{\hyperlink{a00187_ab4fcc5bfc61c109fef9a03618cd0a86e}{DGUString\+Entity.\+copy\+Length}}(\char`\"{}\+Hola Mundo\char`\"{}, 4); ~\newline
- DGUString\+Entity.\+destroy(\&new\+Value);
+string new\+Value = \mbox{\hyperlink{a00187_ab4fcc5bfc61c109fef9a03618cd0a86e}{DGUString\+Entity.\+copy\+Length}}(\char`\"{}\+Hola Mundo\char`\"{}, 4);
 
 
 \begin{DoxyParams}{Parameters}
@@ -120,8 +118,6 @@ Destroy a string
 
 Example\+: 
 
-string new\+String = \mbox{\hyperlink{a00187_a2becd0118fe3eae963c5a82e415745a7}{DGUString\+Entity.\+new}}(\char`\"{}\+String value\char`\"{}); 
-
 DGUString\+Entity.\+destroy(\&new\+String);
 
 
@@ -141,12 +137,8 @@ Format string value.
 
 Format string
 
-string new\+Value = \mbox{\hyperlink{a00187_a36b874dd512ebbf51ce7d45b7dc99d6f}{DGUString\+Entity.\+format}}(\char`\"{}¡\%s \%s!\char`\"{}, \char`\"{}\+Hola\char`\"{}, \char`\"{}mundo\char`\"{}); ~\newline
- DGUString\+Entity.\+destroy(\&new\+Value);
+string new\+Value = \mbox{\hyperlink{a00187_a36b874dd512ebbf51ce7d45b7dc99d6f}{DGUString\+Entity.\+format}}(\char`\"{}¡\%s \%s!\char`\"{}, \char`\"{}\+Hola\char`\"{}, \char`\"{}mundo\char`\"{});
 
-\begin{DoxySeeAlso}{See also}
-\href{https://devdocs.io/c/io/fprintf}{\texttt{ https\+://devdocs.\+io/c/io/fprintf}}
-\end{DoxySeeAlso}
 
 \begin{DoxyParams}{Parameters}
 {\em format} & String value with format \\
@@ -157,14 +149,17 @@ string new\+Value = \mbox{\hyperlink{a00187_a36b874dd512ebbf51ce7d45b7dc99d6f}{D
 \begin{DoxyReturn}{Returns}
 New string with format an values
 \end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\href{https://devdocs.io/c/io/fprintf}{\texttt{ https\+://devdocs.\+io/c/io/fprintf}}
+\end{DoxySeeAlso}
 \begin{DoxyNote}{Note}
 You should always destroy return value to avoid memory leaks 
 \end{DoxyNote}
-\mbox{\Hypertarget{a00187_ad5b3f6b13488d0624405e2ef56ab7e9f}\label{a00187_ad5b3f6b13488d0624405e2ef56ab7e9f}} 
+\mbox{\Hypertarget{a00187_a0580f30a1a938ed470c05c3f7cd6afe7}\label{a00187_a0580f30a1a938ed470c05c3f7cd6afe7}} 
 \index{DGUStringEntity@{DGUStringEntity}!getDateTimeToString@{getDateTimeToString}}
 \index{getDateTimeToString@{getDateTimeToString}!DGUStringEntity@{DGUStringEntity}}
 \doxysubsubsection{\texorpdfstring{getDateTimeToString}{getDateTimeToString}}
-{\footnotesize\ttfamily \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}}($\ast$ DGUString\+Entity\+::get\+Date\+Time\+To\+String) (\mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} format\+Date\+Time)}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}}($\ast$ DGUString\+Entity\+::get\+Date\+Time\+To\+String) (\mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} date\+Time\+Format)}
 
 
 
@@ -172,12 +167,11 @@ String value of date and time.
 
 Get string date and time Format sys/time with strftime, was added MCS = Microseconds and MLS = Milliseconds
 
-string new\+Value = \mbox{\hyperlink{a00187_ad5b3f6b13488d0624405e2ef56ab7e9f}{DGUString\+Entity.\+get\+Date\+Time\+To\+String}}(\char`\"{}\%d/\%m/\%\+Y \%\+H\+:\%\+M\+:\%\+S.\%\+MCS\char`\"{}); ~\newline
- DGUString\+Entity.\+destroy(\&new\+Value);
+string new\+Value = \mbox{\hyperlink{a00187_a0580f30a1a938ed470c05c3f7cd6afe7}{DGUString\+Entity.\+get\+Date\+Time\+To\+String}}(\char`\"{}\%d/\%m/\%\+Y \%\+H\+:\%\+M\+:\%\+S.\%\+MCS\char`\"{});
 
 
 \begin{DoxyParams}{Parameters}
-{\em format\+Date\+Time} & Format of date and time\\
+{\em date\+Time\+Format} & Format of date and time\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -201,8 +195,7 @@ Random uuid.
 
 Get a random uuid string value
 
-string new\+Value = \mbox{\hyperlink{a00187_aed4903c031df6a6bfc128f79907166f9}{DGUString\+Entity.\+get\+UUIDRandom()}}; ~\newline
- DGUString\+Entity.\+destroy(\&new\+Value);
+string new\+Value = \mbox{\hyperlink{a00187_aed4903c031df6a6bfc128f79907166f9}{DGUString\+Entity.\+get\+UUIDRandom()}};
 
 \begin{DoxyReturn}{Returns}
 uuid string value
@@ -224,8 +217,7 @@ Check if a string is empty
 
 Example\+: 
 
-bool is\+Empty = DGUString\+Entity.\+is\+Empty(string\+Value); ~\newline
-
+bool is\+Empty = DGUString\+Entity.\+is\+Empty(string\+Value);
 
 
 \begin{DoxyParams}{Parameters}
@@ -247,8 +239,7 @@ Compare strings.
 
 Compare two strings
 
-bool is\+Equal = DGUString\+Entity.\+conpare(\char`\"{}\+Hola\char`\"{}, \char`\"{}hola\char`\"{}); ~\newline
-
+bool is\+Equal = DGUString\+Entity.\+conpare(\char`\"{}\+Hola\char`\"{}, \char`\"{}hola\char`\"{});
 
 
 \begin{DoxyParams}{Parameters}
@@ -274,10 +265,7 @@ Length a string
 
 Example\+: 
 
-string new\+String = \mbox{\hyperlink{a00187_a2becd0118fe3eae963c5a82e415745a7}{DGUString\+Entity.\+new}}(\char`\"{}\+String value\char`\"{}); ~\newline
- int length = DGUString\+Entity.\+length(new\+String); 
-
-DGUString\+Entity.\+destroy(\&new\+String);
+int length = DGUString\+Entity.\+length(new\+String);
 
 
 \begin{DoxyParams}{Parameters}
@@ -301,9 +289,7 @@ Create a new string
 
 Example\+: 
 
-string new\+String = \mbox{\hyperlink{a00187_a2becd0118fe3eae963c5a82e415745a7}{DGUString\+Entity.\+new}}(\char`\"{}\char`\"{}); 
-
-string new\+String = \mbox{\hyperlink{a00187_a2becd0118fe3eae963c5a82e415745a7}{DGUString\+Entity.\+new}}(\char`\"{}\+String value\char`\"{});
+string new\+String = \mbox{\hyperlink{a00187_a2becd0118fe3eae963c5a82e415745a7}{DGUString\+Entity.\+new}}(\char`\"{}\char`\"{});
 
 
 \begin{DoxyParams}{Parameters}
@@ -350,8 +336,7 @@ Remove characters.
 
 Remove characters from a string
 
-string new\+Value = \mbox{\hyperlink{a00187_a3bb6d61ed19343fe94868c1c82781804}{DGUString\+Entity.\+remove\+Chars}}(\char`\"{}s String value Ss\char`\"{}, \char`\"{}s\+S\char`\"{}); ~\newline
- DGUString\+Entity.\+destroy(\&new\+Value);
+string new\+Value = \mbox{\hyperlink{a00187_a3bb6d61ed19343fe94868c1c82781804}{DGUString\+Entity.\+remove\+Chars}}(\char`\"{}s String value Ss\char`\"{}, \char`\"{}s\+S\char`\"{});
 
 
 \begin{DoxyParams}{Parameters}
@@ -378,8 +363,7 @@ Replace value.
 
 Replace a value in a string
 
-string new\+Value = \mbox{\hyperlink{a00187_a27dafdcb67390b12b88cdb036790fd22}{DGUString\+Entity.\+replace}}(\char`\"{}-\/-\/\+Hola Mundo-\/-\/\char`\"{}, \char`\"{}-\/\char`\"{}, \char`\"{}$\ast$\char`\"{}); ~\newline
- DGUString\+Entity.\+destroy(\&new\+Value);
+string new\+Value = \mbox{\hyperlink{a00187_a27dafdcb67390b12b88cdb036790fd22}{DGUString\+Entity.\+replace}}(\char`\"{}-\/-\/\+Hola Mundo-\/-\/\char`\"{}, \char`\"{}-\/\char`\"{}, \char`\"{}$\ast$\char`\"{});
 
 
 \begin{DoxyParams}{Parameters}
@@ -410,8 +394,7 @@ Convert a string to integer
 
 Example\+: 
 
-int string\+To\+Integer = DGUString\+Entity.\+to\+Integer(string\+Value); ~\newline
-
+int string\+To\+Integer = DGUString\+Entity.\+to\+Integer(string\+Value);
 
 
 \begin{DoxyParams}{Parameters}
@@ -433,8 +416,7 @@ Trim string.
 
 Trim a string, remove whitespace from both the beginning and the end of a string
 
-string trim\+Value = \mbox{\hyperlink{a00187_ac39d1564f784e4419d3eb24f9087aa79}{DGUString\+Entity.\+trim}}(\char`\"{} String value \char`\"{}); ~\newline
- DGUString\+Entity.\+destroy(\&trim\+Value);
+DGUString\+Entity.\+destroy(\&trim\+Value);
 
 
 \begin{DoxyParams}{Parameters}

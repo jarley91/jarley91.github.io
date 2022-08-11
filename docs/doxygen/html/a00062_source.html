@@ -111,64 +111,86 @@ $(document).ready(function(){initNavTree('a00062_source.html',''); initResizable
   <div class="headertitle"><div class="title">DGULog.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef DGU_LOG_H</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define DGU_LOG_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">  #include &quot;<a class="code" href="a00059.html">DGUString.h</a>&quot;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">  #define DGULFile __FILE__</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">  #define DGULFunction (string)__FUNCTION__</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">  #define DGULLine __LINE__</span></div>
+<a href="a00062.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef DGU_LOG_H</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define DGU_LOG_H</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="a00163.html">   15</a></span>  <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="a00163.html">DGULogTypes</a> {</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">string</span> CONSOLE;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">string</span> FILE;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">string</span> CONSOLE_AND_FILE;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  } <a class="code hl_struct" href="a00163.html">DGULogTypes</a>;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="a00167.html">   21</a></span>  <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="a00167.html">DGULogLeves</a> {</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">string</span> INFO;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">string</span> DEBUG;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">string</span> WARNING;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">string</span> ERROR;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordtype">string</span> ALL;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  } <a class="code hl_struct" href="a00167.html">DGULogLeves</a>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="keyword">typedef</span> <span class="keyword">struct </span>DGULog DGULog;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="a00171.html">   31</a></span>  <span class="keyword">extern</span> <span class="keyword">struct </span><a class="code hl_struct" href="a00171.html">DGULogEntity</a> {</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_struct" href="a00163.html">DGULogTypes</a> (*getTypes)(void);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_struct" href="a00167.html">DGULogLeves</a> (*getLeves)(void);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    DGULog *(*new)(void);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    void (*setFormatDateTime)(DGULog *oDGULog, <span class="keywordtype">string</span> formatDateTime);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    void (*setFilePath)(DGULog *oDGULog, <span class="keywordtype">string</span> filePath);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    void (*setType)(DGULog *oDGULog, <span class="keywordtype">string</span> type);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    void (*setLevel)(DGULog *oDGULog, <span class="keywordtype">string</span> level);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    void (*writeLog)(DGULog *oDGULog, <span class="keywordtype">string</span> level, <span class="keywordtype">string</span> source, <span class="keywordtype">string</span> function, <span class="keywordtype">int</span> line, <span class="keywordtype">string</span> message, ...);</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    void (*writeLogMessage)(DGULog *oDGULog, <span class="keywordtype">string</span> message);</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  } <a class="code hl_struct" href="a00171.html">DGULogEntity</a>;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#endif </span><span class="comment">//DGU_LOG_H</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">  #include &quot;<a class="code" href="a00059.html">DGUString.h</a>&quot;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="a00062.html#abe828754770aeffe1d7a662de616db03">   28</a></span><span class="preprocessor">  #define DGULFile __FILE__</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="a00062.html#ae33dd167f84a6746494ad0f69b2c7f11">   36</a></span><span class="preprocessor">  #define DGULFunction (string)__FUNCTION__</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="a00062.html#a6836ec495616ebb320c5308002387a81">   44</a></span><span class="preprocessor">  #define DGULLine __LINE__</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="a00163.html">   52</a></span>  <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="a00163.html">DGULogTypes</a> {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">void</span> *CONSOLE;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">void</span> *FILE;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">void</span> *CONSOLE_AND_FILE;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="a00062.html#a91493469dea20260e15028811619da10">   56</a></span>  } <a class="code hl_typedef" href="a00062.html#a91493469dea20260e15028811619da10">DGULogTypes</a>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="a00167.html">   64</a></span>  <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="a00167.html">DGULogLeves</a> {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">void</span> *INFO;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">void</span> *DEBUG;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordtype">void</span> *WARNING;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordtype">void</span> *ERROR;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordtype">void</span> *ALL;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="a00062.html#af445597323dea71576b4ffc2e5f49ce8">   70</a></span>  } <a class="code hl_typedef" href="a00062.html#af445597323dea71576b4ffc2e5f49ce8">DGULogLeves</a>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="a00062.html#aaa6a2ab602733132b5a14993305b0625">   78</a></span>  <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_typedef" href="a00062.html#aaa6a2ab602733132b5a14993305b0625">DGULog</a> <a class="code hl_typedef" href="a00062.html#aaa6a2ab602733132b5a14993305b0625">DGULog</a>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="a00171.html">   86</a></span>  <span class="keyword">extern</span> <span class="keyword">struct </span><a class="code hl_struct" href="a00171.html">DGULogEntity</a> {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="a00171.html#a5bbac717b2c98e2400e0769b5cd05d01">  100</a></span>    <a class="code hl_typedef" href="a00062.html#a91493469dea20260e15028811619da10">DGULogTypes</a> (*<a class="code hl_variable" href="a00171.html#a5bbac717b2c98e2400e0769b5cd05d01">getTypes</a>)(void);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="a00171.html#a13f06f812dfdc88435fb0a1e2a7b4a8b">  114</a></span>    <a class="code hl_typedef" href="a00062.html#af445597323dea71576b4ffc2e5f49ce8">DGULogLeves</a> (*<a class="code hl_variable" href="a00171.html#a13f06f812dfdc88435fb0a1e2a7b4a8b">getLeves</a>)(void);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="a00171.html#ae3f0ea77fc0007eca34cde13e540c853">  129</a></span>    <a class="code hl_typedef" href="a00062.html#aaa6a2ab602733132b5a14993305b0625">DGULog</a> *(*new)(void);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="a00171.html#a6222a5fc3f9d8f73cba34f44b68cd137">  145</a></span>    void (*<a class="code hl_variable" href="a00171.html#a6222a5fc3f9d8f73cba34f44b68cd137">setDateTimeFormat</a>)(<a class="code hl_typedef" href="a00062.html#aaa6a2ab602733132b5a14993305b0625">DGULog</a> *oDGULog, <span class="keywordtype">string</span> dateTimeFormat);</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="a00171.html#a95d3f3ec71517551c7cc16bc116c6586">  159</a></span>    void (*<a class="code hl_variable" href="a00171.html#a95d3f3ec71517551c7cc16bc116c6586">setFilePath</a>)(<a class="code hl_typedef" href="a00062.html#aaa6a2ab602733132b5a14993305b0625">DGULog</a> *oDGULog, <span class="keywordtype">string</span> filePath);</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno"><a class="line" href="a00171.html#a17b4585798d58d6c5b852c5509fed033">  173</a></span>    void (*<a class="code hl_variable" href="a00171.html#a17b4585798d58d6c5b852c5509fed033">setType</a>)(<a class="code hl_typedef" href="a00062.html#aaa6a2ab602733132b5a14993305b0625">DGULog</a> *oDGULog, <span class="keywordtype">void</span> *type);</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno"><a class="line" href="a00171.html#ae17528a47a54e8e45d4cc6dc4d6c0a9b">  187</a></span>    void (*<a class="code hl_variable" href="a00171.html#ae17528a47a54e8e45d4cc6dc4d6c0a9b">setLevel</a>)(<a class="code hl_typedef" href="a00062.html#aaa6a2ab602733132b5a14993305b0625">DGULog</a> *oDGULog, <span class="keywordtype">void</span> *level);</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno"><a class="line" href="a00171.html#a1ea5e3383024ec2d4c3165791ce5eaec">  209</a></span>    void (*<a class="code hl_variable" href="a00171.html#a1ea5e3383024ec2d4c3165791ce5eaec">writeLog</a>)(<a class="code hl_typedef" href="a00062.html#aaa6a2ab602733132b5a14993305b0625">DGULog</a> *oDGULog, <span class="keywordtype">void</span> *level, <span class="keywordtype">string</span> source, <span class="keywordtype">string</span> function, <span class="keywordtype">int</span> line, <span class="keywordtype">string</span> message, ...);</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno"><a class="line" href="a00171.html#a2c5260251c2fa56712d2ea388f100159">  225</a></span>    void (*<a class="code hl_variable" href="a00171.html#a2c5260251c2fa56712d2ea388f100159">writeLogMessage</a>)(<a class="code hl_typedef" href="a00062.html#aaa6a2ab602733132b5a14993305b0625">DGULog</a> *oDGULog, <span class="keywordtype">string</span> message);</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>  } <a class="code hl_struct" href="a00171.html">DGULogEntity</a>;</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span> </div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>}</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="preprocessor">#endif </span><span class="comment">//DGU_LOG_H</span></div>
 <div class="ttc" id="aa00059_html"><div class="ttname"><a href="a00059.html">DGUString.h</a></div></div>
-<div class="ttc" id="aa00163_html"><div class="ttname"><a href="a00163.html">DGULogTypes</a></div><div class="ttdef"><b>Definition:</b> DGULog.h:15</div></div>
-<div class="ttc" id="aa00167_html"><div class="ttname"><a href="a00167.html">DGULogLeves</a></div><div class="ttdef"><b>Definition:</b> DGULog.h:21</div></div>
-<div class="ttc" id="aa00171_html"><div class="ttname"><a href="a00171.html">DGULogEntity</a></div><div class="ttdef"><b>Definition:</b> DGULog.h:31</div></div>
+<div class="ttc" id="aa00062_html_a91493469dea20260e15028811619da10"><div class="ttname"><a href="a00062.html#a91493469dea20260e15028811619da10">DGULogTypes</a></div><div class="ttdeci">struct DGULogTypes DGULogTypes</div><div class="ttdoc">Log types.</div></div>
+<div class="ttc" id="aa00062_html_aaa6a2ab602733132b5a14993305b0625"><div class="ttname"><a href="a00062.html#aaa6a2ab602733132b5a14993305b0625">DGULog</a></div><div class="ttdeci">struct DGULog DGULog</div><div class="ttdoc">Log.</div><div class="ttdef"><b>Definition:</b> DGULog.h:78</div></div>
+<div class="ttc" id="aa00062_html_af445597323dea71576b4ffc2e5f49ce8"><div class="ttname"><a href="a00062.html#af445597323dea71576b4ffc2e5f49ce8">DGULogLeves</a></div><div class="ttdeci">struct DGULogLeves DGULogLeves</div><div class="ttdoc">Log levels.</div></div>
+<div class="ttc" id="aa00163_html"><div class="ttname"><a href="a00163.html">DGULogTypes</a></div><div class="ttdoc">Log types.</div><div class="ttdef"><b>Definition:</b> DGULog.h:52</div></div>
+<div class="ttc" id="aa00167_html"><div class="ttname"><a href="a00167.html">DGULogLeves</a></div><div class="ttdoc">Log levels.</div><div class="ttdef"><b>Definition:</b> DGULog.h:64</div></div>
+<div class="ttc" id="aa00171_html"><div class="ttname"><a href="a00171.html">DGULogEntity</a></div><div class="ttdoc">Log entity.</div><div class="ttdef"><b>Definition:</b> DGULog.h:86</div></div>
+<div class="ttc" id="aa00171_html_a13f06f812dfdc88435fb0a1e2a7b4a8b"><div class="ttname"><a href="a00171.html#a13f06f812dfdc88435fb0a1e2a7b4a8b">DGULogEntity::getLeves</a></div><div class="ttdeci">DGULogLeves(* getLeves)(void)</div><div class="ttdoc">Log levels.</div><div class="ttdef"><b>Definition:</b> DGULog.h:114</div></div>
+<div class="ttc" id="aa00171_html_a17b4585798d58d6c5b852c5509fed033"><div class="ttname"><a href="a00171.html#a17b4585798d58d6c5b852c5509fed033">DGULogEntity::setType</a></div><div class="ttdeci">void(* setType)(DGULog *oDGULog, void *type)</div><div class="ttdoc">Set type.</div><div class="ttdef"><b>Definition:</b> DGULog.h:173</div></div>
+<div class="ttc" id="aa00171_html_a1ea5e3383024ec2d4c3165791ce5eaec"><div class="ttname"><a href="a00171.html#a1ea5e3383024ec2d4c3165791ce5eaec">DGULogEntity::writeLog</a></div><div class="ttdeci">void(* writeLog)(DGULog *oDGULog, void *level, string source, string function, int line, string message,...)</div><div class="ttdoc">Write log.</div><div class="ttdef"><b>Definition:</b> DGULog.h:209</div></div>
+<div class="ttc" id="aa00171_html_a2c5260251c2fa56712d2ea388f100159"><div class="ttname"><a href="a00171.html#a2c5260251c2fa56712d2ea388f100159">DGULogEntity::writeLogMessage</a></div><div class="ttdeci">void(* writeLogMessage)(DGULog *oDGULog, string message)</div><div class="ttdoc">Write message.</div><div class="ttdef"><b>Definition:</b> DGULog.h:225</div></div>
+<div class="ttc" id="aa00171_html_a5bbac717b2c98e2400e0769b5cd05d01"><div class="ttname"><a href="a00171.html#a5bbac717b2c98e2400e0769b5cd05d01">DGULogEntity::getTypes</a></div><div class="ttdeci">DGULogTypes(* getTypes)(void)</div><div class="ttdoc">Log types.</div><div class="ttdef"><b>Definition:</b> DGULog.h:100</div></div>
+<div class="ttc" id="aa00171_html_a6222a5fc3f9d8f73cba34f44b68cd137"><div class="ttname"><a href="a00171.html#a6222a5fc3f9d8f73cba34f44b68cd137">DGULogEntity::setDateTimeFormat</a></div><div class="ttdeci">void(* setDateTimeFormat)(DGULog *oDGULog, string dateTimeFormat)</div><div class="ttdoc">Set date and time format.</div><div class="ttdef"><b>Definition:</b> DGULog.h:145</div></div>
+<div class="ttc" id="aa00171_html_a95d3f3ec71517551c7cc16bc116c6586"><div class="ttname"><a href="a00171.html#a95d3f3ec71517551c7cc16bc116c6586">DGULogEntity::setFilePath</a></div><div class="ttdeci">void(* setFilePath)(DGULog *oDGULog, string filePath)</div><div class="ttdoc">Set file path.</div><div class="ttdef"><b>Definition:</b> DGULog.h:159</div></div>
+<div class="ttc" id="aa00171_html_ae17528a47a54e8e45d4cc6dc4d6c0a9b"><div class="ttname"><a href="a00171.html#ae17528a47a54e8e45d4cc6dc4d6c0a9b">DGULogEntity::setLevel</a></div><div class="ttdeci">void(* setLevel)(DGULog *oDGULog, void *level)</div><div class="ttdoc">Set level.</div><div class="ttdef"><b>Definition:</b> DGULog.h:187</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_e64df8b9c1f4c17f30f42818af0e0d6d.html">bins</a></li><li class="navelem"><a class="el" href="dir_2d178ba13de16da8adfbb9417f94d59c.html">macOS</a></li><li class="navelem"><a class="el" href="dir_71acbcf58eadc949a2e23f1977368bc9.html">debug</a></li><li class="navelem"><a class="el" href="dir_676b8323458b869fdc514fbb723a092c.html">DeliGran</a></li><li class="navelem"><a class="el" href="dir_df9c427dd44554ed73b860ee17c29a6a.html">include</a></li><li class="navelem"><a class="el" href="dir_9b43912ee00ded4b8816b3eebc3f6f45.html">DeliGranUtils</a></li><li class="navelem"><a class="el" href="dir_ca05907a7119554fd7d6b801cd48d596.html">lib</a></li><li class="navelem"><a class="el" href="dir_a40ac7d156fc0acb77c7090d0bf59f32.html">entities</a></li><li class="navelem"><b>DGULog.h</b></li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_3f25cfb800acbf742fb9d9d77f0f82c1.html">DeliGranUtils</a></li><li class="navelem"><a class="el" href="dir_892dcff09258e537a675047f727ecd9c.html">lib</a></li><li class="navelem"><a class="el" href="dir_52149c8f4233f9aa4d75c7d111929223.html">entities</a></li><li class="navelem"><a class="el" href="a00062.html">DGULog.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

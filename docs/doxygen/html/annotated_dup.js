@@ -1,7 +1,7 @@
 var annotated_dup =
 [
     [ "DeliGranRest", "a00091.html", null ],
-    [ "DeliGranRestEntity", "a00095.html", null ],
+    [ "DeliGranRestEntity", "a00095.html", "a00095" ],
     [ "DGDBControllerEntity", "a00075.html", null ],
     [ "DGDBDataSourceDrivers", "a00071.html", null ],
     [ "DGREndpointEntity", "a00099.html", null ],
@@ -22,8 +22,8 @@ var annotated_dup =
     [ "DGRResponseEntity", "a00155.html", null ],
     [ "DGRSslSessions", "a00083.html", null ],
     [ "DGRStreamConfigs", "a00079.html", null ],
-    [ "DGUHashTableEntity", "a00159.html", null ],
-    [ "DGULogEntity", "a00171.html", null ],
+    [ "DGUHashTableEntity", "a00159.html", "a00159" ],
+    [ "DGULogEntity", "a00171.html", "a00171" ],
     [ "DGULogLeves", "a00167.html", null ],
     [ "DGULogTypes", "a00163.html", null ],
     [ "DGUMarkupEntity", "a00179.html", null ],

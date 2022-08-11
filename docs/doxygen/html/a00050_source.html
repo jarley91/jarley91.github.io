@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('a00050_source.html',''); initResizable
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">  #include &lt;stdbool.h&gt;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">  #include &quot;DGULog.h&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">  #include &quot;<a class="code" href="a00062.html">DGULog.h</a>&quot;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">  #include &quot;DGUThreadMutex.h&quot;</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">  #include &quot;<a class="code" href="a00059.html">DGUString.h</a>&quot;</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('a00050_source.html',''); initResizable
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="a00195.html">   23</a></span>  <span class="keyword">extern</span> <span class="keyword">struct </span><a class="code hl_struct" href="a00195.html">DGUThreadMutexEntity</a> {</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_struct" href="a00191.html">DGUThreadMutexTypes</a> (*getTypes)(void);</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    DGUThreadMutex *(*new)(<span class="keywordtype">int</span> type, <span class="keywordtype">string</span> source, <span class="keywordtype">string</span> function, <span class="keywordtype">int</span> line);</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    void (*setLogger)(DGUThreadMutex *oDGUThreadMutex, DGULog *oDGULog);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    void (*setLogger)(DGUThreadMutex *oDGUThreadMutex, <a class="code hl_typedef" href="a00062.html#aaa6a2ab602733132b5a14993305b0625">DGULog</a> *oDGULog);</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    void (*destroy)(DGUThreadMutex *oDGUThreadMutex, <span class="keywordtype">string</span> source, <span class="keywordtype">string</span> function, <span class="keywordtype">int</span> line);</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    bool (*lock)(DGUThreadMutex *oDGUThreadMutex, <span class="keywordtype">string</span> source, <span class="keywordtype">string</span> function, <span class="keywordtype">int</span> line);</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    bool (*unlock)(DGUThreadMutex *oDGUThreadMutex, <span class="keywordtype">string</span> source, <span class="keywordtype">string</span> function, <span class="keywordtype">int</span> line);</div>
@@ -148,6 +148,8 @@ $(document).ready(function(){initNavTree('a00050_source.html',''); initResizable
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#endif </span><span class="comment">//DGU_THREAD_MUTEX_H</span></div>
 <div class="ttc" id="aa00059_html"><div class="ttname"><a href="a00059.html">DGUString.h</a></div></div>
+<div class="ttc" id="aa00062_html"><div class="ttname"><a href="a00062.html">DGULog.h</a></div></div>
+<div class="ttc" id="aa00062_html_aaa6a2ab602733132b5a14993305b0625"><div class="ttname"><a href="a00062.html#aaa6a2ab602733132b5a14993305b0625">DGULog</a></div><div class="ttdeci">struct DGULog DGULog</div><div class="ttdoc">Log.</div><div class="ttdef"><b>Definition:</b> DGULog.h:78</div></div>
 <div class="ttc" id="aa00191_html"><div class="ttname"><a href="a00191.html">DGUThreadMutexTypes</a></div><div class="ttdef"><b>Definition:</b> DGUThreadMutex.h:15</div></div>
 <div class="ttc" id="aa00195_html"><div class="ttname"><a href="a00195.html">DGUThreadMutexEntity</a></div><div class="ttdef"><b>Definition:</b> DGUThreadMutex.h:23</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -155,7 +157,7 @@ $(document).ready(function(){initNavTree('a00050_source.html',''); initResizable
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_e64df8b9c1f4c17f30f42818af0e0d6d.html">bins</a></li><li class="navelem"><a class="el" href="dir_2d178ba13de16da8adfbb9417f94d59c.html">macOS</a></li><li class="navelem"><a class="el" href="dir_71acbcf58eadc949a2e23f1977368bc9.html">debug</a></li><li class="navelem"><a class="el" href="dir_676b8323458b869fdc514fbb723a092c.html">DeliGran</a></li><li class="navelem"><a class="el" href="dir_df9c427dd44554ed73b860ee17c29a6a.html">include</a></li><li class="navelem"><a class="el" href="dir_9b43912ee00ded4b8816b3eebc3f6f45.html">DeliGranUtils</a></li><li class="navelem"><a class="el" href="dir_ca05907a7119554fd7d6b801cd48d596.html">lib</a></li><li class="navelem"><a class="el" href="dir_a40ac7d156fc0acb77c7090d0bf59f32.html">entities</a></li><li class="navelem"><b>DGUThreadMutex.h</b></li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_3f25cfb800acbf742fb9d9d77f0f82c1.html">DeliGranUtils</a></li><li class="navelem"><a class="el" href="dir_892dcff09258e537a675047f727ecd9c.html">lib</a></li><li class="navelem"><a class="el" href="dir_52149c8f4233f9aa4d75c7d111929223.html">entities</a></li><li class="navelem"><b>DGUThreadMutex.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

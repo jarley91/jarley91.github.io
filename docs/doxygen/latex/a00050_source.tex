@@ -12,7 +12,7 @@
 \DoxyCodeLine{8 }
 \DoxyCodeLine{9 \textcolor{preprocessor}{  \#include <stdbool.h>}}
 \DoxyCodeLine{10 }
-\DoxyCodeLine{11 \textcolor{preprocessor}{  \#include "{}DGULog.h"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{  \#include "{}\mbox{\hyperlink{a00062}{DGULog.h}}"{}}}
 \DoxyCodeLine{12 \textcolor{preprocessor}{  \#include "{}DGUThreadMutex.h"{}}}
 \DoxyCodeLine{13 \textcolor{preprocessor}{  \#include "{}\mbox{\hyperlink{a00059}{DGUString.h}}"{}}}
 \DoxyCodeLine{14 }
@@ -27,7 +27,7 @@
 \DoxyCodeLine{23   \textcolor{keyword}{extern} \textcolor{keyword}{struct }\mbox{\hyperlink{a00195}{DGUThreadMutexEntity}} \{}
 \DoxyCodeLine{24     \mbox{\hyperlink{a00191}{DGUThreadMutexTypes}} (*getTypes)(void);}
 \DoxyCodeLine{25     DGUThreadMutex *(*new)(\textcolor{keywordtype}{int} type, \textcolor{keywordtype}{string} source, \textcolor{keywordtype}{string} function, \textcolor{keywordtype}{int} line);}
-\DoxyCodeLine{26     void (*setLogger)(DGUThreadMutex *oDGUThreadMutex, DGULog *oDGULog);}
+\DoxyCodeLine{26     void (*setLogger)(DGUThreadMutex *oDGUThreadMutex, \mbox{\hyperlink{a00062_aaa6a2ab602733132b5a14993305b0625}{DGULog}} *oDGULog);}
 \DoxyCodeLine{27     void (*destroy)(DGUThreadMutex *oDGUThreadMutex, \textcolor{keywordtype}{string} source, \textcolor{keywordtype}{string} function, \textcolor{keywordtype}{int} line);}
 \DoxyCodeLine{28     bool (*lock)(DGUThreadMutex *oDGUThreadMutex, \textcolor{keywordtype}{string} source, \textcolor{keywordtype}{string} function, \textcolor{keywordtype}{int} line);}
 \DoxyCodeLine{29     bool (*unlock)(DGUThreadMutex *oDGUThreadMutex, \textcolor{keywordtype}{string} source, \textcolor{keywordtype}{string} function, \textcolor{keywordtype}{int} line);}

@@ -1,11 +1,12 @@
 var indexSectionsWithContent =
 {
-  0: "cdfgilnrst",
+  0: "cdfgilnrstw",
   1: "d",
   2: "d",
-  3: "cdfgilnrt",
-  4: "s",
-  5: "d"
+  3: "cdfgilnrstw",
+  4: "dfs",
+  5: "d",
+  6: "d"
 };
 
 var indexSectionNames =
@@ -15,7 +16,8 @@ var indexSectionNames =
   2: "files",
   3: "variables",
   4: "typedefs",
-  5: "pages"
+  5: "defines",
+  6: "pages"
 };
 
 var indexSectionLabels =
@@ -25,6 +27,7 @@ var indexSectionLabels =
   2: "Files",
   3: "Variables",
   4: "Typedefs",
-  5: "Pages"
+  5: "Macros",
+  6: "Pages"
 };
 
