@@ -1,17 +1,117 @@
 \hypertarget{a00183}{}\doxysection{DGUMemory\+Entity Struct Reference}
 \label{a00183}\index{DGUMemoryEntity@{DGUMemoryEntity}}
+
+
+Memory entity.  
+
+
+
+
+{\ttfamily \#include $<$DGUMemory.\+h$>$}
+
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
+void $\ast$($\ast$ \mbox{\hyperlink{a00183_a98fce37b3446b8f7aa19a238712de4dc}{malloc}} )(size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em Malloc. \end{DoxyCompactList}\item 
+void $\ast$($\ast$ \mbox{\hyperlink{a00183_a0cd632851e2703229572f63cfc4d8e21}{realloc}} )(void $\ast$pointer, size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em Realloc. \end{DoxyCompactList}\item 
+void($\ast$ \mbox{\hyperlink{a00183_adbf9364ef52646beda98e271c1120a3f}{free}} )(void $\ast$$\ast$pointer)
+\begin{DoxyCompactList}\small\item\em Free. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Memory entity. 
+
+Entity memory functions 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{a00183_adbf9364ef52646beda98e271c1120a3f}\label{a00183_adbf9364ef52646beda98e271c1120a3f}} 
+\index{DGUMemoryEntity@{DGUMemoryEntity}!free@{free}}
+\index{free@{free}!DGUMemoryEntity@{DGUMemoryEntity}}
+\doxysubsubsection{\texorpdfstring{free}{free}}
+{\footnotesize\ttfamily void($\ast$ DGUMemory\+Entity\+::free) (void $\ast$$\ast$pointer)}
+
+
+
+Free. 
+
+Set the pointer with zeros and deallocates the space previously allocated
+
+Example\+: 
+
+DGUMemory\+Entity.\+free(sizeof(\&pointer));
+
+
+\begin{DoxyParams}{Parameters}
+{\em pointer} & Pointer to free\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{https://devdocs.io/c/memory/free}{\texttt{ https\+://devdocs.\+io/c/memory/free}} 
+\end{DoxySeeAlso}
 \mbox{\Hypertarget{a00183_a98fce37b3446b8f7aa19a238712de4dc}\label{a00183_a98fce37b3446b8f7aa19a238712de4dc}} 
-void $\ast$($\ast$ {\bfseries malloc} )(size\+\_\+t size)
-\item 
-\mbox{\Hypertarget{a00183_ab4ab5db38a8274fde1b4183f52ba6dcd}\label{a00183_ab4ab5db38a8274fde1b4183f52ba6dcd}} 
-void $\ast$($\ast$ {\bfseries realloc} )(void $\ast$ptr, size\+\_\+t size)
-\item 
-\mbox{\Hypertarget{a00183_a07dac56fbbdb0692ce6633156c574b35}\label{a00183_a07dac56fbbdb0692ce6633156c574b35}} 
-void($\ast$ {\bfseries free} )(void $\ast$$\ast$ptr)
-\end{DoxyCompactItemize}
+\index{DGUMemoryEntity@{DGUMemoryEntity}!malloc@{malloc}}
+\index{malloc@{malloc}!DGUMemoryEntity@{DGUMemoryEntity}}
+\doxysubsubsection{\texorpdfstring{malloc}{malloc}}
+{\footnotesize\ttfamily void $\ast$($\ast$ DGUMemory\+Entity\+::malloc) (size\+\_\+t size)}
+
+
+
+Malloc. 
+
+Allocates size bytes of initialized memory storage with zeros
+
+Example\+: 
+
+type\+Struct $\ast$pointer = DGUMemory\+Entity.\+malloc(sizeof(type\+Struc));
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & Size of type or struct\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the beginning of newly allocated memory, or null if it was not possible to reserve the space in memory
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\href{https://devdocs.io/c/memory/malloc}{\texttt{ https\+://devdocs.\+io/c/memory/malloc}}
+\end{DoxySeeAlso}
+\begin{DoxyNote}{Note}
+When you no longer need the pointer, you should free the reserved memory with \mbox{\hyperlink{a00183_adbf9364ef52646beda98e271c1120a3f}{DGUMemory\+Entity.\+free}} 
+\end{DoxyNote}
+\mbox{\Hypertarget{a00183_a0cd632851e2703229572f63cfc4d8e21}\label{a00183_a0cd632851e2703229572f63cfc4d8e21}} 
+\index{DGUMemoryEntity@{DGUMemoryEntity}!realloc@{realloc}}
+\index{realloc@{realloc}!DGUMemoryEntity@{DGUMemoryEntity}}
+\doxysubsubsection{\texorpdfstring{realloc}{realloc}}
+{\footnotesize\ttfamily void $\ast$($\ast$ DGUMemory\+Entity\+::realloc) (void $\ast$pointer, size\+\_\+t size)}
+
+
+
+Realloc. 
+
+Reallocates the given area of memory
+
+Example\+: 
+
+type\+Struct $\ast$new\+Pointer = DGUMemory\+Entity.\+realloc(pointer, sizeof(type\+Struc) $\ast$ 20);
+
+
+\begin{DoxyParams}{Parameters}
+{\em pointer} & Pointer to allocate new memory size \\
+\hline
+{\em size} & New size of type or struct\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the beginning of newly allocated memory, or null if it was not possible to reserve the space in memory
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\href{https://devdocs.io/c/memory/realloc}{\texttt{ https\+://devdocs.\+io/c/memory/realloc}}
+\end{DoxySeeAlso}
+\begin{DoxyNote}{Note}
+When you no longer need the pointer, you should free the reserved memory with \mbox{\hyperlink{a00183_adbf9364ef52646beda98e271c1120a3f}{DGUMemory\+Entity.\+free}} 
+\end{DoxyNote}
 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}

@@ -20,17 +20,17 @@
 \DoxyCodeLine{44 \textcolor{preprocessor}{  \#define DGULLine \_\_LINE\_\_}}
 \DoxyCodeLine{45 }
 \DoxyCodeLine{52   \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{a00163}{DGULogTypes}} \{}
-\DoxyCodeLine{53     \textcolor{keywordtype}{void} *CONSOLE;}
-\DoxyCodeLine{54     \textcolor{keywordtype}{void} *FILE;}
-\DoxyCodeLine{55     \textcolor{keywordtype}{void} *CONSOLE\_AND\_FILE;}
+\DoxyCodeLine{53     \textcolor{keywordtype}{void} *Console;}
+\DoxyCodeLine{54     \textcolor{keywordtype}{void} *File;}
+\DoxyCodeLine{55     \textcolor{keywordtype}{void} *ConsoleAndFile;}
 \DoxyCodeLine{56   \} \mbox{\hyperlink{a00062_a91493469dea20260e15028811619da10}{DGULogTypes}};}
 \DoxyCodeLine{57   }
 \DoxyCodeLine{64   \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{a00167}{DGULogLeves}} \{}
-\DoxyCodeLine{65     \textcolor{keywordtype}{void} *INFO;}
-\DoxyCodeLine{66     \textcolor{keywordtype}{void} *DEBUG;}
-\DoxyCodeLine{67     \textcolor{keywordtype}{void} *WARNING;}
-\DoxyCodeLine{68     \textcolor{keywordtype}{void} *ERROR;}
-\DoxyCodeLine{69     \textcolor{keywordtype}{void} *ALL;}
+\DoxyCodeLine{65     \textcolor{keywordtype}{void} *Info;}
+\DoxyCodeLine{66     \textcolor{keywordtype}{void} *Debug;}
+\DoxyCodeLine{67     \textcolor{keywordtype}{void} *Warning;}
+\DoxyCodeLine{68     \textcolor{keywordtype}{void} *Error;}
+\DoxyCodeLine{69     \textcolor{keywordtype}{void} *All;}
 \DoxyCodeLine{70   \} \mbox{\hyperlink{a00062_af445597323dea71576b4ffc2e5f49ce8}{DGULogLeves}};}
 \DoxyCodeLine{71 }
 \DoxyCodeLine{78   \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{a00062_aaa6a2ab602733132b5a14993305b0625}{DGULog}} \mbox{\hyperlink{a00062_aaa6a2ab602733132b5a14993305b0625}{DGULog}};}
@@ -43,23 +43,25 @@
 \DoxyCodeLine{115     }
 \DoxyCodeLine{129     \mbox{\hyperlink{a00062_aaa6a2ab602733132b5a14993305b0625}{DGULog}} *(*new)(void);}
 \DoxyCodeLine{130 }
-\DoxyCodeLine{145     void (*\mbox{\hyperlink{a00171_a6222a5fc3f9d8f73cba34f44b68cd137}{setDateTimeFormat}})(\mbox{\hyperlink{a00062_aaa6a2ab602733132b5a14993305b0625}{DGULog}} *oDGULog, \textcolor{keywordtype}{string} dateTimeFormat);}
-\DoxyCodeLine{146 }
-\DoxyCodeLine{159     void (*\mbox{\hyperlink{a00171_a95d3f3ec71517551c7cc16bc116c6586}{setFilePath}})(\mbox{\hyperlink{a00062_aaa6a2ab602733132b5a14993305b0625}{DGULog}} *oDGULog, \textcolor{keywordtype}{string} filePath);}
-\DoxyCodeLine{160 }
-\DoxyCodeLine{173     void (*\mbox{\hyperlink{a00171_a17b4585798d58d6c5b852c5509fed033}{setType}})(\mbox{\hyperlink{a00062_aaa6a2ab602733132b5a14993305b0625}{DGULog}} *oDGULog, \textcolor{keywordtype}{void} *type);}
-\DoxyCodeLine{174 }
-\DoxyCodeLine{187     void (*\mbox{\hyperlink{a00171_ae17528a47a54e8e45d4cc6dc4d6c0a9b}{setLevel}})(\mbox{\hyperlink{a00062_aaa6a2ab602733132b5a14993305b0625}{DGULog}} *oDGULog, \textcolor{keywordtype}{void} *level);}
-\DoxyCodeLine{188 }
-\DoxyCodeLine{209     void (*\mbox{\hyperlink{a00171_a1ea5e3383024ec2d4c3165791ce5eaec}{writeLog}})(\mbox{\hyperlink{a00062_aaa6a2ab602733132b5a14993305b0625}{DGULog}} *oDGULog, \textcolor{keywordtype}{void} *level, \textcolor{keywordtype}{string} source, \textcolor{keywordtype}{string} function, \textcolor{keywordtype}{int} line, \textcolor{keywordtype}{string} message, ...);}
-\DoxyCodeLine{210 }
-\DoxyCodeLine{225     void (*\mbox{\hyperlink{a00171_a2c5260251c2fa56712d2ea388f100159}{writeLogMessage}})(\mbox{\hyperlink{a00062_aaa6a2ab602733132b5a14993305b0625}{DGULog}} *oDGULog, \textcolor{keywordtype}{string} message);}
-\DoxyCodeLine{226   \} \mbox{\hyperlink{a00171}{DGULogEntity}};}
-\DoxyCodeLine{227 }
-\DoxyCodeLine{228 \textcolor{preprocessor}{\#ifdef \_\_cplusplus}}
-\DoxyCodeLine{229 \}}
-\DoxyCodeLine{230 \textcolor{preprocessor}{\#endif}}
-\DoxyCodeLine{231 }
-\DoxyCodeLine{232 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//DGU\_LOG\_H}}
+\DoxyCodeLine{142     void (*\mbox{\hyperlink{a00171_aad351a61c5f5ad8fb2f3b9e58238c7bf}{destroy}})(\mbox{\hyperlink{a00062_aaa6a2ab602733132b5a14993305b0625}{DGULog}} **oDGULog);}
+\DoxyCodeLine{143 }
+\DoxyCodeLine{158     void (*\mbox{\hyperlink{a00171_a6222a5fc3f9d8f73cba34f44b68cd137}{setDateTimeFormat}})(\mbox{\hyperlink{a00062_aaa6a2ab602733132b5a14993305b0625}{DGULog}} *oDGULog, \textcolor{keywordtype}{string} dateTimeFormat);}
+\DoxyCodeLine{159 }
+\DoxyCodeLine{172     void (*\mbox{\hyperlink{a00171_a95d3f3ec71517551c7cc16bc116c6586}{setFilePath}})(\mbox{\hyperlink{a00062_aaa6a2ab602733132b5a14993305b0625}{DGULog}} *oDGULog, \textcolor{keywordtype}{string} filePath);}
+\DoxyCodeLine{173 }
+\DoxyCodeLine{186     void (*\mbox{\hyperlink{a00171_a17b4585798d58d6c5b852c5509fed033}{setType}})(\mbox{\hyperlink{a00062_aaa6a2ab602733132b5a14993305b0625}{DGULog}} *oDGULog, \textcolor{keywordtype}{void} *type);}
+\DoxyCodeLine{187 }
+\DoxyCodeLine{200     void (*\mbox{\hyperlink{a00171_ae17528a47a54e8e45d4cc6dc4d6c0a9b}{setLevel}})(\mbox{\hyperlink{a00062_aaa6a2ab602733132b5a14993305b0625}{DGULog}} *oDGULog, \textcolor{keywordtype}{void} *level);}
+\DoxyCodeLine{201 }
+\DoxyCodeLine{222     void (*\mbox{\hyperlink{a00171_a1ea5e3383024ec2d4c3165791ce5eaec}{writeLog}})(\mbox{\hyperlink{a00062_aaa6a2ab602733132b5a14993305b0625}{DGULog}} *oDGULog, \textcolor{keywordtype}{void} *level, \textcolor{keywordtype}{string} source, \textcolor{keywordtype}{string} function, \textcolor{keywordtype}{int} line, \textcolor{keywordtype}{string} message, ...);}
+\DoxyCodeLine{223 }
+\DoxyCodeLine{238     void (*\mbox{\hyperlink{a00171_a2c5260251c2fa56712d2ea388f100159}{writeLogMessage}})(\mbox{\hyperlink{a00062_aaa6a2ab602733132b5a14993305b0625}{DGULog}} *oDGULog, \textcolor{keywordtype}{string} message);}
+\DoxyCodeLine{239   \} \mbox{\hyperlink{a00171}{DGULogEntity}};}
+\DoxyCodeLine{240 }
+\DoxyCodeLine{241 \textcolor{preprocessor}{\#ifdef \_\_cplusplus}}
+\DoxyCodeLine{242 \}}
+\DoxyCodeLine{243 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{244 }
+\DoxyCodeLine{245 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//DGU\_LOG\_H}}
 
 \end{DoxyCode}

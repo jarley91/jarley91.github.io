@@ -114,19 +114,111 @@ $(document).ready(function(){initNavTree('a00183.html',''); initResizable(); });
   <div class="headertitle"><div class="title">DGUMemoryEntity Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Memory entity.  
+ <a href="a00183.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00056_source.html">DGUMemory.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a98fce37b3446b8f7aa19a238712de4dc"><td class="memItemLeft" align="right" valign="top"><a id="a98fce37b3446b8f7aa19a238712de4dc" name="a98fce37b3446b8f7aa19a238712de4dc"></a>
-void *(*&#160;</td><td class="memItemRight" valign="bottom"><b>malloc</b> )(size_t size)</td></tr>
+<tr class="memitem:a98fce37b3446b8f7aa19a238712de4dc"><td class="memItemLeft" align="right" valign="top">void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00183.html#a98fce37b3446b8f7aa19a238712de4dc">malloc</a> )(size_t size)</td></tr>
+<tr class="memdesc:a98fce37b3446b8f7aa19a238712de4dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Malloc.  <a href="a00183.html#a98fce37b3446b8f7aa19a238712de4dc">More...</a><br /></td></tr>
 <tr class="separator:a98fce37b3446b8f7aa19a238712de4dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4ab5db38a8274fde1b4183f52ba6dcd"><td class="memItemLeft" align="right" valign="top"><a id="ab4ab5db38a8274fde1b4183f52ba6dcd" name="ab4ab5db38a8274fde1b4183f52ba6dcd"></a>
-void *(*&#160;</td><td class="memItemRight" valign="bottom"><b>realloc</b> )(void *ptr, size_t size)</td></tr>
-<tr class="separator:ab4ab5db38a8274fde1b4183f52ba6dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07dac56fbbdb0692ce6633156c574b35"><td class="memItemLeft" align="right" valign="top"><a id="a07dac56fbbdb0692ce6633156c574b35" name="a07dac56fbbdb0692ce6633156c574b35"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>free</b> )(void **ptr)</td></tr>
-<tr class="separator:a07dac56fbbdb0692ce6633156c574b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cd632851e2703229572f63cfc4d8e21"><td class="memItemLeft" align="right" valign="top">void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00183.html#a0cd632851e2703229572f63cfc4d8e21">realloc</a> )(void *pointer, size_t size)</td></tr>
+<tr class="memdesc:a0cd632851e2703229572f63cfc4d8e21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realloc.  <a href="a00183.html#a0cd632851e2703229572f63cfc4d8e21">More...</a><br /></td></tr>
+<tr class="separator:a0cd632851e2703229572f63cfc4d8e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbf9364ef52646beda98e271c1120a3f"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00183.html#adbf9364ef52646beda98e271c1120a3f">free</a> )(void **pointer)</td></tr>
+<tr class="memdesc:adbf9364ef52646beda98e271c1120a3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free.  <a href="a00183.html#adbf9364ef52646beda98e271c1120a3f">More...</a><br /></td></tr>
+<tr class="separator:adbf9364ef52646beda98e271c1120a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Memory entity. </p>
+<p >Entity memory functions </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="adbf9364ef52646beda98e271c1120a3f" name="adbf9364ef52646beda98e271c1120a3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbf9364ef52646beda98e271c1120a3f">&#9670;&nbsp;</a></span>free</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* DGUMemoryEntity::free) (void **pointer)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Free. </p>
+<p >Set the pointer with zeros and deallocates the space previously allocated</p>
+<p >Example: </p>
+<p >DGUMemoryEntity.free(sizeof(&amp;pointer));</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pointer</td><td>Pointer to free</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://devdocs.io/c/memory/free">https://devdocs.io/c/memory/free</a> </dd></dl>
+
+</div>
+</div>
+<a id="a98fce37b3446b8f7aa19a238712de4dc" name="a98fce37b3446b8f7aa19a238712de4dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98fce37b3446b8f7aa19a238712de4dc">&#9670;&nbsp;</a></span>malloc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void *(* DGUMemoryEntity::malloc) (size_t size)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Malloc. </p>
+<p >Allocates size bytes of initialized memory storage with zeros</p>
+<p >Example: </p>
+<p >typeStruct *pointer = DGUMemoryEntity.malloc(sizeof(typeStruc));</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>Size of type or struct</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the beginning of newly allocated memory, or null if it was not possible to reserve the space in memory</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://devdocs.io/c/memory/malloc">https://devdocs.io/c/memory/malloc</a></dd></dl>
+<dl class="section note"><dt>Note</dt><dd>When you no longer need the pointer, you should free the reserved memory with <a class="el" href="a00183.html#adbf9364ef52646beda98e271c1120a3f" title="Free.">DGUMemoryEntity.free</a> </dd></dl>
+
+</div>
+</div>
+<a id="a0cd632851e2703229572f63cfc4d8e21" name="a0cd632851e2703229572f63cfc4d8e21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cd632851e2703229572f63cfc4d8e21">&#9670;&nbsp;</a></span>realloc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void *(* DGUMemoryEntity::realloc) (void *pointer, size_t size)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Realloc. </p>
+<p >Reallocates the given area of memory</p>
+<p >Example: </p>
+<p >typeStruct *newPointer = DGUMemoryEntity.realloc(pointer, sizeof(typeStruc) * 20);</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pointer</td><td>Pointer to allocate new memory size </td></tr>
+    <tr><td class="paramname">size</td><td>New size of type or struct</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the beginning of newly allocated memory, or null if it was not possible to reserve the space in memory</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://devdocs.io/c/memory/realloc">https://devdocs.io/c/memory/realloc</a></dd></dl>
+<dl class="section note"><dt>Note</dt><dd>When you no longer need the pointer, you should free the reserved memory with <a class="el" href="a00183.html#adbf9364ef52646beda98e271c1120a3f" title="Free.">DGUMemoryEntity.free</a> </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="a00056_source.html">DGUMemory.h</a></li>
 </ul>

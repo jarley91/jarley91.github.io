@@ -125,9 +125,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ae14b0e2ce7b1740877f24f2fccb0a73c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00047.html#a9c2ffdd83eb554a97e47af406b7cf903">DGUHashTable</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00159.html#ae14b0e2ce7b1740877f24f2fccb0a73c">new</a> )(unsigned int initialSize)</td></tr>
 <tr class="memdesc:ae14b0e2ce7b1740877f24f2fccb0a73c"><td class="mdescLeft">&#160;</td><td class="mdescRight">New Hash table.  <a href="a00159.html#ae14b0e2ce7b1740877f24f2fccb0a73c">More...</a><br /></td></tr>
 <tr class="separator:ae14b0e2ce7b1740877f24f2fccb0a73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d1c2eb5c0d2d1b8f7ba8c9a782026e4"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00159.html#a5d1c2eb5c0d2d1b8f7ba8c9a782026e4">destroy</a> )(<a class="el" href="a00047.html#a9c2ffdd83eb554a97e47af406b7cf903">DGUHashTable</a> *oDGUHashTable)</td></tr>
-<tr class="memdesc:a5d1c2eb5c0d2d1b8f7ba8c9a782026e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy Hash table.  <a href="a00159.html#a5d1c2eb5c0d2d1b8f7ba8c9a782026e4">More...</a><br /></td></tr>
-<tr class="separator:a5d1c2eb5c0d2d1b8f7ba8c9a782026e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4373c1798eb6fb89f93eced83b0e87d3"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00159.html#a4373c1798eb6fb89f93eced83b0e87d3">destroy</a> )(<a class="el" href="a00047.html#a9c2ffdd83eb554a97e47af406b7cf903">DGUHashTable</a> **oDGUHashTable)</td></tr>
+<tr class="memdesc:a4373c1798eb6fb89f93eced83b0e87d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy Hash table.  <a href="a00159.html#a4373c1798eb6fb89f93eced83b0e87d3">More...</a><br /></td></tr>
+<tr class="separator:a4373c1798eb6fb89f93eced83b0e87d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5dda05d374bcfc6d0219191f7800514"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00159.html#ad5dda05d374bcfc6d0219191f7800514">insert</a> )(<a class="el" href="a00047.html#a9c2ffdd83eb554a97e47af406b7cf903">DGUHashTable</a> *oDGUHashTable, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> key, void *value)</td></tr>
 <tr class="memdesc:ad5dda05d374bcfc6d0219191f7800514"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert item.  <a href="a00159.html#ad5dda05d374bcfc6d0219191f7800514">More...</a><br /></td></tr>
 <tr class="separator:ad5dda05d374bcfc6d0219191f7800514"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,14 +177,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a5d1c2eb5c0d2d1b8f7ba8c9a782026e4" name="a5d1c2eb5c0d2d1b8f7ba8c9a782026e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d1c2eb5c0d2d1b8f7ba8c9a782026e4">&#9670;&nbsp;</a></span>destroy</h2>
+<a id="a4373c1798eb6fb89f93eced83b0e87d3" name="a4373c1798eb6fb89f93eced83b0e87d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4373c1798eb6fb89f93eced83b0e87d3">&#9670;&nbsp;</a></span>destroy</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* DGUHashTableEntity::destroy) (<a class="el" href="a00047.html#a9c2ffdd83eb554a97e47af406b7cf903">DGUHashTable</a> *oDGUHashTable)</td>
+          <td class="memname">void(* DGUHashTableEntity::destroy) (<a class="el" href="a00047.html#a9c2ffdd83eb554a97e47af406b7cf903">DGUHashTable</a> **oDGUHashTable)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -358,7 +358,7 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>New Hash table</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>New Hash table, or null if it was not possible to reserve the space in memory</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>You should always destroy return value to avoid memory leaks </dd></dl>
 
 </div>

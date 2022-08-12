@@ -33,14 +33,14 @@
 \DoxyCodeLine{39 }
 \DoxyCodeLine{40   \textcolor{keyword}{extern} \textcolor{keyword}{struct }\mbox{\hyperlink{a00179}{DGUMarkupEntity}} \{}
 \DoxyCodeLine{41     void (*setLogger)(DGUMarkup *oDGUMarkup, \mbox{\hyperlink{a00062_aaa6a2ab602733132b5a14993305b0625}{DGULog}} *oDGULog);}
-\DoxyCodeLine{42     void (*destroy)(DGUMarkup *oDGUMarkup);}
+\DoxyCodeLine{42     void (*destroy)(DGUMarkup **oDGUMarkup);}
 \DoxyCodeLine{43     DGUMarkup *(*new)(void);}
-\DoxyCodeLine{44     void (*setPathFileDocument)(DGUMarkup *oDGUMarkup, \textcolor{keywordtype}{string} pathFileDocument);}
-\DoxyCodeLine{45     \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} (*getPathFileDocument)(DGUMarkup *oDGUMarkup);}
-\DoxyCodeLine{46     void (*setStringDocument)(DGUMarkup *oDGUMarkup, \textcolor{keywordtype}{string} stringDocument);}
-\DoxyCodeLine{47     \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} (*getStringDocument)(DGUMarkup *oDGUMarkup);}
+\DoxyCodeLine{44     void (*setDocumentFilePath)(DGUMarkup *oDGUMarkup, \textcolor{keywordtype}{string} filePath);}
+\DoxyCodeLine{45     \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} (*getDocumentFilePath)(DGUMarkup *oDGUMarkup);}
+\DoxyCodeLine{46     void (*setDocumentText)(DGUMarkup *oDGUMarkup, \textcolor{keywordtype}{string} text);}
+\DoxyCodeLine{47     \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} (*getDocumentText)(DGUMarkup *oDGUMarkup);}
 \DoxyCodeLine{48     bool (*isValidDocument)(DGUMarkup *oDGUMarkup);}
-\DoxyCodeLine{49     \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} (*getValueByPath)(DGUMarkup *oDGUMarkup, \textcolor{keywordtype}{string} pathNode);}
+\DoxyCodeLine{49     \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} (*getValueByPath)(DGUMarkup *oDGUMarkup, \textcolor{keywordtype}{string} nodePath);}
 \DoxyCodeLine{50     \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} (*getNodeValue)(DGUMarkup *oDGUMarkup, \textcolor{keywordtype}{void} *node, \textcolor{keywordtype}{string} key);}
 \DoxyCodeLine{51     void (*setNodeKeyValueByPath)(DGUMarkup *oDGUMarkup, \textcolor{keywordtype}{string} nodePath, \textcolor{keywordtype}{string} key, \textcolor{keywordtype}{string} value);}
 \DoxyCodeLine{52     DGUMUDocument *(*newDocument)(DGUMarkup *oDGUMarkup);}

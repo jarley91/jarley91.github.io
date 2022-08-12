@@ -1,5 +1,6 @@
 var a00171 =
 [
+    [ "destroy", "a00171.html#aad351a61c5f5ad8fb2f3b9e58238c7bf", null ],
     [ "getLeves", "a00171.html#a13f06f812dfdc88435fb0a1e2a7b4a8b", null ],
     [ "getTypes", "a00171.html#a5bbac717b2c98e2400e0769b5cd05d01", null ],
     [ "new", "a00171.html#ae3f0ea77fc0007eca34cde13e540c853", null ],

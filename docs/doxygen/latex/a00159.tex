@@ -14,7 +14,7 @@ Hash table entity.
 \item 
 \mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHash\+Table}} $\ast$($\ast$ \mbox{\hyperlink{a00159_ae14b0e2ce7b1740877f24f2fccb0a73c}{new}} )(unsigned int initial\+Size)
 \begin{DoxyCompactList}\small\item\em New Hash table. \end{DoxyCompactList}\item 
-void($\ast$ \mbox{\hyperlink{a00159_a5d1c2eb5c0d2d1b8f7ba8c9a782026e4}{destroy}} )(\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHash\+Table}} $\ast$o\+DGUHash\+Table)
+void($\ast$ \mbox{\hyperlink{a00159_a4373c1798eb6fb89f93eced83b0e87d3}{destroy}} )(\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHash\+Table}} $\ast$$\ast$o\+DGUHash\+Table)
 \begin{DoxyCompactList}\small\item\em Destroy Hash table. \end{DoxyCompactList}\item 
 void($\ast$ \mbox{\hyperlink{a00159_ad5dda05d374bcfc6d0219191f7800514}{insert}} )(\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHash\+Table}} $\ast$o\+DGUHash\+Table, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} key, void $\ast$value)
 \begin{DoxyCompactList}\small\item\em Insert item. \end{DoxyCompactList}\item 
@@ -59,11 +59,11 @@ Example\+:
 {\em key} & Item key \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{a00159_a5d1c2eb5c0d2d1b8f7ba8c9a782026e4}\label{a00159_a5d1c2eb5c0d2d1b8f7ba8c9a782026e4}} 
+\mbox{\Hypertarget{a00159_a4373c1798eb6fb89f93eced83b0e87d3}\label{a00159_a4373c1798eb6fb89f93eced83b0e87d3}} 
 \index{DGUHashTableEntity@{DGUHashTableEntity}!destroy@{destroy}}
 \index{destroy@{destroy}!DGUHashTableEntity@{DGUHashTableEntity}}
 \doxysubsubsection{\texorpdfstring{destroy}{destroy}}
-{\footnotesize\ttfamily void($\ast$ DGUHash\+Table\+Entity\+::destroy) (\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHash\+Table}} $\ast$o\+DGUHash\+Table)}
+{\footnotesize\ttfamily void($\ast$ DGUHash\+Table\+Entity\+::destroy) (\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHash\+Table}} $\ast$$\ast$o\+DGUHash\+Table)}
 
 
 
@@ -228,7 +228,7 @@ DGUHash\+Table $\ast$o\+DGUHash\+Table = DGUHash\+Table\+Entity.\+new(0);
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-New Hash table
+New Hash table, or null if it was not possible to reserve the space in memory
 \end{DoxyReturn}
 \begin{DoxyNote}{Note}
 You should always destroy return value to avoid memory leaks 

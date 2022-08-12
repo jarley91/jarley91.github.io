@@ -18,6 +18,8 @@ Log entity.
 \begin{DoxyCompactList}\small\item\em Log levels. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{a00062_aaa6a2ab602733132b5a14993305b0625}{DGULog}} $\ast$($\ast$ \mbox{\hyperlink{a00171_ae3f0ea77fc0007eca34cde13e540c853}{new}} )(void)
 \begin{DoxyCompactList}\small\item\em New log. \end{DoxyCompactList}\item 
+void($\ast$ \mbox{\hyperlink{a00171_aad351a61c5f5ad8fb2f3b9e58238c7bf}{destroy}} )(\mbox{\hyperlink{a00062_aaa6a2ab602733132b5a14993305b0625}{DGULog}} $\ast$$\ast$o\+DGULog)
+\begin{DoxyCompactList}\small\item\em Destroy log. \end{DoxyCompactList}\item 
 void($\ast$ \mbox{\hyperlink{a00171_a6222a5fc3f9d8f73cba34f44b68cd137}{set\+Date\+Time\+Format}} )(\mbox{\hyperlink{a00062_aaa6a2ab602733132b5a14993305b0625}{DGULog}} $\ast$o\+DGULog, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} date\+Time\+Format)
 \begin{DoxyCompactList}\small\item\em Set date and time format. \end{DoxyCompactList}\item 
 void($\ast$ \mbox{\hyperlink{a00171_a95d3f3ec71517551c7cc16bc116c6586}{set\+File\+Path}} )(\mbox{\hyperlink{a00062_aaa6a2ab602733132b5a14993305b0625}{DGULog}} $\ast$o\+DGULog, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} file\+Path)
@@ -38,6 +40,27 @@ Log entity.
 Entity for log 
 
 \doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{a00171_aad351a61c5f5ad8fb2f3b9e58238c7bf}\label{a00171_aad351a61c5f5ad8fb2f3b9e58238c7bf}} 
+\index{DGULogEntity@{DGULogEntity}!destroy@{destroy}}
+\index{destroy@{destroy}!DGULogEntity@{DGULogEntity}}
+\doxysubsubsection{\texorpdfstring{destroy}{destroy}}
+{\footnotesize\ttfamily void($\ast$ DGULog\+Entity\+::destroy) (\mbox{\hyperlink{a00062_aaa6a2ab602733132b5a14993305b0625}{DGULog}} $\ast$$\ast$o\+DGULog)}
+
+
+
+Destroy log. 
+
+Destroy a log
+
+Example\+: 
+
+DGULog\+Entity.\+destroy(\&o\+DGULog);
+
+
+\begin{DoxyParams}{Parameters}
+{\em o\+DGULog} & Log to destroy \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{a00171_a13f06f812dfdc88435fb0a1e2a7b4a8b}\label{a00171_a13f06f812dfdc88435fb0a1e2a7b4a8b}} 
 \index{DGULogEntity@{DGULogEntity}!getLeves@{getLeves}}
 \index{getLeves@{getLeves}!DGULogEntity@{DGULogEntity}}
@@ -93,7 +116,7 @@ Example\+:
 DGULog $\ast$o\+DGULog = DGULog\+Entity.\+new(0);
 
 \begin{DoxyReturn}{Returns}
-New log
+New log, or null if it was not possible to reserve the space in memory
 \end{DoxyReturn}
 \begin{DoxyNote}{Note}
 You should always destroy return value to avoid memory leaks 
@@ -207,8 +230,8 @@ Write log with the defined configuration, if it is not defined, the default conf
 
 Example\+: 
 
-\mbox{\hyperlink{a00171_a1ea5e3383024ec2d4c3165791ce5eaec}{DGULog\+Entity.\+write\+Log}}(o\+DGULog, \mbox{\hyperlink{a00171_a13f06f812dfdc88435fb0a1e2a7b4a8b}{DGULog\+Entity.\+get\+Leves()}}.INFO, DGULFile, DGULFunction, DGULLine, \char`\"{}\+Info \%s\char`\"{}, \char`\"{}value log\char`\"{}); ~\newline
- \mbox{\hyperlink{a00171_a1ea5e3383024ec2d4c3165791ce5eaec}{DGULog\+Entity.\+write\+Log}}(NULL, \mbox{\hyperlink{a00171_a13f06f812dfdc88435fb0a1e2a7b4a8b}{DGULog\+Entity.\+get\+Leves()}}.ERROR, DGULFile, DGULFunction, DGULLine, \char`\"{}\+Error \%s\char`\"{}, \char`\"{}value log\char`\"{});
+\mbox{\hyperlink{a00171_a1ea5e3383024ec2d4c3165791ce5eaec}{DGULog\+Entity.\+write\+Log}}(o\+DGULog, DGULog\+Private\+Entity.\+get\+Leves().Info, DGULFile, DGULFunction, DGULLine, \char`\"{}\+Info \%s\char`\"{}, \char`\"{}value log\char`\"{}); ~\newline
+ \mbox{\hyperlink{a00171_a1ea5e3383024ec2d4c3165791ce5eaec}{DGULog\+Entity.\+write\+Log}}(NULL, DGULog\+Private\+Entity.\+get\+Leves().Error, DGULFile, DGULFunction, DGULLine, \char`\"{}\+Error \%s\char`\"{}, \char`\"{}value log\char`\"{});
 
 
 \begin{DoxyParams}{Parameters}

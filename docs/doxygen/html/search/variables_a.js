@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['writelog_0',['writeLog',['../a00171.html#a1ea5e3383024ec2d4c3165791ce5eaec',1,'DGULogEntity']]],
-  ['writelogmessage_1',['writeLogMessage',['../a00171.html#a2c5260251c2fa56712d2ea388f100159',1,'DGULogEntity']]]
+  ['tointeger_0',['toInteger',['../a00187.html#a8862c482df865aa6a225348ba4a87c07',1,'DGUStringEntity']]],
+  ['trim_1',['trim',['../a00187.html#ac39d1564f784e4419d3eb24f9087aa79',1,'DGUStringEntity']]]
 ];

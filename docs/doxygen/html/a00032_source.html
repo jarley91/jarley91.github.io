@@ -124,8 +124,8 @@ $(document).ready(function(){initNavTree('a00032_source.html',''); initResizable
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">  #include &quot;../../DeliGranDB/lib/entities/DGDBController.h&quot;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">  #include &quot;../../DeliGranUtils/lib/entities/DGULog.h&quot;</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">  #include &quot;entities/DGREndpoint.h&quot;</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">  #include &quot;entities/DGRHttp.h&quot;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">  #include &quot;<a class="code" href="a00035.html">entities/DGREndpoint.h</a>&quot;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">  #include &quot;<a class="code" href="a00041.html">entities/DGRHttp.h</a>&quot;</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="a00079.html">   27</a></span>  <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="a00079.html">DGRStreamConfigs</a> {</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">int</span> BLOCK_SIZE_DEFAULT;</div>
@@ -159,7 +159,7 @@ $(document).ready(function(){initNavTree('a00032_source.html',''); initResizable
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    DGDBController *(*getDGDBController)(<a class="code hl_struct" href="a00091.html">DeliGranRest</a> *oDeliGranRest);</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="a00095.html#a2888899fca97fa19013b4b92607961ef">   63</a></span>    <a class="code hl_struct" href="a00091.html">DeliGranRest</a> *(*new)(void);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    void (*destroy)(<a class="code hl_struct" href="a00091.html">DeliGranRest</a> *oDeliGranRest);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    void (*destroy)(<a class="code hl_struct" href="a00091.html">DeliGranRest</a> **oDeliGranRest);</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <a class="code hl_typedef" href="a00062.html#aaa6a2ab602733132b5a14993305b0625">DGULog</a> *(*getLogger)(<a class="code hl_struct" href="a00091.html">DeliGranRest</a> *oDeliGranRest);</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    bool (*loadConfigFromFile)(<a class="code hl_struct" href="a00091.html">DeliGranRest</a> *oDeliGranRest, <span class="keywordtype">string</span> pathFile);</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    bool (*addEndpoint)(<a class="code hl_struct" href="a00091.html">DeliGranRest</a> *oDeliGranRest, DGREndpoint *endpoint);</div>
@@ -171,14 +171,16 @@ $(document).ready(function(){initNavTree('a00032_source.html',''); initResizable
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="preprocessor">#endif </span><span class="comment">// DELIGRAN_REST_H</span></div>
+<div class="ttc" id="aa00035_html"><div class="ttname"><a href="a00035.html">DGREndpoint.h</a></div></div>
+<div class="ttc" id="aa00041_html"><div class="ttname"><a href="a00041.html">DGRHttp.h</a></div></div>
 <div class="ttc" id="aa00062_html_aaa6a2ab602733132b5a14993305b0625"><div class="ttname"><a href="a00062.html#aaa6a2ab602733132b5a14993305b0625">DGULog</a></div><div class="ttdeci">struct DGULog DGULog</div><div class="ttdoc">Log.</div><div class="ttdef"><b>Definition:</b> DGULog.h:78</div></div>
 <div class="ttc" id="aa00079_html"><div class="ttname"><a href="a00079.html">DGRStreamConfigs</a></div><div class="ttdef"><b>Definition:</b> DeliGranRest.h:27</div></div>
 <div class="ttc" id="aa00083_html"><div class="ttname"><a href="a00083.html">DGRSslSessions</a></div><div class="ttdef"><b>Definition:</b> DeliGranRest.h:34</div></div>
 <div class="ttc" id="aa00087_html"><div class="ttname"><a href="a00087.html">DGRGlobal</a></div><div class="ttdef"><b>Definition:</b> DeliGranRest.h:39</div></div>
 <div class="ttc" id="aa00091_html"><div class="ttname"><a href="a00091.html">DeliGranRest</a></div><div class="ttdef"><b>Definition:</b> DeliGranRest.h:47</div></div>
 <div class="ttc" id="aa00095_html"><div class="ttname"><a href="a00095.html">DeliGranRestEntity</a></div><div class="ttdef"><b>Definition:</b> DeliGranRest.h:51</div></div>
-<div class="ttc" id="aa00139_html"><div class="ttname"><a href="a00139.html">DGRHNetworkTypes</a></div><div class="ttdef"><b>Definition:</b> DGRHttp.h:353</div></div>
-<div class="ttc" id="aa00143_html"><div class="ttname"><a href="a00143.html">DGRHttp</a></div><div class="ttdef"><b>Definition:</b> DGRHttp.h:358</div></div>
+<div class="ttc" id="aa00139_html"><div class="ttname"><a href="a00139.html">DGRHNetworkTypes</a></div><div class="ttdef"><b>Definition:</b> DGRHttp.h:364</div></div>
+<div class="ttc" id="aa00143_html"><div class="ttname"><a href="a00143.html">DGRHttp</a></div><div class="ttdef"><b>Definition:</b> DGRHttp.h:369</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -1,26 +1,187 @@
 \hypertarget{a00195}{}\doxysection{DGUThread\+Mutex\+Entity Struct Reference}
 \label{a00195}\index{DGUThreadMutexEntity@{DGUThreadMutexEntity}}
+
+
+Thread\+Mutex entity.  
+
+
+
+
+{\ttfamily \#include $<$DGUThread\+Mutex.\+h$>$}
+
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{a00191}{DGUThread\+Mutex\+Types}}($\ast$ \mbox{\hyperlink{a00195_a76a57c3311705e6fe96a314683ee30a7}{get\+Types}} )(void)
+\begin{DoxyCompactList}\small\item\em Thread\+Mutex types. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{a00050_a91314791cb93235cdbd56cd82645eb54}{DGUThread\+Mutex}} $\ast$($\ast$ \mbox{\hyperlink{a00195_ae50d170eb690853fa97a98d97af31eba}{new}} )(int type, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} source, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} function, int line)
+\begin{DoxyCompactList}\small\item\em New Thread\+Mutex. \end{DoxyCompactList}\item 
+void($\ast$ \mbox{\hyperlink{a00195_a5134748d6d19294dcae9ca1faeb6c501}{destroy}} )(\mbox{\hyperlink{a00050_a91314791cb93235cdbd56cd82645eb54}{DGUThread\+Mutex}} $\ast$$\ast$o\+DGUThread\+Mutex, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} source, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} function, int line)
+\begin{DoxyCompactList}\small\item\em Destroy Thread\+Mutex. \end{DoxyCompactList}\item 
+void($\ast$ \mbox{\hyperlink{a00195_a3f4445e67cac252f2b3575e13425c77e}{set\+Logger}} )(\mbox{\hyperlink{a00050_a91314791cb93235cdbd56cd82645eb54}{DGUThread\+Mutex}} $\ast$o\+DGUThread\+Mutex, \mbox{\hyperlink{a00062_aaa6a2ab602733132b5a14993305b0625}{DGULog}} $\ast$o\+DGULog)
+\begin{DoxyCompactList}\small\item\em Set logger. \end{DoxyCompactList}\item 
+bool($\ast$ \mbox{\hyperlink{a00195_a988ebe82e6a96d7629dc5c928af50b54}{lock}} )(\mbox{\hyperlink{a00050_a91314791cb93235cdbd56cd82645eb54}{DGUThread\+Mutex}} $\ast$o\+DGUThread\+Mutex, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} source, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} function, int line)
+\begin{DoxyCompactList}\small\item\em Lock threads. \end{DoxyCompactList}\item 
+bool($\ast$ \mbox{\hyperlink{a00195_a847277099a1222b79c3f0fa1153fbbfd}{unlock}} )(\mbox{\hyperlink{a00050_a91314791cb93235cdbd56cd82645eb54}{DGUThread\+Mutex}} $\ast$o\+DGUThread\+Mutex, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} source, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} function, int line)
+\begin{DoxyCompactList}\small\item\em Unlock threads. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Thread\+Mutex entity. 
+
+Entity for Thread\+Mutex 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{a00195_a5134748d6d19294dcae9ca1faeb6c501}\label{a00195_a5134748d6d19294dcae9ca1faeb6c501}} 
+\index{DGUThreadMutexEntity@{DGUThreadMutexEntity}!destroy@{destroy}}
+\index{destroy@{destroy}!DGUThreadMutexEntity@{DGUThreadMutexEntity}}
+\doxysubsubsection{\texorpdfstring{destroy}{destroy}}
+{\footnotesize\ttfamily void($\ast$ DGUThread\+Mutex\+Entity\+::destroy) (\mbox{\hyperlink{a00050_a91314791cb93235cdbd56cd82645eb54}{DGUThread\+Mutex}} $\ast$$\ast$o\+DGUThread\+Mutex, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} source, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} function, int line)}
+
+
+
+Destroy Thread\+Mutex. 
+
+Destroy a Thread\+Mutex
+
+Example\+: 
+
+DGUThread\+Mutex\+Entity.\+destroy(\&o\+DGUThread\+Mutex);
+
+
+\begin{DoxyParams}{Parameters}
+{\em o\+DGUThread\+Mutex} & Thread\+Mutex to destroy \\
+\hline
+{\em source} & Source, DGULFile \\
+\hline
+{\em function} & Function, DGULFunction \\
+\hline
+{\em line} & Line, DGULLine \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{a00195_a76a57c3311705e6fe96a314683ee30a7}\label{a00195_a76a57c3311705e6fe96a314683ee30a7}} 
-\mbox{\hyperlink{a00191}{DGUThread\+Mutex\+Types}}($\ast$ {\bfseries get\+Types} )(void)
-\item 
-\mbox{\Hypertarget{a00195_ae50d170eb690853fa97a98d97af31eba}\label{a00195_ae50d170eb690853fa97a98d97af31eba}} 
-DGUThread\+Mutex $\ast$($\ast$ {\bfseries new} )(int type, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} source, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} function, int line)
-\item 
-\mbox{\Hypertarget{a00195_a3f4445e67cac252f2b3575e13425c77e}\label{a00195_a3f4445e67cac252f2b3575e13425c77e}} 
-void($\ast$ {\bfseries set\+Logger} )(DGUThread\+Mutex $\ast$o\+DGUThread\+Mutex, \mbox{\hyperlink{a00062_aaa6a2ab602733132b5a14993305b0625}{DGULog}} $\ast$o\+DGULog)
-\item 
-\mbox{\Hypertarget{a00195_ae247bc87a9ded6fb752f0e1a12cde971}\label{a00195_ae247bc87a9ded6fb752f0e1a12cde971}} 
-void($\ast$ {\bfseries destroy} )(DGUThread\+Mutex $\ast$o\+DGUThread\+Mutex, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} source, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} function, int line)
-\item 
+\index{DGUThreadMutexEntity@{DGUThreadMutexEntity}!getTypes@{getTypes}}
+\index{getTypes@{getTypes}!DGUThreadMutexEntity@{DGUThreadMutexEntity}}
+\doxysubsubsection{\texorpdfstring{getTypes}{getTypes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00191}{DGUThread\+Mutex\+Types}}($\ast$ DGUThread\+Mutex\+Entity\+::get\+Types) (void)}
+
+
+
+Thread\+Mutex types. 
+
+Get the list Thread\+Mutex types
+
+Example\+: 
+
+\mbox{\hyperlink{a00195_a76a57c3311705e6fe96a314683ee30a7}{DGUThread\+Mutex\+Entity.\+get\+Types()}}
+
+\begin{DoxyReturn}{Returns}
+List Thread\+Mutex types 
+\end{DoxyReturn}
 \mbox{\Hypertarget{a00195_a988ebe82e6a96d7629dc5c928af50b54}\label{a00195_a988ebe82e6a96d7629dc5c928af50b54}} 
-bool($\ast$ {\bfseries lock} )(DGUThread\+Mutex $\ast$o\+DGUThread\+Mutex, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} source, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} function, int line)
-\item 
+\index{DGUThreadMutexEntity@{DGUThreadMutexEntity}!lock@{lock}}
+\index{lock@{lock}!DGUThreadMutexEntity@{DGUThreadMutexEntity}}
+\doxysubsubsection{\texorpdfstring{lock}{lock}}
+{\footnotesize\ttfamily bool($\ast$ DGUThread\+Mutex\+Entity\+::lock) (\mbox{\hyperlink{a00050_a91314791cb93235cdbd56cd82645eb54}{DGUThread\+Mutex}} $\ast$o\+DGUThread\+Mutex, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} source, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} function, int line)}
+
+
+
+Lock threads. 
+
+Lock threads
+
+
+\begin{DoxyParams}{Parameters}
+{\em o\+DGUThread\+Mutex} & Thread\+Mutex \\
+\hline
+{\em source} & Source, DGULFile \\
+\hline
+{\em function} & Function, DGULFunction \\
+\hline
+{\em line} & Line, DGULLine\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{https://pubs.opengroup.org/onlinepubs/007908799/xsh/pthread_mutex_lock.html}{\texttt{ https\+://pubs.\+opengroup.\+org/onlinepubs/007908799/xsh/pthread\+\_\+mutex\+\_\+lock.\+html}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{a00195_ae50d170eb690853fa97a98d97af31eba}\label{a00195_ae50d170eb690853fa97a98d97af31eba}} 
+\index{DGUThreadMutexEntity@{DGUThreadMutexEntity}!new@{new}}
+\index{new@{new}!DGUThreadMutexEntity@{DGUThreadMutexEntity}}
+\doxysubsubsection{\texorpdfstring{new}{new}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00050_a91314791cb93235cdbd56cd82645eb54}{DGUThread\+Mutex}} $\ast$($\ast$ DGUThread\+Mutex\+Entity\+::new) (int type, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} source, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} function, int line)}
+
+
+
+New Thread\+Mutex. 
+
+Create a new Thread\+Mutex
+
+Example\+: 
+
+DGUThread\+Mutex $\ast$o\+DGUThread\+Mutex = \mbox{\hyperlink{a00195_ae50d170eb690853fa97a98d97af31eba}{DGUThread\+Mutex\+Entity.\+new}}(\mbox{\hyperlink{a00195_a76a57c3311705e6fe96a314683ee30a7}{DGUThread\+Mutex\+Entity.\+get\+Types()}}.Error\+Check, DGULFile, DGULFunction, DGULLine);
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & Thread\+Mutex type \\
+\hline
+{\em source} & Source, DGULFile \\
+\hline
+{\em function} & Function, DGULFunction \\
+\hline
+{\em line} & Line, DGULLine\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+New Thread\+Mutex, or null if it was not possible to reserve the space in memory
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+You should always destroy return value to avoid memory leaks 
+\end{DoxyNote}
+\mbox{\Hypertarget{a00195_a3f4445e67cac252f2b3575e13425c77e}\label{a00195_a3f4445e67cac252f2b3575e13425c77e}} 
+\index{DGUThreadMutexEntity@{DGUThreadMutexEntity}!setLogger@{setLogger}}
+\index{setLogger@{setLogger}!DGUThreadMutexEntity@{DGUThreadMutexEntity}}
+\doxysubsubsection{\texorpdfstring{setLogger}{setLogger}}
+{\footnotesize\ttfamily void($\ast$ DGUThread\+Mutex\+Entity\+::set\+Logger) (\mbox{\hyperlink{a00050_a91314791cb93235cdbd56cd82645eb54}{DGUThread\+Mutex}} $\ast$o\+DGUThread\+Mutex, \mbox{\hyperlink{a00062_aaa6a2ab602733132b5a14993305b0625}{DGULog}} $\ast$o\+DGULog)}
+
+
+
+Set logger. 
+
+Set logger to Thread\+Mutex
+
+
+\begin{DoxyParams}{Parameters}
+{\em o\+DGUThread\+Mutex} & Thread\+Mutex \\
+\hline
+{\em o\+DGULog} & Logger \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{a00195_a847277099a1222b79c3f0fa1153fbbfd}\label{a00195_a847277099a1222b79c3f0fa1153fbbfd}} 
-bool($\ast$ {\bfseries unlock} )(DGUThread\+Mutex $\ast$o\+DGUThread\+Mutex, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} source, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} function, int line)
-\end{DoxyCompactItemize}
+\index{DGUThreadMutexEntity@{DGUThreadMutexEntity}!unlock@{unlock}}
+\index{unlock@{unlock}!DGUThreadMutexEntity@{DGUThreadMutexEntity}}
+\doxysubsubsection{\texorpdfstring{unlock}{unlock}}
+{\footnotesize\ttfamily bool($\ast$ DGUThread\+Mutex\+Entity\+::unlock) (\mbox{\hyperlink{a00050_a91314791cb93235cdbd56cd82645eb54}{DGUThread\+Mutex}} $\ast$o\+DGUThread\+Mutex, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} source, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} function, int line)}
+
+
+
+Unlock threads. 
+
+Unlock threads
+
+
+\begin{DoxyParams}{Parameters}
+{\em o\+DGUThread\+Mutex} & Thread\+Mutex \\
+\hline
+{\em source} & Source, DGULFile \\
+\hline
+{\em function} & Function, DGULFunction \\
+\hline
+{\em line} & Line, DGULLine\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{https://pubs.opengroup.org/onlinepubs/007908799/xsh/pthread_mutex_lock.html}{\texttt{ https\+://pubs.\+opengroup.\+org/onlinepubs/007908799/xsh/pthread\+\_\+mutex\+\_\+lock.\+html}} 
+\end{DoxySeeAlso}
 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
