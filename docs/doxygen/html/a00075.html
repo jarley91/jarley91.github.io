@@ -114,28 +114,87 @@ $(document).ready(function(){initNavTree('a00075.html',''); initResizable(); });
   <div class="headertitle"><div class="title">DGDBControllerEntity Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Database controller entity.  
+ <a href="a00075.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00026_source.html">DGDBController.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:af4c48a8f2c0aab62ad0ef7eeebed69be"><td class="memItemLeft" align="right" valign="top"><a id="af4c48a8f2c0aab62ad0ef7eeebed69be" name="af4c48a8f2c0aab62ad0ef7eeebed69be"></a>
-<a class="el" href="a00071.html">DGDBDataSourceDrivers</a>(*&#160;</td><td class="memItemRight" valign="bottom"><b>getDrivers</b> )(void)</td></tr>
+<tr class="memitem:af4c48a8f2c0aab62ad0ef7eeebed69be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00071.html">DGDBDataSourceDrivers</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#af4c48a8f2c0aab62ad0ef7eeebed69be">getDrivers</a> )(void)</td></tr>
+<tr class="memdesc:af4c48a8f2c0aab62ad0ef7eeebed69be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data source drivers.  <a href="a00075.html#af4c48a8f2c0aab62ad0ef7eeebed69be">More...</a><br /></td></tr>
 <tr class="separator:af4c48a8f2c0aab62ad0ef7eeebed69be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6aaf1a369d12ee42b1b00354f9b2674"><td class="memItemLeft" align="right" valign="top"><a id="ae6aaf1a369d12ee42b1b00354f9b2674" name="ae6aaf1a369d12ee42b1b00354f9b2674"></a>
-DGDBQuery *(*&#160;</td><td class="memItemRight" valign="bottom"><b>execQuery</b> )(DGDBController *oDGDBController, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> nameDataSource, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> query,...)</td></tr>
-<tr class="separator:ae6aaf1a369d12ee42b1b00354f9b2674"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7b1724ab2b602a550679c676c81f0e4"><td class="memItemLeft" align="right" valign="top"><a id="ad7b1724ab2b602a550679c676c81f0e4" name="ad7b1724ab2b602a550679c676c81f0e4"></a>
-DGDBQuery *(*&#160;</td><td class="memItemRight" valign="bottom"><b>execQueryByPath</b> )(DGDBController *oDGDBController, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> nameDataSource, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> queryPath,...)</td></tr>
-<tr class="separator:ad7b1724ab2b602a550679c676c81f0e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbc6f2c5fdee3ee012646b63bfdbc83e"><td class="memItemLeft" align="right" valign="top">DGDBQuery *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#afbc6f2c5fdee3ee012646b63bfdbc83e">execQuery</a> )(<a class="el" href="a00026.html#a822e8cad4164be3fbd8af2fb808c3289">DGDBController</a> *oDGDBController, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> dataSourceName, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> query,...)</td></tr>
+<tr class="memdesc:afbc6f2c5fdee3ee012646b63bfdbc83e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute query.  <a href="a00075.html#afbc6f2c5fdee3ee012646b63bfdbc83e">More...</a><br /></td></tr>
+<tr class="separator:afbc6f2c5fdee3ee012646b63bfdbc83e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6169db71f00679279889bc2265b4801f"><td class="memItemLeft" align="right" valign="top"><a id="a6169db71f00679279889bc2265b4801f" name="a6169db71f00679279889bc2265b4801f"></a>
+DGDBQuery *(*&#160;</td><td class="memItemRight" valign="bottom"><b>execQueryByPath</b> )(<a class="el" href="a00026.html#a822e8cad4164be3fbd8af2fb808c3289">DGDBController</a> *oDGDBController, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> dataSourceName, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> queryPath,...)</td></tr>
+<tr class="separator:a6169db71f00679279889bc2265b4801f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d534bae40c6d0767f2ff71d7b0735f6"><td class="memItemLeft" align="right" valign="top"><a id="a5d534bae40c6d0767f2ff71d7b0735f6" name="a5d534bae40c6d0767f2ff71d7b0735f6"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>destroyQuery</b> )(DGDBController *oDGDBController, DGDBQuery *oDGDBQuery)</td></tr>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>destroyQuery</b> )(<a class="el" href="a00026.html#a822e8cad4164be3fbd8af2fb808c3289">DGDBController</a> *oDGDBController, DGDBQuery *oDGDBQuery)</td></tr>
 <tr class="separator:a5d534bae40c6d0767f2ff71d7b0735f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a874555ad094e8bec2a87fe9d80456fc3"><td class="memItemLeft" align="right" valign="top"><a id="a874555ad094e8bec2a87fe9d80456fc3" name="a874555ad094e8bec2a87fe9d80456fc3"></a>
-int(*&#160;</td><td class="memItemRight" valign="bottom"><b>getTotalColumns</b> )(DGDBController *oDGDBController, DGDBQuery *oDGDBQuery)</td></tr>
+int(*&#160;</td><td class="memItemRight" valign="bottom"><b>getTotalColumns</b> )(<a class="el" href="a00026.html#a822e8cad4164be3fbd8af2fb808c3289">DGDBController</a> *oDGDBController, DGDBQuery *oDGDBQuery)</td></tr>
 <tr class="separator:a874555ad094e8bec2a87fe9d80456fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae620b20da731eb4c8d2dd7fa222caff9"><td class="memItemLeft" align="right" valign="top"><a id="ae620b20da731eb4c8d2dd7fa222caff9" name="ae620b20da731eb4c8d2dd7fa222caff9"></a>
-int(*&#160;</td><td class="memItemRight" valign="bottom"><b>getTotalRows</b> )(DGDBController *oDGDBController, DGDBQuery *oDGDBQuery)</td></tr>
+int(*&#160;</td><td class="memItemRight" valign="bottom"><b>getTotalRows</b> )(<a class="el" href="a00026.html#a822e8cad4164be3fbd8af2fb808c3289">DGDBController</a> *oDGDBController, DGDBQuery *oDGDBQuery)</td></tr>
 <tr class="separator:ae620b20da731eb4c8d2dd7fa222caff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Database controller entity. </p>
+<p >Entity for database controller </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="afbc6f2c5fdee3ee012646b63bfdbc83e" name="afbc6f2c5fdee3ee012646b63bfdbc83e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbc6f2c5fdee3ee012646b63bfdbc83e">&#9670;&nbsp;</a></span>execQuery</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DGDBQuery *(* DGDBControllerEntity::execQuery) (<a class="el" href="a00026.html#a822e8cad4164be3fbd8af2fb808c3289">DGDBController</a> *oDGDBController, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> dataSourceName, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> query,...)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Execute query. </p>
+<p >Execute query</p>
+<p >Example: </p>
+<p >DGDBQuery *oDGDBQuery = <a class="el" href="a00075.html#afbc6f2c5fdee3ee012646b63bfdbc83e" title="Execute query.">DGDBControllerEntity.execQuery</a>(dbController, dataSourceName, "select * from table where col1 = '%s';", "Value col1");</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">oDGDBController</td><td>Database controller </td></tr>
+    <tr><td class="paramname">dataSourceName</td><td>Datasource name for execute query </td></tr>
+    <tr><td class="paramname">query</td><td>Query statement </td></tr>
+    <tr><td class="paramname">...</td><td>Comma separated query values</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Query pointer when execution was successful, NULL if any error occurred</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>You should always destroy return pointer to avoid memory leaks </dd></dl>
+
+</div>
+</div>
+<a id="af4c48a8f2c0aab62ad0ef7eeebed69be" name="af4c48a8f2c0aab62ad0ef7eeebed69be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4c48a8f2c0aab62ad0ef7eeebed69be">&#9670;&nbsp;</a></span>getDrivers</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00071.html">DGDBDataSourceDrivers</a>(* DGDBControllerEntity::getDrivers) (void)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Data source drivers. </p>
+<p >Get the list of data source drivers</p>
+<p >Example: </p>
+<p ><a class="el" href="a00075.html#af4c48a8f2c0aab62ad0ef7eeebed69be" title="Data source drivers.">DGDBControllerEntity.getDrivers()</a></p>
+<dl class="section return"><dt>Returns</dt><dd>List data source drivers </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="a00026_source.html">DGDBController.h</a></li>
 </ul>

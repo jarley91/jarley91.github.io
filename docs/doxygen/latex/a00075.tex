@@ -1,26 +1,93 @@
 \hypertarget{a00075}{}\doxysection{DGDBController\+Entity Struct Reference}
 \label{a00075}\index{DGDBControllerEntity@{DGDBControllerEntity}}
+
+
+Database controller entity.  
+
+
+
+
+{\ttfamily \#include $<$DGDBController.\+h$>$}
+
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{a00075_af4c48a8f2c0aab62ad0ef7eeebed69be}\label{a00075_af4c48a8f2c0aab62ad0ef7eeebed69be}} 
-\mbox{\hyperlink{a00071}{DGDBData\+Source\+Drivers}}($\ast$ {\bfseries get\+Drivers} )(void)
-\item 
-\mbox{\Hypertarget{a00075_ae6aaf1a369d12ee42b1b00354f9b2674}\label{a00075_ae6aaf1a369d12ee42b1b00354f9b2674}} 
-DGDBQuery $\ast$($\ast$ {\bfseries exec\+Query} )(DGDBController $\ast$o\+DGDBController, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} name\+Data\+Source, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} query,...)
-\item 
-\mbox{\Hypertarget{a00075_ad7b1724ab2b602a550679c676c81f0e4}\label{a00075_ad7b1724ab2b602a550679c676c81f0e4}} 
-DGDBQuery $\ast$($\ast$ {\bfseries exec\+Query\+By\+Path} )(DGDBController $\ast$o\+DGDBController, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} name\+Data\+Source, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} query\+Path,...)
+\mbox{\hyperlink{a00071}{DGDBData\+Source\+Drivers}}($\ast$ \mbox{\hyperlink{a00075_af4c48a8f2c0aab62ad0ef7eeebed69be}{get\+Drivers}} )(void)
+\begin{DoxyCompactList}\small\item\em Data source drivers. \end{DoxyCompactList}\item 
+DGDBQuery $\ast$($\ast$ \mbox{\hyperlink{a00075_afbc6f2c5fdee3ee012646b63bfdbc83e}{exec\+Query}} )(\mbox{\hyperlink{a00026_a822e8cad4164be3fbd8af2fb808c3289}{DGDBController}} $\ast$o\+DGDBController, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} data\+Source\+Name, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} query,...)
+\begin{DoxyCompactList}\small\item\em Execute query. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{a00075_a6169db71f00679279889bc2265b4801f}\label{a00075_a6169db71f00679279889bc2265b4801f}} 
+DGDBQuery $\ast$($\ast$ {\bfseries exec\+Query\+By\+Path} )(\mbox{\hyperlink{a00026_a822e8cad4164be3fbd8af2fb808c3289}{DGDBController}} $\ast$o\+DGDBController, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} data\+Source\+Name, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} query\+Path,...)
 \item 
 \mbox{\Hypertarget{a00075_a5d534bae40c6d0767f2ff71d7b0735f6}\label{a00075_a5d534bae40c6d0767f2ff71d7b0735f6}} 
-void($\ast$ {\bfseries destroy\+Query} )(DGDBController $\ast$o\+DGDBController, DGDBQuery $\ast$o\+DGDBQuery)
+void($\ast$ {\bfseries destroy\+Query} )(\mbox{\hyperlink{a00026_a822e8cad4164be3fbd8af2fb808c3289}{DGDBController}} $\ast$o\+DGDBController, DGDBQuery $\ast$o\+DGDBQuery)
 \item 
 \mbox{\Hypertarget{a00075_a874555ad094e8bec2a87fe9d80456fc3}\label{a00075_a874555ad094e8bec2a87fe9d80456fc3}} 
-int($\ast$ {\bfseries get\+Total\+Columns} )(DGDBController $\ast$o\+DGDBController, DGDBQuery $\ast$o\+DGDBQuery)
+int($\ast$ {\bfseries get\+Total\+Columns} )(\mbox{\hyperlink{a00026_a822e8cad4164be3fbd8af2fb808c3289}{DGDBController}} $\ast$o\+DGDBController, DGDBQuery $\ast$o\+DGDBQuery)
 \item 
 \mbox{\Hypertarget{a00075_ae620b20da731eb4c8d2dd7fa222caff9}\label{a00075_ae620b20da731eb4c8d2dd7fa222caff9}} 
-int($\ast$ {\bfseries get\+Total\+Rows} )(DGDBController $\ast$o\+DGDBController, DGDBQuery $\ast$o\+DGDBQuery)
+int($\ast$ {\bfseries get\+Total\+Rows} )(\mbox{\hyperlink{a00026_a822e8cad4164be3fbd8af2fb808c3289}{DGDBController}} $\ast$o\+DGDBController, DGDBQuery $\ast$o\+DGDBQuery)
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Database controller entity. 
+
+Entity for database controller 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{a00075_afbc6f2c5fdee3ee012646b63bfdbc83e}\label{a00075_afbc6f2c5fdee3ee012646b63bfdbc83e}} 
+\index{DGDBControllerEntity@{DGDBControllerEntity}!execQuery@{execQuery}}
+\index{execQuery@{execQuery}!DGDBControllerEntity@{DGDBControllerEntity}}
+\doxysubsubsection{\texorpdfstring{execQuery}{execQuery}}
+{\footnotesize\ttfamily DGDBQuery $\ast$($\ast$ DGDBController\+Entity\+::exec\+Query) (\mbox{\hyperlink{a00026_a822e8cad4164be3fbd8af2fb808c3289}{DGDBController}} $\ast$o\+DGDBController, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} data\+Source\+Name, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} query,...)}
+
+
+
+Execute query. 
+
+Execute query
+
+Example\+: 
+
+DGDBQuery $\ast$o\+DGDBQuery = \mbox{\hyperlink{a00075_afbc6f2c5fdee3ee012646b63bfdbc83e}{DGDBController\+Entity.\+exec\+Query}}(db\+Controller, data\+Source\+Name, \char`\"{}select $\ast$ from table where col1 = \textquotesingle{}\%s\textquotesingle{};\char`\"{}, \char`\"{}\+Value col1\char`\"{});
+
+
+\begin{DoxyParams}{Parameters}
+{\em o\+DGDBController} & Database controller \\
+\hline
+{\em data\+Source\+Name} & Datasource name for execute query \\
+\hline
+{\em query} & Query statement \\
+\hline
+{\em ...} & Comma separated query values\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Query pointer when execution was successful, NULL if any error occurred
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+You should always destroy return pointer to avoid memory leaks 
+\end{DoxyNote}
+\mbox{\Hypertarget{a00075_af4c48a8f2c0aab62ad0ef7eeebed69be}\label{a00075_af4c48a8f2c0aab62ad0ef7eeebed69be}} 
+\index{DGDBControllerEntity@{DGDBControllerEntity}!getDrivers@{getDrivers}}
+\index{getDrivers@{getDrivers}!DGDBControllerEntity@{DGDBControllerEntity}}
+\doxysubsubsection{\texorpdfstring{getDrivers}{getDrivers}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00071}{DGDBData\+Source\+Drivers}}($\ast$ DGDBController\+Entity\+::get\+Drivers) (void)}
+
+
+
+Data source drivers. 
+
+Get the list of data source drivers
+
+Example\+: 
+
+\mbox{\hyperlink{a00075_af4c48a8f2c0aab62ad0ef7eeebed69be}{DGDBController\+Entity.\+get\+Drivers()}}
+
+\begin{DoxyReturn}{Returns}
+List data source drivers 
+\end{DoxyReturn}
 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}

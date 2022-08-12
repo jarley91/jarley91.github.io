@@ -2,7 +2,7 @@ var annotated_dup =
 [
     [ "DeliGranRest", "a00091.html", null ],
     [ "DeliGranRestEntity", "a00095.html", "a00095" ],
-    [ "DGDBControllerEntity", "a00075.html", null ],
+    [ "DGDBControllerEntity", "a00075.html", "a00075" ],
     [ "DGDBDataSourceDrivers", "a00071.html", null ],
     [ "DGREndpointEntity", "a00099.html", null ],
     [ "DGRGlobal", "a00087.html", null ],
