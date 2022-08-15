@@ -140,17 +140,43 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a47532617148849cf71242eb886dc9cd7"><td class="memItemLeft" align="right" valign="top">void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00159.html#a47532617148849cf71242eb886dc9cd7">getValue</a> )(<a class="el" href="a00047.html#a9c2ffdd83eb554a97e47af406b7cf903">DGUHashTable</a> *oDGUHashTable, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> key)</td></tr>
 <tr class="memdesc:a47532617148849cf71242eb886dc9cd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get item value.  <a href="a00159.html#a47532617148849cf71242eb886dc9cd7">More...</a><br /></td></tr>
 <tr class="separator:a47532617148849cf71242eb886dc9cd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac29bbccdb710b0b9cb43fed3029d5b58"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00159.html#ac29bbccdb710b0b9cb43fed3029d5b58">getTotalItems</a> )(<a class="el" href="a00047.html#a9c2ffdd83eb554a97e47af406b7cf903">DGUHashTable</a> *oDGUHashTable)</td></tr>
-<tr class="memdesc:ac29bbccdb710b0b9cb43fed3029d5b58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get total items.  <a href="a00159.html#ac29bbccdb710b0b9cb43fed3029d5b58">More...</a><br /></td></tr>
-<tr class="separator:ac29bbccdb710b0b9cb43fed3029d5b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f2280391861034487e975b2f76d1e09"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00159.html#a9f2280391861034487e975b2f76d1e09">forEachItem</a> )(<a class="el" href="a00047.html#a9c2ffdd83eb554a97e47af406b7cf903">DGUHashTable</a> *oDGUHashTable, <a class="el" href="a00047.html#a957757aa7ef735b7a3e9df10f094e600">forEachItemFunctionDGUHashTable</a> forEachItemFunction, void *userData)</td></tr>
-<tr class="memdesc:a9f2280391861034487e975b2f76d1e09"><td class="mdescLeft">&#160;</td><td class="mdescRight">For each item.  <a href="a00159.html#a9f2280391861034487e975b2f76d1e09">More...</a><br /></td></tr>
-<tr class="separator:a9f2280391861034487e975b2f76d1e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a95bb06eb4c67fe7d84f5753172e520"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00159.html#a7a95bb06eb4c67fe7d84f5753172e520">countItems</a> )(<a class="el" href="a00047.html#a9c2ffdd83eb554a97e47af406b7cf903">DGUHashTable</a> *oDGUHashTable)</td></tr>
+<tr class="memdesc:a7a95bb06eb4c67fe7d84f5753172e520"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get total items.  <a href="a00159.html#a7a95bb06eb4c67fe7d84f5753172e520">More...</a><br /></td></tr>
+<tr class="separator:a7a95bb06eb4c67fe7d84f5753172e520"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c7bf4c982329c4d56261ba7f84ea813"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00159.html#a1c7bf4c982329c4d56261ba7f84ea813">forEachItem</a> )(<a class="el" href="a00047.html#a9c2ffdd83eb554a97e47af406b7cf903">DGUHashTable</a> *oDGUHashTable, <a class="el" href="a00047.html#a558827c926cdd00f6c4d22972f8d0784">forEachItemFunctionDGUHashTable</a> forEachItemFunction, void *aux)</td></tr>
+<tr class="memdesc:a1c7bf4c982329c4d56261ba7f84ea813"><td class="mdescLeft">&#160;</td><td class="mdescRight">For each item.  <a href="a00159.html#a1c7bf4c982329c4d56261ba7f84ea813">More...</a><br /></td></tr>
+<tr class="separator:a1c7bf4c982329c4d56261ba7f84ea813"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Hash table entity. </p>
 <p >Entity for Hash table </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a7a95bb06eb4c67fe7d84f5753172e520" name="a7a95bb06eb4c67fe7d84f5753172e520"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a95bb06eb4c67fe7d84f5753172e520">&#9670;&nbsp;</a></span>countItems</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* DGUHashTableEntity::countItems) (<a class="el" href="a00047.html#a9c2ffdd83eb554a97e47af406b7cf903">DGUHashTable</a> *oDGUHashTable)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get total items. </p>
+<p >Get the total of items in a Hash table</p>
+<p >Example: </p>
+<p >int *totalItems = DGUHashTableEntity.countItems(oDGUHashTable);</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">oDGUHashTable</td><td>Hash table where get the total items</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The total items </dd></dl>
+
+</div>
+</div>
 <a id="a37b9081def1beacd628024ccdd0a0d43" name="a37b9081def1beacd628024ccdd0a0d43"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a37b9081def1beacd628024ccdd0a0d43">&#9670;&nbsp;</a></span>delete</h2>
 
@@ -202,14 +228,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a9f2280391861034487e975b2f76d1e09" name="a9f2280391861034487e975b2f76d1e09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f2280391861034487e975b2f76d1e09">&#9670;&nbsp;</a></span>forEachItem</h2>
+<a id="a1c7bf4c982329c4d56261ba7f84ea813" name="a1c7bf4c982329c4d56261ba7f84ea813"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c7bf4c982329c4d56261ba7f84ea813">&#9670;&nbsp;</a></span>forEachItem</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* DGUHashTableEntity::forEachItem) (<a class="el" href="a00047.html#a9c2ffdd83eb554a97e47af406b7cf903">DGUHashTable</a> *oDGUHashTable, <a class="el" href="a00047.html#a957757aa7ef735b7a3e9df10f094e600">forEachItemFunctionDGUHashTable</a> forEachItemFunction, void *userData)</td>
+          <td class="memname">void(* DGUHashTableEntity::forEachItem) (<a class="el" href="a00047.html#a9c2ffdd83eb554a97e47af406b7cf903">DGUHashTable</a> *oDGUHashTable, <a class="el" href="a00047.html#a558827c926cdd00f6c4d22972f8d0784">forEachItemFunctionDGUHashTable</a> forEachItemFunction, void *aux)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -217,41 +243,15 @@ Public Attributes</h2></td></tr>
 <p>For each item. </p>
 <p >Iteration for each item in a Hash table</p>
 <p >Example: </p>
-<p >DGUHashTableEntity.forEachItem(oDGUHashTable, forEachItemFunction, userData);</p>
+<p >DGUHashTableEntity.forEachItem(oDGUHashTable, forEachItemFunction, aux);</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">oDGUHashTable</td><td>Hash table where to iterate each item </td></tr>
     <tr><td class="paramname">forEachItemFunction</td><td>Function for iteration with each item </td></tr>
-    <tr><td class="paramname">userData</td><td>User data to use on the function for iteration with each item </td></tr>
+    <tr><td class="paramname">aux</td><td>User data to use on the function for iteration with each item </td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="ac29bbccdb710b0b9cb43fed3029d5b58" name="ac29bbccdb710b0b9cb43fed3029d5b58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac29bbccdb710b0b9cb43fed3029d5b58">&#9670;&nbsp;</a></span>getTotalItems</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int(* DGUHashTableEntity::getTotalItems) (<a class="el" href="a00047.html#a9c2ffdd83eb554a97e47af406b7cf903">DGUHashTable</a> *oDGUHashTable)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get total items. </p>
-<p >Get the total of items in a Hash table</p>
-<p >Example: </p>
-<p >int *totalItems = DGUHashTableEntity.getTotalItems(oDGUHashTable);</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">oDGUHashTable</td><td>Hash table where get the total items</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The total items </dd></dl>
 
 </div>
 </div>

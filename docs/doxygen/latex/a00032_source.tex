@@ -13,54 +13,50 @@
 \DoxyCodeLine{19 \textcolor{preprocessor}{  \#include <stdbool.h>}}
 \DoxyCodeLine{20 \textcolor{preprocessor}{  \#include <netinet/in.h>}}
 \DoxyCodeLine{21 }
-\DoxyCodeLine{22 \textcolor{preprocessor}{  \#include "{}../../DeliGranDB/lib/entities/DGDBController.h"{}}}
-\DoxyCodeLine{23 \textcolor{preprocessor}{  \#include "{}../../DeliGranUtils/lib/entities/DGULog.h"{}}}
-\DoxyCodeLine{24 \textcolor{preprocessor}{  \#include "{}\mbox{\hyperlink{a00035}{entities/DGREndpoint.h}}"{}}}
-\DoxyCodeLine{25 \textcolor{preprocessor}{  \#include "{}\mbox{\hyperlink{a00041}{entities/DGRHttp.h}}"{}}}
-\DoxyCodeLine{26 }
-\DoxyCodeLine{27   \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{a00079}{DGRStreamConfigs}} \{}
-\DoxyCodeLine{28     \textcolor{keywordtype}{int} BLOCK\_SIZE\_DEFAULT;}
-\DoxyCodeLine{29     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} END;}
-\DoxyCodeLine{30     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} ERROR;}
-\DoxyCodeLine{31     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} SIZE\_UNKOWN;}
-\DoxyCodeLine{32   \} \mbox{\hyperlink{a00079}{DGRStreamConfigs}};}
-\DoxyCodeLine{33 }
-\DoxyCodeLine{34   \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{a00083}{DGRSslSessions}} \{}
-\DoxyCodeLine{35     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{short} VERIFY\_PEER;}
-\DoxyCodeLine{36     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{short} VERIFY\_HOSTNAME;}
-\DoxyCodeLine{37   \} \mbox{\hyperlink{a00083}{DGRSslSessions}};}
-\DoxyCodeLine{38 }
-\DoxyCodeLine{39   \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{a00087}{DGRGlobal}} \{}
-\DoxyCodeLine{40     \mbox{\hyperlink{a00079}{DGRStreamConfigs}} (*getStreamConfigs)(void);}
-\DoxyCodeLine{41     \mbox{\hyperlink{a00083}{DGRSslSessions}} (*getSslSessions)(void);}
-\DoxyCodeLine{42     \mbox{\hyperlink{a00143}{DGRHttp}} *(*getHttp)(void);}
-\DoxyCodeLine{43   \} \mbox{\hyperlink{a00087}{DGRGlobal}};}
+\DoxyCodeLine{22 \textcolor{preprocessor}{  \#include "{}\mbox{\hyperlink{a00035}{entities/DGREndpoint.h}}"{}}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{  \#include "{}\mbox{\hyperlink{a00041}{entities/DGRHttp.h}}"{}}}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25   \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{a00079}{DGRStreamConfigs}} \{}
+\DoxyCodeLine{26     \textcolor{keywordtype}{int} BLOCK\_SIZE\_DEFAULT;}
+\DoxyCodeLine{27     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} END;}
+\DoxyCodeLine{28     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} ERROR;}
+\DoxyCodeLine{29     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} SIZE\_UNKOWN;}
+\DoxyCodeLine{30   \} \mbox{\hyperlink{a00079}{DGRStreamConfigs}};}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32   \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{a00083}{DGRSslSessions}} \{}
+\DoxyCodeLine{33     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{short} VERIFY\_PEER;}
+\DoxyCodeLine{34     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{short} VERIFY\_HOSTNAME;}
+\DoxyCodeLine{35   \} \mbox{\hyperlink{a00083}{DGRSslSessions}};}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37   \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{a00087}{DGRGlobal}} \{}
+\DoxyCodeLine{38     \mbox{\hyperlink{a00079}{DGRStreamConfigs}} (*getStreamConfigs)(void);}
+\DoxyCodeLine{39     \mbox{\hyperlink{a00083}{DGRSslSessions}} (*getSslSessions)(void);}
+\DoxyCodeLine{40     \mbox{\hyperlink{a00143}{DGRHttp}} *(*getHttp)(void);}
+\DoxyCodeLine{41   \} \mbox{\hyperlink{a00087}{DGRGlobal}};}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43   \textcolor{keyword}{typedef} \textcolor{keyword}{struct }DeliGranRestPrivate DeliGranRestPrivate;}
 \DoxyCodeLine{44 }
-\DoxyCodeLine{45   \textcolor{keyword}{typedef} \textcolor{keyword}{struct }DeliGranRestPrivate DeliGranRestPrivate;}
-\DoxyCodeLine{46 }
-\DoxyCodeLine{47   \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{a00091}{DeliGranRest}} \{}
-\DoxyCodeLine{48     DeliGranRestPrivate *\textcolor{keyword}{private};}
-\DoxyCodeLine{49   \} \mbox{\hyperlink{a00091}{DeliGranRest}};}
-\DoxyCodeLine{50   }
-\DoxyCodeLine{51   \textcolor{keyword}{extern} \textcolor{keyword}{struct }\mbox{\hyperlink{a00095}{DeliGranRestEntity}} \{}
-\DoxyCodeLine{52     \mbox{\hyperlink{a00079}{DGRStreamConfigs}} (*getStreamConfigs)(void);}
-\DoxyCodeLine{53     \mbox{\hyperlink{a00139}{DGRHNetworkTypes}} (*getNetworkTypes)(void);}
-\DoxyCodeLine{54     \mbox{\hyperlink{a00083}{DGRSslSessions}} (*getSslSessions)(void);}
-\DoxyCodeLine{55     \mbox{\hyperlink{a00143}{DGRHttp}} *(*getHttp)(void);}
-\DoxyCodeLine{56     \mbox{\hyperlink{a00026_a822e8cad4164be3fbd8af2fb808c3289}{DGDBController}} *(*getDGDBController)(\mbox{\hyperlink{a00091}{DeliGranRest}} *oDeliGranRest);}
-\DoxyCodeLine{57 }
-\DoxyCodeLine{63     \mbox{\hyperlink{a00091}{DeliGranRest}} *(*new)(void);}
-\DoxyCodeLine{64     void (*destroy)(\mbox{\hyperlink{a00091}{DeliGranRest}} **oDeliGranRest);}
-\DoxyCodeLine{65     \mbox{\hyperlink{a00062_aaa6a2ab602733132b5a14993305b0625}{DGULog}} *(*getLogger)(\mbox{\hyperlink{a00091}{DeliGranRest}} *oDeliGranRest);}
-\DoxyCodeLine{66     bool (*loadConfigFromFile)(\mbox{\hyperlink{a00091}{DeliGranRest}} *oDeliGranRest, \textcolor{keywordtype}{string} pathFile);}
-\DoxyCodeLine{67     bool (*addEndpoint)(\mbox{\hyperlink{a00091}{DeliGranRest}} *oDeliGranRest, DGREndpoint *endpoint);}
-\DoxyCodeLine{68     void (*start)(\mbox{\hyperlink{a00091}{DeliGranRest}} *oDeliGranRest);}
-\DoxyCodeLine{69   \} \mbox{\hyperlink{a00095}{DeliGranRestEntity}};}
+\DoxyCodeLine{45   \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{a00091}{DeliGranRest}} \{}
+\DoxyCodeLine{46     DeliGranRestPrivate *\textcolor{keyword}{private};}
+\DoxyCodeLine{47   \} \mbox{\hyperlink{a00091}{DeliGranRest}};}
+\DoxyCodeLine{48   }
+\DoxyCodeLine{49   \textcolor{keyword}{extern} \textcolor{keyword}{struct }\mbox{\hyperlink{a00095}{DeliGranRestEntity}} \{}
+\DoxyCodeLine{50     \mbox{\hyperlink{a00079}{DGRStreamConfigs}} (*getStreamConfigs)(void);}
+\DoxyCodeLine{51     \mbox{\hyperlink{a00139}{DGRHNetworkTypes}} (*getNetworkTypes)(void);}
+\DoxyCodeLine{52     \mbox{\hyperlink{a00083}{DGRSslSessions}} (*getSslSessions)(void);}
+\DoxyCodeLine{53     \mbox{\hyperlink{a00143}{DGRHttp}} *(*getHttp)(void);}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{60     \mbox{\hyperlink{a00091}{DeliGranRest}} *(*new)(void);}
+\DoxyCodeLine{61     void (*destroy)(\mbox{\hyperlink{a00091}{DeliGranRest}} **oDeliGranRest);}
+\DoxyCodeLine{62     bool (*loadConfigFromFile)(\mbox{\hyperlink{a00091}{DeliGranRest}} *oDeliGranRest, \textcolor{keywordtype}{string} filePath);}
+\DoxyCodeLine{63     bool (*addEndpoint)(\mbox{\hyperlink{a00091}{DeliGranRest}} *oDeliGranRest, DGREndpoint *endpoint);}
+\DoxyCodeLine{64     void (*start)(\mbox{\hyperlink{a00091}{DeliGranRest}} *oDeliGranRest);}
+\DoxyCodeLine{65   \} \mbox{\hyperlink{a00095}{DeliGranRestEntity}};}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67 \textcolor{preprocessor}{\#ifdef \_\_cplusplus}}
+\DoxyCodeLine{68 \}}
+\DoxyCodeLine{69 \textcolor{preprocessor}{\#endif}}
 \DoxyCodeLine{70 }
-\DoxyCodeLine{71 \textcolor{preprocessor}{\#ifdef \_\_cplusplus}}
-\DoxyCodeLine{72 \}}
-\DoxyCodeLine{73 \textcolor{preprocessor}{\#endif}}
-\DoxyCodeLine{74 }
-\DoxyCodeLine{75 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// DELIGRAN\_REST\_H}}
+\DoxyCodeLine{71 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// DELIGRAN\_REST\_H}}
 
 \end{DoxyCode}

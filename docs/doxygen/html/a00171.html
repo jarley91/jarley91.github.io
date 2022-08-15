@@ -146,12 +146,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ae17528a47a54e8e45d4cc6dc4d6c0a9b"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00171.html#ae17528a47a54e8e45d4cc6dc4d6c0a9b">setLevel</a> )(<a class="el" href="a00062.html#aaa6a2ab602733132b5a14993305b0625">DGULog</a> *oDGULog, void *level)</td></tr>
 <tr class="memdesc:ae17528a47a54e8e45d4cc6dc4d6c0a9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set level.  <a href="a00171.html#ae17528a47a54e8e45d4cc6dc4d6c0a9b">More...</a><br /></td></tr>
 <tr class="separator:ae17528a47a54e8e45d4cc6dc4d6c0a9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ea5e3383024ec2d4c3165791ce5eaec"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00171.html#a1ea5e3383024ec2d4c3165791ce5eaec">writeLog</a> )(<a class="el" href="a00062.html#aaa6a2ab602733132b5a14993305b0625">DGULog</a> *oDGULog, void *level, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> source, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> function, int line, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> message,...)</td></tr>
-<tr class="memdesc:a1ea5e3383024ec2d4c3165791ce5eaec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write log.  <a href="a00171.html#a1ea5e3383024ec2d4c3165791ce5eaec">More...</a><br /></td></tr>
-<tr class="separator:a1ea5e3383024ec2d4c3165791ce5eaec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c5260251c2fa56712d2ea388f100159"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00171.html#a2c5260251c2fa56712d2ea388f100159">writeLogMessage</a> )(<a class="el" href="a00062.html#aaa6a2ab602733132b5a14993305b0625">DGULog</a> *oDGULog, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> message)</td></tr>
-<tr class="memdesc:a2c5260251c2fa56712d2ea388f100159"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write message.  <a href="a00171.html#a2c5260251c2fa56712d2ea388f100159">More...</a><br /></td></tr>
-<tr class="separator:a2c5260251c2fa56712d2ea388f100159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dc1ff1efe67f04acc38037380d6255a"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00171.html#a5dc1ff1efe67f04acc38037380d6255a">writeLog</a> )(void *level, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> source, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> function, int line, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> message,...)</td></tr>
+<tr class="memdesc:a5dc1ff1efe67f04acc38037380d6255a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write log.  <a href="a00171.html#a5dc1ff1efe67f04acc38037380d6255a">More...</a><br /></td></tr>
+<tr class="separator:a5dc1ff1efe67f04acc38037380d6255a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bcb76d31fd7ec4c699fb2af74b8c168"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00171.html#a1bcb76d31fd7ec4c699fb2af74b8c168">writeMessage</a> )(<a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> message)</td></tr>
+<tr class="memdesc:a1bcb76d31fd7ec4c699fb2af74b8c168"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write message.  <a href="a00171.html#a1bcb76d31fd7ec4c699fb2af74b8c168">More...</a><br /></td></tr>
+<tr class="separator:a1bcb76d31fd7ec4c699fb2af74b8c168"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Log entity. </p>
@@ -195,10 +195,10 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Log levels. </p>
-<p >Get the list log levels</p>
+<p >Get the log levels list</p>
 <p >Example: </p>
 <p ><a class="el" href="a00171.html#a13f06f812dfdc88435fb0a1e2a7b4a8b" title="Log levels.">DGULogEntity.getLeves()</a></p>
-<dl class="section return"><dt>Returns</dt><dd>List log levels </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Log levels list </dd></dl>
 
 </div>
 </div>
@@ -215,10 +215,10 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Log types. </p>
-<p >Get the list types for log print</p>
+<p >Get the types list for log print</p>
 <p >Example: </p>
 <p ><a class="el" href="a00171.html#a5bbac717b2c98e2400e0769b5cd05d01" title="Log types.">DGULogEntity.getTypes()</a></p>
-<dl class="section return"><dt>Returns</dt><dd>List log types </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Log types list </dd></dl>
 
 </div>
 </div>
@@ -348,23 +348,23 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a1ea5e3383024ec2d4c3165791ce5eaec" name="a1ea5e3383024ec2d4c3165791ce5eaec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ea5e3383024ec2d4c3165791ce5eaec">&#9670;&nbsp;</a></span>writeLog</h2>
+<a id="a5dc1ff1efe67f04acc38037380d6255a" name="a5dc1ff1efe67f04acc38037380d6255a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dc1ff1efe67f04acc38037380d6255a">&#9670;&nbsp;</a></span>writeLog</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* DGULogEntity::writeLog) (<a class="el" href="a00062.html#aaa6a2ab602733132b5a14993305b0625">DGULog</a> *oDGULog, void *level, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> source, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> function, int line, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> message,...)</td>
+          <td class="memname">void(* DGULogEntity::writeLog) (void *level, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> source, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> function, int line, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> message,...)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Write log. </p>
-<p >Write log with the defined configuration, if it is not defined, the default configuration will be used</p>
+<p >Write log with YAML/JSON file configuration defined, if it is not defined, the default configuration will be used</p>
 <p >Example: </p>
-<p ><a class="el" href="a00171.html#a1ea5e3383024ec2d4c3165791ce5eaec" title="Write log.">DGULogEntity.writeLog</a>(oDGULog, DGULogPrivateEntity.getLeves().Info, DGULFile, DGULFunction, DGULLine, "Info %s", "value log"); <br  />
- <a class="el" href="a00171.html#a1ea5e3383024ec2d4c3165791ce5eaec" title="Write log.">DGULogEntity.writeLog</a>(NULL, DGULogPrivateEntity.getLeves().Error, DGULFile, DGULFunction, DGULLine, "Error %s", "value log");</p>
+<p ><a class="el" href="a00171.html#a5dc1ff1efe67f04acc38037380d6255a" title="Write log.">DGULogEntity.writeLog</a>(oDGULog, <a class="el" href="a00171.html#a13f06f812dfdc88435fb0a1e2a7b4a8b" title="Log levels.">DGULogEntity.getLeves()</a>.INFO, DGULFile, DGULFunction, DGULLine, "Info %s", "value log"); <br  />
+ <a class="el" href="a00171.html#a5dc1ff1efe67f04acc38037380d6255a" title="Write log.">DGULogEntity.writeLog</a>(<a class="el" href="a00171.html#a13f06f812dfdc88435fb0a1e2a7b4a8b" title="Log levels.">DGULogEntity.getLeves()</a>.ERROR, DGULFile, DGULFunction, DGULLine, "Error %s", "value log");</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">oDGULog</td><td>Log used for write the log </td></tr>
@@ -381,14 +381,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a2c5260251c2fa56712d2ea388f100159" name="a2c5260251c2fa56712d2ea388f100159"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c5260251c2fa56712d2ea388f100159">&#9670;&nbsp;</a></span>writeLogMessage</h2>
+<a id="a1bcb76d31fd7ec4c699fb2af74b8c168" name="a1bcb76d31fd7ec4c699fb2af74b8c168"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bcb76d31fd7ec4c699fb2af74b8c168">&#9670;&nbsp;</a></span>writeMessage</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* DGULogEntity::writeLogMessage) (<a class="el" href="a00062.html#aaa6a2ab602733132b5a14993305b0625">DGULog</a> *oDGULog, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> message)</td>
+          <td class="memname">void(* DGULogEntity::writeMessage) (<a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> message)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -396,7 +396,7 @@ Public Attributes</h2></td></tr>
 <p>Write message. </p>
 <p >Write log message</p>
 <p >Example: </p>
-<p ><a class="el" href="a00171.html#a2c5260251c2fa56712d2ea388f100159" title="Write message.">DGULogEntity.writeLogMessage</a>(oDGULog, "message");</p>
+<p ><a class="el" href="a00171.html#a1bcb76d31fd7ec4c699fb2af74b8c168" title="Write message.">DGULogEntity.writeMessage</a>(oDGULog, "message");</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">oDGULog</td><td>Log used for write the log message </td></tr>

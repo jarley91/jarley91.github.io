@@ -40,7 +40,7 @@ bool($\ast$ \mbox{\hyperlink{a00187_aad2e1d24524c1ac66d853ae5b3a56f79}{is\+Equal
 \begin{DoxyCompactList}\small\item\em String value of date and time. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}}($\ast$ \mbox{\hyperlink{a00187_ab4fcc5bfc61c109fef9a03618cd0a86e}{copy\+Length}} )(\mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} source, int \mbox{\hyperlink{a00187_a493a0878cf8327ccfd3d9a8f9d9922a1}{length}})
 \begin{DoxyCompactList}\small\item\em Copy value by length. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}}($\ast$ \mbox{\hyperlink{a00187_aed4903c031df6a6bfc128f79907166f9}{get\+UUIDRandom}} )(void)
+\mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}}($\ast$ \mbox{\hyperlink{a00187_ad165035857e83ea7425778990c22a385}{get\+Random\+UUID}} )(void)
 \begin{DoxyCompactList}\small\item\em Random uuid. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -183,11 +183,11 @@ New value of date and time as string
 \begin{DoxyNote}{Note}
 You should always destroy return pointer to avoid memory leaks 
 \end{DoxyNote}
-\mbox{\Hypertarget{a00187_aed4903c031df6a6bfc128f79907166f9}\label{a00187_aed4903c031df6a6bfc128f79907166f9}} 
-\index{DGUStringEntity@{DGUStringEntity}!getUUIDRandom@{getUUIDRandom}}
-\index{getUUIDRandom@{getUUIDRandom}!DGUStringEntity@{DGUStringEntity}}
-\doxysubsubsection{\texorpdfstring{getUUIDRandom}{getUUIDRandom}}
-{\footnotesize\ttfamily \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}}($\ast$ DGUString\+Entity\+::get\+UUIDRandom) (void)}
+\mbox{\Hypertarget{a00187_ad165035857e83ea7425778990c22a385}\label{a00187_ad165035857e83ea7425778990c22a385}} 
+\index{DGUStringEntity@{DGUStringEntity}!getRandomUUID@{getRandomUUID}}
+\index{getRandomUUID@{getRandomUUID}!DGUStringEntity@{DGUStringEntity}}
+\doxysubsubsection{\texorpdfstring{getRandomUUID}{getRandomUUID}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}}($\ast$ DGUString\+Entity\+::get\+Random\+UUID) (void)}
 
 
 
@@ -195,7 +195,7 @@ Random uuid.
 
 Get a random uuid string value
 
-string new\+Value = \mbox{\hyperlink{a00187_aed4903c031df6a6bfc128f79907166f9}{DGUString\+Entity.\+get\+UUIDRandom()}};
+string new\+Value = \mbox{\hyperlink{a00187_ad165035857e83ea7425778990c22a385}{DGUString\+Entity.\+get\+Random\+UUID()}};
 
 \begin{DoxyReturn}{Returns}
 uuid string value

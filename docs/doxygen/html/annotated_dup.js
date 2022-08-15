@@ -26,7 +26,7 @@ var annotated_dup =
     [ "DGULogEntity", "a00171.html", "a00171" ],
     [ "DGULogLeves", "a00167.html", null ],
     [ "DGULogTypes", "a00163.html", null ],
-    [ "DGUMarkupEntity", "a00179.html", null ],
+    [ "DGUMarkupEntity", "a00179.html", "a00179" ],
     [ "DGUMemoryEntity", "a00183.html", "a00183" ],
     [ "DGUMUFormats", "a00175.html", null ],
     [ "DGUStringEntity", "a00187.html", "a00187" ],

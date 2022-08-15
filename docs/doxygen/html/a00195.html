@@ -131,9 +131,6 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a5134748d6d19294dcae9ca1faeb6c501"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00195.html#a5134748d6d19294dcae9ca1faeb6c501">destroy</a> )(<a class="el" href="a00050.html#a91314791cb93235cdbd56cd82645eb54">DGUThreadMutex</a> **oDGUThreadMutex, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> source, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> function, int line)</td></tr>
 <tr class="memdesc:a5134748d6d19294dcae9ca1faeb6c501"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy ThreadMutex.  <a href="a00195.html#a5134748d6d19294dcae9ca1faeb6c501">More...</a><br /></td></tr>
 <tr class="separator:a5134748d6d19294dcae9ca1faeb6c501"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f4445e67cac252f2b3575e13425c77e"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00195.html#a3f4445e67cac252f2b3575e13425c77e">setLogger</a> )(<a class="el" href="a00050.html#a91314791cb93235cdbd56cd82645eb54">DGUThreadMutex</a> *oDGUThreadMutex, <a class="el" href="a00062.html#aaa6a2ab602733132b5a14993305b0625">DGULog</a> *oDGULog)</td></tr>
-<tr class="memdesc:a3f4445e67cac252f2b3575e13425c77e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set logger.  <a href="a00195.html#a3f4445e67cac252f2b3575e13425c77e">More...</a><br /></td></tr>
-<tr class="separator:a3f4445e67cac252f2b3575e13425c77e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a988ebe82e6a96d7629dc5c928af50b54"><td class="memItemLeft" align="right" valign="top">bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00195.html#a988ebe82e6a96d7629dc5c928af50b54">lock</a> )(<a class="el" href="a00050.html#a91314791cb93235cdbd56cd82645eb54">DGUThreadMutex</a> *oDGUThreadMutex, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> source, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> function, int line)</td></tr>
 <tr class="memdesc:a988ebe82e6a96d7629dc5c928af50b54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock threads.  <a href="a00195.html#a988ebe82e6a96d7629dc5c928af50b54">More...</a><br /></td></tr>
 <tr class="separator:a988ebe82e6a96d7629dc5c928af50b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -247,30 +244,6 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>New ThreadMutex, or null if it was not possible to reserve the space in memory</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>You should always destroy return pointer to avoid memory leaks </dd></dl>
-
-</div>
-</div>
-<a id="a3f4445e67cac252f2b3575e13425c77e" name="a3f4445e67cac252f2b3575e13425c77e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f4445e67cac252f2b3575e13425c77e">&#9670;&nbsp;</a></span>setLogger</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void(* DGUThreadMutexEntity::setLogger) (<a class="el" href="a00050.html#a91314791cb93235cdbd56cd82645eb54">DGUThreadMutex</a> *oDGUThreadMutex, <a class="el" href="a00062.html#aaa6a2ab602733132b5a14993305b0625">DGULog</a> *oDGULog)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set logger. </p>
-<p >Set logger to ThreadMutex</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">oDGUThreadMutex</td><td>ThreadMutex </td></tr>
-    <tr><td class="paramname">oDGULog</td><td>Logger </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>

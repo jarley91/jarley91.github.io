@@ -8,6 +8,6 @@ var a00171 =
     [ "setFilePath", "a00171.html#a95d3f3ec71517551c7cc16bc116c6586", null ],
     [ "setLevel", "a00171.html#ae17528a47a54e8e45d4cc6dc4d6c0a9b", null ],
     [ "setType", "a00171.html#a17b4585798d58d6c5b852c5509fed033", null ],
-    [ "writeLog", "a00171.html#a1ea5e3383024ec2d4c3165791ce5eaec", null ],
-    [ "writeLogMessage", "a00171.html#a2c5260251c2fa56712d2ea388f100159", null ]
+    [ "writeLog", "a00171.html#a5dc1ff1efe67f04acc38037380d6255a", null ],
+    [ "writeMessage", "a00171.html#a1bcb76d31fd7ec4c699fb2af74b8c168", null ]
 ];

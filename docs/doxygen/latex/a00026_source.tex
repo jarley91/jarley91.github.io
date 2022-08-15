@@ -32,11 +32,11 @@
 \DoxyCodeLine{62 }
 \DoxyCodeLine{75     \mbox{\hyperlink{a00026_a3d7a9b300842fcbdf8a663d03b82ed19}{DGDBDataSourceDrivers}} (*\mbox{\hyperlink{a00075_af4c48a8f2c0aab62ad0ef7eeebed69be}{getDrivers}})(void);}
 \DoxyCodeLine{76 }
-\DoxyCodeLine{95     DGDBQuery *(*execQuery)(\mbox{\hyperlink{a00026_a822e8cad4164be3fbd8af2fb808c3289}{DGDBController}} *oDGDBController, \textcolor{keywordtype}{string} dataSourceName, \textcolor{keywordtype}{string} query, ...);}
-\DoxyCodeLine{96     DGDBQuery *(*execQueryByPath)(\mbox{\hyperlink{a00026_a822e8cad4164be3fbd8af2fb808c3289}{DGDBController}} *oDGDBController, \textcolor{keywordtype}{string} dataSourceName, \textcolor{keywordtype}{string} queryPath, ...);}
-\DoxyCodeLine{97     void (*destroyQuery)(\mbox{\hyperlink{a00026_a822e8cad4164be3fbd8af2fb808c3289}{DGDBController}} *oDGDBController, DGDBQuery *oDGDBQuery);}
-\DoxyCodeLine{98     int (*getTotalColumns)(\mbox{\hyperlink{a00026_a822e8cad4164be3fbd8af2fb808c3289}{DGDBController}} *oDGDBController, DGDBQuery *oDGDBQuery);}
-\DoxyCodeLine{99     int (*getTotalRows)(\mbox{\hyperlink{a00026_a822e8cad4164be3fbd8af2fb808c3289}{DGDBController}} *oDGDBController, DGDBQuery *oDGDBQuery);}
+\DoxyCodeLine{95     DGDBQuery *(*execQuery)(\textcolor{keywordtype}{string} dataSourceName, \textcolor{keywordtype}{string} query, ...);}
+\DoxyCodeLine{96     DGDBQuery *(*execQueryByPath)(\textcolor{keywordtype}{string} dataSourceName, \textcolor{keywordtype}{string} queryPath, ...);}
+\DoxyCodeLine{97     void (*destroyQuery)(DGDBQuery *oDGDBQuery);}
+\DoxyCodeLine{98     int (*getTotalColumns)(DGDBQuery *oDGDBQuery);}
+\DoxyCodeLine{99     int (*getTotalRows)(DGDBQuery *oDGDBQuery);}
 \DoxyCodeLine{100   \} \mbox{\hyperlink{a00075}{DGDBControllerEntity}};}
 \DoxyCodeLine{101 }
 \DoxyCodeLine{102 \textcolor{preprocessor}{\#ifdef \_\_cplusplus}}

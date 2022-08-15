@@ -15,53 +15,54 @@
 \DoxyCodeLine{21 }
 \DoxyCodeLine{22 \textcolor{preprocessor}{  \#include "{}\mbox{\hyperlink{a00059}{DGUString.h}}"{}}}
 \DoxyCodeLine{23 \textcolor{preprocessor}{  \#include "{}\mbox{\hyperlink{a00053}{DGUMarkup.h}}"{}}}
-\DoxyCodeLine{24 \textcolor{preprocessor}{  \#include "{}\mbox{\hyperlink{a00062}{DGULog.h}}"{}}}
-\DoxyCodeLine{25 \textcolor{preprocessor}{  \#include "{}\mbox{\hyperlink{a00047}{DGUHashTable.h}}"{}}}
-\DoxyCodeLine{26 }
-\DoxyCodeLine{27   \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{a00175}{DGUMUFormats}} \{}
-\DoxyCodeLine{28     \textcolor{keywordtype}{void} *YAML;}
-\DoxyCodeLine{29     \textcolor{keywordtype}{void} *JSON;}
-\DoxyCodeLine{30   \} \mbox{\hyperlink{a00175}{DGUMUFormats}};}
-\DoxyCodeLine{31 }
-\DoxyCodeLine{32   \textcolor{keyword}{typedef} \textcolor{keyword}{struct }DGUMUDocument DGUMUDocument;}
-\DoxyCodeLine{33   \textcolor{keyword}{typedef} \textcolor{keyword}{struct }DGUMUNode DGUMUNode;}
-\DoxyCodeLine{34 }
-\DoxyCodeLine{35   \textcolor{keyword}{typedef} bool (*arrayIterationDGUMUFunction)(\textcolor{keywordtype}{void} *node, \textcolor{keywordtype}{void} *aux);}
-\DoxyCodeLine{36   \textcolor{keyword}{typedef} bool (*propertiesIterationDGUMUFunction)(\textcolor{keywordtype}{string} key, \textcolor{keywordtype}{string} value, \textcolor{keywordtype}{void} *aux);}
-\DoxyCodeLine{37 }
-\DoxyCodeLine{38   \textcolor{keyword}{typedef} \textcolor{keyword}{struct }DGUMarkup DGUMarkup;}
-\DoxyCodeLine{39 }
-\DoxyCodeLine{40   \textcolor{keyword}{extern} \textcolor{keyword}{struct }\mbox{\hyperlink{a00179}{DGUMarkupEntity}} \{}
-\DoxyCodeLine{41     void (*setLogger)(DGUMarkup *oDGUMarkup, \mbox{\hyperlink{a00062_aaa6a2ab602733132b5a14993305b0625}{DGULog}} *oDGULog);}
-\DoxyCodeLine{42     void (*destroy)(DGUMarkup **oDGUMarkup);}
-\DoxyCodeLine{43     DGUMarkup *(*new)(void);}
-\DoxyCodeLine{44     void (*setDocumentFilePath)(DGUMarkup *oDGUMarkup, \textcolor{keywordtype}{string} filePath);}
-\DoxyCodeLine{45     \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} (*getDocumentFilePath)(DGUMarkup *oDGUMarkup);}
-\DoxyCodeLine{46     void (*setDocumentText)(DGUMarkup *oDGUMarkup, \textcolor{keywordtype}{string} text);}
-\DoxyCodeLine{47     \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} (*getDocumentText)(DGUMarkup *oDGUMarkup);}
-\DoxyCodeLine{48     bool (*isValidDocument)(DGUMarkup *oDGUMarkup);}
-\DoxyCodeLine{49     \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} (*getValueByPath)(DGUMarkup *oDGUMarkup, \textcolor{keywordtype}{string} nodePath);}
-\DoxyCodeLine{50     \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} (*getNodeValue)(DGUMarkup *oDGUMarkup, \textcolor{keywordtype}{void} *node, \textcolor{keywordtype}{string} key);}
-\DoxyCodeLine{51     void (*setNodeKeyValueByPath)(DGUMarkup *oDGUMarkup, \textcolor{keywordtype}{string} nodePath, \textcolor{keywordtype}{string} key, \textcolor{keywordtype}{string} value);}
-\DoxyCodeLine{52     DGUMUDocument *(*newDocument)(DGUMarkup *oDGUMarkup);}
-\DoxyCodeLine{53     void (*destroyDcoument)(DGUMarkup *oDGUMarkup, DGUMUDocument *document);}
-\DoxyCodeLine{54     void (*addPropertyToDocument)(DGUMarkup *oDGUMarkup, DGUMUDocument *document, \textcolor{keywordtype}{string} key, \textcolor{keywordtype}{string} value);}
-\DoxyCodeLine{55     DGUMUNode *(*addNodeToDocument)(DGUMarkup *oDGUMarkup, DGUMUDocument *document, \textcolor{keywordtype}{string} key);}
-\DoxyCodeLine{56     void (*addNodeToNode)(DGUMarkup *oDGUMarkup, DGUMUNode *nodeSource, DGUMUNode *nodeDest);}
-\DoxyCodeLine{57     void (*addPropertyToNode)(DGUMarkup *oDGUMarkup, DGUMUNode *node, \textcolor{keywordtype}{string} key, \textcolor{keywordtype}{string} value);}
-\DoxyCodeLine{58     DGUMUNode *(*addArrayToNode)(DGUMarkup *oDGUMarkup, \textcolor{keywordtype}{string} keyArray, \textcolor{keywordtype}{string} keyNodeArray, DGUMUNode *nodeDest);}
-\DoxyCodeLine{59     DGUMUNode *(*newNode)(DGUMarkup *oDGUMarkup, \textcolor{keywordtype}{string} key);}
-\DoxyCodeLine{60     DGUMUNode *(*newNodeItemArray)(DGUMarkup *oDGUMarkup);}
-\DoxyCodeLine{61     void (*addPropertyToNodeFromNode)(DGUMarkup *oDGUMarkup, DGUMUNode *node, DGUMUNode *nodeValue);}
-\DoxyCodeLine{62     \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} (*documentToString)(DGUMarkup *oDGUMarkup, DGUMUDocument *document, \textcolor{keywordtype}{string} format);}
-\DoxyCodeLine{63     \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} (*toString)(DGUMarkup *oDGUMarkup, \textcolor{keywordtype}{string} format);}
-\DoxyCodeLine{64     \mbox{\hyperlink{a00175}{DGUMUFormats}} (*getFormats)(void);}
-\DoxyCodeLine{65   \} \mbox{\hyperlink{a00179}{DGUMarkupEntity}};}
-\DoxyCodeLine{66 }
-\DoxyCodeLine{67 \textcolor{preprocessor}{\#ifdef \_\_cplusplus}}
-\DoxyCodeLine{68 \}}
-\DoxyCodeLine{69 \textcolor{preprocessor}{\#endif}}
-\DoxyCodeLine{70 }
-\DoxyCodeLine{71 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//DGU\_Markup\_H}}
+\DoxyCodeLine{24 \textcolor{preprocessor}{  \#include "{}\mbox{\hyperlink{a00047}{DGUHashTable.h}}"{}}}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{32   \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{a00175}{DGUMUFormats}} \{}
+\DoxyCodeLine{33     \textcolor{keywordtype}{void} *YAML;}
+\DoxyCodeLine{34     \textcolor{keywordtype}{void} *JSON;}
+\DoxyCodeLine{35   \} \mbox{\hyperlink{a00053_a810bad82126591d8a885112ecc4c398f}{DGUMUFormats}};}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{47   \textcolor{keyword}{typedef} bool (*\mbox{\hyperlink{a00053_ad305d928e564b63d19ce4aa728c13d51}{DGUMUArrayNodeIterationFunction}})(\textcolor{keywordtype}{void} *node, \textcolor{keywordtype}{void} *aux);}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{60   \textcolor{keyword}{typedef} bool (*\mbox{\hyperlink{a00053_af5e3efa5f013b329919034d77ce5dd56}{DGUMUNodesIterationFunction}})(\textcolor{keywordtype}{string} key, \textcolor{keywordtype}{string} value, \textcolor{keywordtype}{void} *aux);}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{68   \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{a00053_ae48d6ebd905f52a025029d4384df4a15}{DGUMarkup}} \mbox{\hyperlink{a00053_ae48d6ebd905f52a025029d4384df4a15}{DGUMarkup}};}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{76   \textcolor{keyword}{extern} \textcolor{keyword}{struct }\mbox{\hyperlink{a00179}{DGUMarkupEntity}} \{}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{89     \mbox{\hyperlink{a00053_a810bad82126591d8a885112ecc4c398f}{DGUMUFormats}} (*\mbox{\hyperlink{a00179_a52ff98f8a16f18e149c02bfc2b9f1439}{getFormats}})(void);}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{104     \mbox{\hyperlink{a00053_ae48d6ebd905f52a025029d4384df4a15}{DGUMarkup}} *(*new)(void);}
+\DoxyCodeLine{105 }
+\DoxyCodeLine{117     void (*\mbox{\hyperlink{a00179_a78a8b9706a85b7152e1b34e4531c84de}{destroy}})(\mbox{\hyperlink{a00053_ae48d6ebd905f52a025029d4384df4a15}{DGUMarkup}} **oDGUMarkup);}
+\DoxyCodeLine{118 }
+\DoxyCodeLine{131     bool (*\mbox{\hyperlink{a00179_a0b1644afdd498c8caef4b870a9cf94c2}{loadFile}})(\mbox{\hyperlink{a00053_ae48d6ebd905f52a025029d4384df4a15}{DGUMarkup}} *oDGUMarkup, \textcolor{keywordtype}{string} filePath);}
+\DoxyCodeLine{132 }
+\DoxyCodeLine{144     \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} (*\mbox{\hyperlink{a00179_aaedca7351cb1d8fca1bf8d14efb3b540}{getFilePath}})(\mbox{\hyperlink{a00053_ae48d6ebd905f52a025029d4384df4a15}{DGUMarkup}} *oDGUMarkup);}
+\DoxyCodeLine{145 }
+\DoxyCodeLine{158     bool (*\mbox{\hyperlink{a00179_a81fbfc32c92bb07d06e91abbe0f10a9a}{loadText}})(\mbox{\hyperlink{a00053_ae48d6ebd905f52a025029d4384df4a15}{DGUMarkup}} *oDGUMarkup, \textcolor{keywordtype}{string} text);}
+\DoxyCodeLine{159 }
+\DoxyCodeLine{174     \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} (*\mbox{\hyperlink{a00179_a58f17190e6220ba2738b6ff1e06a6e1e}{getText}})(\mbox{\hyperlink{a00053_ae48d6ebd905f52a025029d4384df4a15}{DGUMarkup}} *oDGUMarkup, \textcolor{keywordtype}{void} *format);}
+\DoxyCodeLine{175 }
+\DoxyCodeLine{190     \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} (*\mbox{\hyperlink{a00179_ab1f0a1418715b29a86db7daf5092e24d}{getValueByPath}})(\mbox{\hyperlink{a00053_ae48d6ebd905f52a025029d4384df4a15}{DGUMarkup}} *oDGUMarkup, \textcolor{keywordtype}{string} nodeKeyPath);}
+\DoxyCodeLine{191 }
+\DoxyCodeLine{207     \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} (*\mbox{\hyperlink{a00179_ac6ceed870de9328ebd252c05e5d118c9}{getNodeValue}})(\mbox{\hyperlink{a00053_ae48d6ebd905f52a025029d4384df4a15}{DGUMarkup}} *oDGUMarkup, \textcolor{keywordtype}{void} *node, \textcolor{keywordtype}{string} key);}
+\DoxyCodeLine{208 }
+\DoxyCodeLine{223     void (*\mbox{\hyperlink{a00179_ae6a90c0d8b09ff902fd046fee0a589b7}{setNodeKeyValueByPath}})(\mbox{\hyperlink{a00053_ae48d6ebd905f52a025029d4384df4a15}{DGUMarkup}} *oDGUMarkup, \textcolor{keywordtype}{string} nodeKeyPath, \textcolor{keywordtype}{string} key, \textcolor{keywordtype}{string} value);}
+\DoxyCodeLine{224 }
+\DoxyCodeLine{240     void (*\mbox{\hyperlink{a00179_a1b071babe8a7e3432cf60062185f15ac}{nodeArrayIteration}})(\mbox{\hyperlink{a00053_ae48d6ebd905f52a025029d4384df4a15}{DGUMarkup}} *oDGUMarkup, \textcolor{keywordtype}{string} nodeArrayKeyPath, \textcolor{keywordtype}{string} nodeKeyPath, \mbox{\hyperlink{a00053_ad305d928e564b63d19ce4aa728c13d51}{DGUMUArrayNodeIterationFunction}} nodeArrayIterationFunction, \textcolor{keywordtype}{void} *aux);}
+\DoxyCodeLine{241 }
+\DoxyCodeLine{256     void (*\mbox{\hyperlink{a00179_a19e57fba3f6b59b3a1f895640c9bb5da}{nodesIteration}})(\mbox{\hyperlink{a00053_ae48d6ebd905f52a025029d4384df4a15}{DGUMarkup}} *oDGUMarkup, \textcolor{keywordtype}{string} nodeKeyPath, \mbox{\hyperlink{a00053_af5e3efa5f013b329919034d77ce5dd56}{DGUMUNodesIterationFunction}} nodesIterationFunction,  \textcolor{keywordtype}{void} *aux);}
+\DoxyCodeLine{257 }
+\DoxyCodeLine{272     int (*\mbox{\hyperlink{a00179_a25e603e9e04502dca0fc97e079163547}{nodesCount}})(\mbox{\hyperlink{a00053_ae48d6ebd905f52a025029d4384df4a15}{DGUMarkup}} *oDGUMarkup, \textcolor{keywordtype}{string} nodeKeyPath);}
+\DoxyCodeLine{273 }
+\DoxyCodeLine{288     int (*\mbox{\hyperlink{a00179_a87a58ae0a681ab63967ac17d02acf488}{nodeArrayCount}})(\mbox{\hyperlink{a00053_ae48d6ebd905f52a025029d4384df4a15}{DGUMarkup}} *oDGUMarkup, \textcolor{keywordtype}{string} nodeKeyPath);}
+\DoxyCodeLine{289   \} \mbox{\hyperlink{a00179}{DGUMarkupEntity}};}
+\DoxyCodeLine{290 }
+\DoxyCodeLine{291 \textcolor{preprocessor}{\#ifdef \_\_cplusplus}}
+\DoxyCodeLine{292 \}}
+\DoxyCodeLine{293 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{294 }
+\DoxyCodeLine{295 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//DGU\_Markup\_H}}
 
 \end{DoxyCode}

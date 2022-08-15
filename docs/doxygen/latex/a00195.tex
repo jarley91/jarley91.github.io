@@ -18,8 +18,6 @@ Thread\+Mutex entity.
 \begin{DoxyCompactList}\small\item\em New Thread\+Mutex. \end{DoxyCompactList}\item 
 void($\ast$ \mbox{\hyperlink{a00195_a5134748d6d19294dcae9ca1faeb6c501}{destroy}} )(\mbox{\hyperlink{a00050_a91314791cb93235cdbd56cd82645eb54}{DGUThread\+Mutex}} $\ast$$\ast$o\+DGUThread\+Mutex, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} source, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} function, int line)
 \begin{DoxyCompactList}\small\item\em Destroy Thread\+Mutex. \end{DoxyCompactList}\item 
-void($\ast$ \mbox{\hyperlink{a00195_a3f4445e67cac252f2b3575e13425c77e}{set\+Logger}} )(\mbox{\hyperlink{a00050_a91314791cb93235cdbd56cd82645eb54}{DGUThread\+Mutex}} $\ast$o\+DGUThread\+Mutex, \mbox{\hyperlink{a00062_aaa6a2ab602733132b5a14993305b0625}{DGULog}} $\ast$o\+DGULog)
-\begin{DoxyCompactList}\small\item\em Set logger. \end{DoxyCompactList}\item 
 bool($\ast$ \mbox{\hyperlink{a00195_a988ebe82e6a96d7629dc5c928af50b54}{lock}} )(\mbox{\hyperlink{a00050_a91314791cb93235cdbd56cd82645eb54}{DGUThread\+Mutex}} $\ast$o\+DGUThread\+Mutex, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} source, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} function, int line)
 \begin{DoxyCompactList}\small\item\em Lock threads. \end{DoxyCompactList}\item 
 bool($\ast$ \mbox{\hyperlink{a00195_a847277099a1222b79c3f0fa1153fbbfd}{unlock}} )(\mbox{\hyperlink{a00050_a91314791cb93235cdbd56cd82645eb54}{DGUThread\+Mutex}} $\ast$o\+DGUThread\+Mutex, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} source, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} function, int line)
@@ -137,25 +135,6 @@ New Thread\+Mutex, or null if it was not possible to reserve the space in memory
 \begin{DoxyNote}{Note}
 You should always destroy return pointer to avoid memory leaks 
 \end{DoxyNote}
-\mbox{\Hypertarget{a00195_a3f4445e67cac252f2b3575e13425c77e}\label{a00195_a3f4445e67cac252f2b3575e13425c77e}} 
-\index{DGUThreadMutexEntity@{DGUThreadMutexEntity}!setLogger@{setLogger}}
-\index{setLogger@{setLogger}!DGUThreadMutexEntity@{DGUThreadMutexEntity}}
-\doxysubsubsection{\texorpdfstring{setLogger}{setLogger}}
-{\footnotesize\ttfamily void($\ast$ DGUThread\+Mutex\+Entity\+::set\+Logger) (\mbox{\hyperlink{a00050_a91314791cb93235cdbd56cd82645eb54}{DGUThread\+Mutex}} $\ast$o\+DGUThread\+Mutex, \mbox{\hyperlink{a00062_aaa6a2ab602733132b5a14993305b0625}{DGULog}} $\ast$o\+DGULog)}
-
-
-
-Set logger. 
-
-Set logger to Thread\+Mutex
-
-
-\begin{DoxyParams}{Parameters}
-{\em o\+DGUThread\+Mutex} & Thread\+Mutex \\
-\hline
-{\em o\+DGULog} & Logger \\
-\hline
-\end{DoxyParams}
 \mbox{\Hypertarget{a00195_a847277099a1222b79c3f0fa1153fbbfd}\label{a00195_a847277099a1222b79c3f0fa1153fbbfd}} 
 \index{DGUThreadMutexEntity@{DGUThreadMutexEntity}!unlock@{unlock}}
 \index{unlock@{unlock}!DGUThreadMutexEntity@{DGUThreadMutexEntity}}

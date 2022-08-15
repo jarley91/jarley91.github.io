@@ -11,37 +11,34 @@
 \DoxyCodeLine{17 \{}
 \DoxyCodeLine{18 \textcolor{preprocessor}{\#endif}}
 \DoxyCodeLine{19 }
-\DoxyCodeLine{20 \textcolor{preprocessor}{  \#include "{}../../../DeliGranUtils/lib/entities/DGULog.h"{}}}
-\DoxyCodeLine{21 }
-\DoxyCodeLine{22 \textcolor{preprocessor}{  \#include "{}\mbox{\hyperlink{a00044}{DGRRequest.h}}"{}}}
-\DoxyCodeLine{23 \textcolor{preprocessor}{  \#include "{}\mbox{\hyperlink{a00038}{DGRResponse.h}}"{}}}
-\DoxyCodeLine{24 }
-\DoxyCodeLine{25   \textcolor{keyword}{typedef} \textcolor{keyword}{struct }DGREndpointPrivate DGREndpointPrivate;}
-\DoxyCodeLine{26   \textcolor{keyword}{typedef} \textcolor{keyword}{struct }DGREndpoint DGREndpoint;}
+\DoxyCodeLine{20 \textcolor{preprocessor}{  \#include "{}\mbox{\hyperlink{a00044}{DGRRequest.h}}"{}}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{  \#include "{}\mbox{\hyperlink{a00038}{DGRResponse.h}}"{}}}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23   \textcolor{keyword}{typedef} \textcolor{keyword}{struct }DGREndpointPrivate DGREndpointPrivate;}
+\DoxyCodeLine{24   \textcolor{keyword}{typedef} \textcolor{keyword}{struct }DGREndpoint DGREndpoint;}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26   \textcolor{keyword}{typedef} void (*CallbackFunctionDGRE)(DGRRequest *request, DGRResponse *response, \textcolor{keywordtype}{void} *aux);}
 \DoxyCodeLine{27 }
-\DoxyCodeLine{28   \textcolor{keyword}{typedef} void (*CallbackFunctionDGRE)(DGRRequest *request, DGRResponse *response, \textcolor{keywordtype}{void} *userData);}
-\DoxyCodeLine{29 }
-\DoxyCodeLine{30   \textcolor{keyword}{extern} \textcolor{keyword}{struct }\mbox{\hyperlink{a00099}{DGREndpointEntity}} \{}
-\DoxyCodeLine{31     void (*destroy)(DGREndpoint **oDGREndpoint);}
-\DoxyCodeLine{32     DGREndpoint *(*new)(void);}
-\DoxyCodeLine{33     void (*setController)(DGREndpoint *oDGREndpoint, \textcolor{keywordtype}{void} *controller);}
-\DoxyCodeLine{34     void (*setCallbackFunction)(DGREndpoint *oDGREndpoint, CallbackFunctionDGRE callbackFunction);}
-\DoxyCodeLine{35     void (*setLogger)(DGREndpoint *oDGREndpoint, \mbox{\hyperlink{a00062_aaa6a2ab602733132b5a14993305b0625}{DGULog}} *oDGULog);}
-\DoxyCodeLine{36     bool (*isValid)(DGREndpoint *oDGREndpoint);}
-\DoxyCodeLine{37     bool (*isValidConsume)(DGREndpoint *oDGREndpoint, \textcolor{keywordtype}{string} contentType);}
-\DoxyCodeLine{38     void (*setHttpMethod)(DGREndpoint *oDGREndpoint, \textcolor{keywordtype}{string} httpMethod);}
-\DoxyCodeLine{39     \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} (*getHttpMethod)(DGREndpoint *oDGREndpoint);}
-\DoxyCodeLine{40     void (*setUrlPath)(DGREndpoint *oDGREndpoint, \textcolor{keywordtype}{string} urlPath);}
-\DoxyCodeLine{41     \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} (*getUrlPath)(DGREndpoint *oDGREndpoint);}
-\DoxyCodeLine{42     DGREndpoint *(*copy)(DGREndpoint *oDGREndpoint);}
-\DoxyCodeLine{43     void (*addConsume)(DGREndpoint *oDGREndpoint, \textcolor{keywordtype}{string} consume);}
-\DoxyCodeLine{44     void (*addProduce)(DGREndpoint *oDGREndpoint, \textcolor{keywordtype}{string} produce);}
-\DoxyCodeLine{45   \} \mbox{\hyperlink{a00099}{DGREndpointEntity}};}
-\DoxyCodeLine{46 }
-\DoxyCodeLine{47 \textcolor{preprocessor}{\#ifdef \_\_cplusplus}}
-\DoxyCodeLine{48 \}}
-\DoxyCodeLine{49 \textcolor{preprocessor}{\#endif}}
-\DoxyCodeLine{50 }
-\DoxyCodeLine{51 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//DGR\_ENDPOINT\_H}}
+\DoxyCodeLine{28   \textcolor{keyword}{extern} \textcolor{keyword}{struct }\mbox{\hyperlink{a00099}{DGREndpointEntity}} \{}
+\DoxyCodeLine{29     void (*destroy)(DGREndpoint **oDGREndpoint);}
+\DoxyCodeLine{30     DGREndpoint *(*new)(void);}
+\DoxyCodeLine{31     void (*setController)(DGREndpoint *oDGREndpoint, \textcolor{keywordtype}{void} *controller);}
+\DoxyCodeLine{32     void (*setCallbackFunction)(DGREndpoint *oDGREndpoint, CallbackFunctionDGRE callbackFunction);}
+\DoxyCodeLine{33     bool (*isValid)(DGREndpoint *oDGREndpoint);}
+\DoxyCodeLine{34     bool (*isValidConsume)(DGREndpoint *oDGREndpoint, \textcolor{keywordtype}{string} contentType);}
+\DoxyCodeLine{35     void (*setHttpMethod)(DGREndpoint *oDGREndpoint, \textcolor{keywordtype}{string} httpMethod);}
+\DoxyCodeLine{36     \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} (*getHttpMethod)(DGREndpoint *oDGREndpoint);}
+\DoxyCodeLine{37     void (*setUrlPath)(DGREndpoint *oDGREndpoint, \textcolor{keywordtype}{string} urlPath);}
+\DoxyCodeLine{38     \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} (*getUrlPath)(DGREndpoint *oDGREndpoint);}
+\DoxyCodeLine{39     DGREndpoint *(*copy)(DGREndpoint *oDGREndpoint);}
+\DoxyCodeLine{40     void (*addConsume)(DGREndpoint *oDGREndpoint, \textcolor{keywordtype}{string} consume);}
+\DoxyCodeLine{41     void (*addProduce)(DGREndpoint *oDGREndpoint, \textcolor{keywordtype}{string} produce);}
+\DoxyCodeLine{42   \} \mbox{\hyperlink{a00099}{DGREndpointEntity}};}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 \textcolor{preprocessor}{\#ifdef \_\_cplusplus}}
+\DoxyCodeLine{45 \}}
+\DoxyCodeLine{46 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//DGR\_ENDPOINT\_H}}
 
 \end{DoxyCode}

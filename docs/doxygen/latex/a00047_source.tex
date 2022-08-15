@@ -15,33 +15,33 @@
 \DoxyCodeLine{21 }
 \DoxyCodeLine{22 \textcolor{preprocessor}{  \#include "{}\mbox{\hyperlink{a00059}{DGUString.h}}"{}}}
 \DoxyCodeLine{23 }
-\DoxyCodeLine{31   \textcolor{keyword}{typedef} bool (*\mbox{\hyperlink{a00047_a957757aa7ef735b7a3e9df10f094e600}{forEachItemFunctionDGUHashTable}})(\textcolor{keywordtype}{int} index, \textcolor{keywordtype}{string} key, \textcolor{keywordtype}{void} *value, \textcolor{keywordtype}{void} *userData);}
-\DoxyCodeLine{32 }
-\DoxyCodeLine{39   \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHashTable}} \mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHashTable}};}
-\DoxyCodeLine{40 }
-\DoxyCodeLine{47   \textcolor{keyword}{extern} \textcolor{keyword}{struct }\mbox{\hyperlink{a00159}{DGUHashTableEntity}} \{}
-\DoxyCodeLine{48 }
-\DoxyCodeLine{64     \mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHashTable}} *(*new)(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} initialSize);}
-\DoxyCodeLine{65 }
-\DoxyCodeLine{77     void (*\mbox{\hyperlink{a00159_a4373c1798eb6fb89f93eced83b0e87d3}{destroy}})(\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHashTable}} **oDGUHashTable);}
-\DoxyCodeLine{78 }
-\DoxyCodeLine{92     void (*\mbox{\hyperlink{a00159_ad5dda05d374bcfc6d0219191f7800514}{insert}})(\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHashTable}} *oDGUHashTable, \textcolor{keywordtype}{string} key, \textcolor{keywordtype}{void} *value);}
-\DoxyCodeLine{93 }
-\DoxyCodeLine{106     void (*\textcolor{keyword}{delete})(\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHashTable}} *oDGUHashTable, \textcolor{keywordtype}{string} key);}
-\DoxyCodeLine{107 }
-\DoxyCodeLine{122     bool (*\mbox{\hyperlink{a00159_a67405c097cde499f80519f60845be3ab}{itemExist}})(\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHashTable}} *oDGUHashTable, \textcolor{keywordtype}{string} key);}
-\DoxyCodeLine{123 }
-\DoxyCodeLine{138     \textcolor{keywordtype}{void} *(*getValue)(\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHashTable}} *oDGUHashTable, \textcolor{keywordtype}{string} key);}
-\DoxyCodeLine{139 }
-\DoxyCodeLine{153     int (*\mbox{\hyperlink{a00159_ac29bbccdb710b0b9cb43fed3029d5b58}{getTotalItems}})(\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHashTable}} *oDGUHashTable);}
-\DoxyCodeLine{154 }
-\DoxyCodeLine{168     void (*\mbox{\hyperlink{a00159_a9f2280391861034487e975b2f76d1e09}{forEachItem}})(\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHashTable}} *oDGUHashTable, \mbox{\hyperlink{a00047_a957757aa7ef735b7a3e9df10f094e600}{forEachItemFunctionDGUHashTable}} forEachItemFunction, \textcolor{keywordtype}{void} *userData);}
-\DoxyCodeLine{169   \} \mbox{\hyperlink{a00159}{DGUHashTableEntity}};}
-\DoxyCodeLine{170 }
-\DoxyCodeLine{171 \textcolor{preprocessor}{\#ifdef \_\_cplusplus}}
-\DoxyCodeLine{172 \}}
-\DoxyCodeLine{173 \textcolor{preprocessor}{\#endif}}
-\DoxyCodeLine{174 }
-\DoxyCodeLine{175 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//DGU\_HASHTABLE\_H}}
+\DoxyCodeLine{36   \textcolor{keyword}{typedef} bool (*\mbox{\hyperlink{a00047_a558827c926cdd00f6c4d22972f8d0784}{forEachItemFunctionDGUHashTable}})(\textcolor{keywordtype}{int} index, \textcolor{keywordtype}{string} key, \textcolor{keywordtype}{void} *value, \textcolor{keywordtype}{void} *aux);}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{44   \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHashTable}} \mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHashTable}};}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{52   \textcolor{keyword}{extern} \textcolor{keyword}{struct }\mbox{\hyperlink{a00159}{DGUHashTableEntity}} \{}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{69     \mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHashTable}} *(*new)(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} initialSize);}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{82     void (*\mbox{\hyperlink{a00159_a4373c1798eb6fb89f93eced83b0e87d3}{destroy}})(\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHashTable}} **oDGUHashTable);}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{97     void (*\mbox{\hyperlink{a00159_ad5dda05d374bcfc6d0219191f7800514}{insert}})(\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHashTable}} *oDGUHashTable, \textcolor{keywordtype}{string} key, \textcolor{keywordtype}{void} *value);}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{111     void (*\textcolor{keyword}{delete})(\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHashTable}} *oDGUHashTable, \textcolor{keywordtype}{string} key);}
+\DoxyCodeLine{112 }
+\DoxyCodeLine{127     bool (*\mbox{\hyperlink{a00159_a67405c097cde499f80519f60845be3ab}{itemExist}})(\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHashTable}} *oDGUHashTable, \textcolor{keywordtype}{string} key);}
+\DoxyCodeLine{128 }
+\DoxyCodeLine{143     \textcolor{keywordtype}{void} *(*getValue)(\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHashTable}} *oDGUHashTable, \textcolor{keywordtype}{string} key);}
+\DoxyCodeLine{144 }
+\DoxyCodeLine{158     int (*\mbox{\hyperlink{a00159_a7a95bb06eb4c67fe7d84f5753172e520}{countItems}})(\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHashTable}} *oDGUHashTable);}
+\DoxyCodeLine{159 }
+\DoxyCodeLine{173     void (*\mbox{\hyperlink{a00159_a1c7bf4c982329c4d56261ba7f84ea813}{forEachItem}})(\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHashTable}} *oDGUHashTable, \mbox{\hyperlink{a00047_a558827c926cdd00f6c4d22972f8d0784}{forEachItemFunctionDGUHashTable}} forEachItemFunction, \textcolor{keywordtype}{void} *aux);}
+\DoxyCodeLine{174   \} \mbox{\hyperlink{a00159}{DGUHashTableEntity}};}
+\DoxyCodeLine{175 }
+\DoxyCodeLine{176 \textcolor{preprocessor}{\#ifdef \_\_cplusplus}}
+\DoxyCodeLine{177 \}}
+\DoxyCodeLine{178 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{179 }
+\DoxyCodeLine{180 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//DGU\_HASHTABLE\_H}}
 
 \end{DoxyCode}

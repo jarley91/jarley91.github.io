@@ -114,82 +114,425 @@ $(document).ready(function(){initNavTree('a00179.html',''); initResizable(); });
   <div class="headertitle"><div class="title">DGUMarkupEntity Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Markup entity.  
+ <a href="a00179.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00053_source.html">DGUMarkup.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aedea693fec2260266ad19d7935d83756"><td class="memItemLeft" align="right" valign="top"><a id="aedea693fec2260266ad19d7935d83756" name="aedea693fec2260266ad19d7935d83756"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>setLogger</b> )(DGUMarkup *oDGUMarkup, <a class="el" href="a00062.html#aaa6a2ab602733132b5a14993305b0625">DGULog</a> *oDGULog)</td></tr>
-<tr class="separator:aedea693fec2260266ad19d7935d83756"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78a8b9706a85b7152e1b34e4531c84de"><td class="memItemLeft" align="right" valign="top"><a id="a78a8b9706a85b7152e1b34e4531c84de" name="a78a8b9706a85b7152e1b34e4531c84de"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>destroy</b> )(DGUMarkup **oDGUMarkup)</td></tr>
-<tr class="separator:a78a8b9706a85b7152e1b34e4531c84de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af238fb5183ae01c7e7c52a991c72351c"><td class="memItemLeft" align="right" valign="top"><a id="af238fb5183ae01c7e7c52a991c72351c" name="af238fb5183ae01c7e7c52a991c72351c"></a>
-DGUMarkup *(*&#160;</td><td class="memItemRight" valign="bottom"><b>new</b> )(void)</td></tr>
-<tr class="separator:af238fb5183ae01c7e7c52a991c72351c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81cb02c29ff75b3527303e9ca524fa9f"><td class="memItemLeft" align="right" valign="top"><a id="a81cb02c29ff75b3527303e9ca524fa9f" name="a81cb02c29ff75b3527303e9ca524fa9f"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>setDocumentFilePath</b> )(DGUMarkup *oDGUMarkup, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> filePath)</td></tr>
-<tr class="separator:a81cb02c29ff75b3527303e9ca524fa9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8071c5560367be3176652bc96313795d"><td class="memItemLeft" align="right" valign="top"><a id="a8071c5560367be3176652bc96313795d" name="a8071c5560367be3176652bc96313795d"></a>
-<a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a>(*&#160;</td><td class="memItemRight" valign="bottom"><b>getDocumentFilePath</b> )(DGUMarkup *oDGUMarkup)</td></tr>
-<tr class="separator:a8071c5560367be3176652bc96313795d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f33e89571bbbbbc948029272284141f"><td class="memItemLeft" align="right" valign="top"><a id="a1f33e89571bbbbbc948029272284141f" name="a1f33e89571bbbbbc948029272284141f"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>setDocumentText</b> )(DGUMarkup *oDGUMarkup, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> text)</td></tr>
-<tr class="separator:a1f33e89571bbbbbc948029272284141f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1f54f389150d9bd2c4bae8f9752905c"><td class="memItemLeft" align="right" valign="top"><a id="aa1f54f389150d9bd2c4bae8f9752905c" name="aa1f54f389150d9bd2c4bae8f9752905c"></a>
-<a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a>(*&#160;</td><td class="memItemRight" valign="bottom"><b>getDocumentText</b> )(DGUMarkup *oDGUMarkup)</td></tr>
-<tr class="separator:aa1f54f389150d9bd2c4bae8f9752905c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a088f704df508d5d51eb92c7c161dc6e2"><td class="memItemLeft" align="right" valign="top"><a id="a088f704df508d5d51eb92c7c161dc6e2" name="a088f704df508d5d51eb92c7c161dc6e2"></a>
-bool(*&#160;</td><td class="memItemRight" valign="bottom"><b>isValidDocument</b> )(DGUMarkup *oDGUMarkup)</td></tr>
-<tr class="separator:a088f704df508d5d51eb92c7c161dc6e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8318b5e488d9dd545b274bd2de30473a"><td class="memItemLeft" align="right" valign="top"><a id="a8318b5e488d9dd545b274bd2de30473a" name="a8318b5e488d9dd545b274bd2de30473a"></a>
-<a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a>(*&#160;</td><td class="memItemRight" valign="bottom"><b>getValueByPath</b> )(DGUMarkup *oDGUMarkup, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> nodePath)</td></tr>
-<tr class="separator:a8318b5e488d9dd545b274bd2de30473a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6ceed870de9328ebd252c05e5d118c9"><td class="memItemLeft" align="right" valign="top"><a id="ac6ceed870de9328ebd252c05e5d118c9" name="ac6ceed870de9328ebd252c05e5d118c9"></a>
-<a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a>(*&#160;</td><td class="memItemRight" valign="bottom"><b>getNodeValue</b> )(DGUMarkup *oDGUMarkup, void *node, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> key)</td></tr>
-<tr class="separator:ac6ceed870de9328ebd252c05e5d118c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad541f37aa6d841050b3779699af9b9a9"><td class="memItemLeft" align="right" valign="top"><a id="ad541f37aa6d841050b3779699af9b9a9" name="ad541f37aa6d841050b3779699af9b9a9"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>setNodeKeyValueByPath</b> )(DGUMarkup *oDGUMarkup, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> nodePath, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> key, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> value)</td></tr>
-<tr class="separator:ad541f37aa6d841050b3779699af9b9a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a536e99ac373af4554198612442669a45"><td class="memItemLeft" align="right" valign="top"><a id="a536e99ac373af4554198612442669a45" name="a536e99ac373af4554198612442669a45"></a>
-DGUMUDocument *(*&#160;</td><td class="memItemRight" valign="bottom"><b>newDocument</b> )(DGUMarkup *oDGUMarkup)</td></tr>
-<tr class="separator:a536e99ac373af4554198612442669a45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3a98457f81300695bba697ad73ac634"><td class="memItemLeft" align="right" valign="top"><a id="ab3a98457f81300695bba697ad73ac634" name="ab3a98457f81300695bba697ad73ac634"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>destroyDcoument</b> )(DGUMarkup *oDGUMarkup, DGUMUDocument *document)</td></tr>
-<tr class="separator:ab3a98457f81300695bba697ad73ac634"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f74e33cc7309324e18a1103b99e43c7"><td class="memItemLeft" align="right" valign="top"><a id="a3f74e33cc7309324e18a1103b99e43c7" name="a3f74e33cc7309324e18a1103b99e43c7"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>addPropertyToDocument</b> )(DGUMarkup *oDGUMarkup, DGUMUDocument *document, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> key, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> value)</td></tr>
-<tr class="separator:a3f74e33cc7309324e18a1103b99e43c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af52d65acf7467b36c7da10f178b60e03"><td class="memItemLeft" align="right" valign="top"><a id="af52d65acf7467b36c7da10f178b60e03" name="af52d65acf7467b36c7da10f178b60e03"></a>
-DGUMUNode *(*&#160;</td><td class="memItemRight" valign="bottom"><b>addNodeToDocument</b> )(DGUMarkup *oDGUMarkup, DGUMUDocument *document, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> key)</td></tr>
-<tr class="separator:af52d65acf7467b36c7da10f178b60e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5a4d9db7a3afdfec6838039bfc87de0"><td class="memItemLeft" align="right" valign="top"><a id="ae5a4d9db7a3afdfec6838039bfc87de0" name="ae5a4d9db7a3afdfec6838039bfc87de0"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>addNodeToNode</b> )(DGUMarkup *oDGUMarkup, DGUMUNode *nodeSource, DGUMUNode *nodeDest)</td></tr>
-<tr class="separator:ae5a4d9db7a3afdfec6838039bfc87de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f8de17f6e7391d354c3676e930cd127"><td class="memItemLeft" align="right" valign="top"><a id="a7f8de17f6e7391d354c3676e930cd127" name="a7f8de17f6e7391d354c3676e930cd127"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>addPropertyToNode</b> )(DGUMarkup *oDGUMarkup, DGUMUNode *node, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> key, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> value)</td></tr>
-<tr class="separator:a7f8de17f6e7391d354c3676e930cd127"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdd54a585cf793ea9b16812f2384b335"><td class="memItemLeft" align="right" valign="top"><a id="acdd54a585cf793ea9b16812f2384b335" name="acdd54a585cf793ea9b16812f2384b335"></a>
-DGUMUNode *(*&#160;</td><td class="memItemRight" valign="bottom"><b>addArrayToNode</b> )(DGUMarkup *oDGUMarkup, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> keyArray, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> keyNodeArray, DGUMUNode *nodeDest)</td></tr>
-<tr class="separator:acdd54a585cf793ea9b16812f2384b335"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6103c771a90b3cad2c7465897666ba3"><td class="memItemLeft" align="right" valign="top"><a id="ad6103c771a90b3cad2c7465897666ba3" name="ad6103c771a90b3cad2c7465897666ba3"></a>
-DGUMUNode *(*&#160;</td><td class="memItemRight" valign="bottom"><b>newNode</b> )(DGUMarkup *oDGUMarkup, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> key)</td></tr>
-<tr class="separator:ad6103c771a90b3cad2c7465897666ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf0250ae20f3f15b28d481e47a753751"><td class="memItemLeft" align="right" valign="top"><a id="abf0250ae20f3f15b28d481e47a753751" name="abf0250ae20f3f15b28d481e47a753751"></a>
-DGUMUNode *(*&#160;</td><td class="memItemRight" valign="bottom"><b>newNodeItemArray</b> )(DGUMarkup *oDGUMarkup)</td></tr>
-<tr class="separator:abf0250ae20f3f15b28d481e47a753751"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a575dfdba25affe6b5c9dd213c40b94f7"><td class="memItemLeft" align="right" valign="top"><a id="a575dfdba25affe6b5c9dd213c40b94f7" name="a575dfdba25affe6b5c9dd213c40b94f7"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>addPropertyToNodeFromNode</b> )(DGUMarkup *oDGUMarkup, DGUMUNode *node, DGUMUNode *nodeValue)</td></tr>
-<tr class="separator:a575dfdba25affe6b5c9dd213c40b94f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa308a84d94159b7e0f098f217ff7ae71"><td class="memItemLeft" align="right" valign="top"><a id="aa308a84d94159b7e0f098f217ff7ae71" name="aa308a84d94159b7e0f098f217ff7ae71"></a>
-<a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a>(*&#160;</td><td class="memItemRight" valign="bottom"><b>documentToString</b> )(DGUMarkup *oDGUMarkup, DGUMUDocument *document, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> format)</td></tr>
-<tr class="separator:aa308a84d94159b7e0f098f217ff7ae71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3af18e0c406ebd1e528749f43fd8f6df"><td class="memItemLeft" align="right" valign="top"><a id="a3af18e0c406ebd1e528749f43fd8f6df" name="a3af18e0c406ebd1e528749f43fd8f6df"></a>
-<a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a>(*&#160;</td><td class="memItemRight" valign="bottom"><b>toString</b> )(DGUMarkup *oDGUMarkup, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> format)</td></tr>
-<tr class="separator:a3af18e0c406ebd1e528749f43fd8f6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52ff98f8a16f18e149c02bfc2b9f1439"><td class="memItemLeft" align="right" valign="top"><a id="a52ff98f8a16f18e149c02bfc2b9f1439" name="a52ff98f8a16f18e149c02bfc2b9f1439"></a>
-<a class="el" href="a00175.html">DGUMUFormats</a>(*&#160;</td><td class="memItemRight" valign="bottom"><b>getFormats</b> )(void)</td></tr>
+<tr class="memitem:a52ff98f8a16f18e149c02bfc2b9f1439"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00175.html">DGUMUFormats</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a52ff98f8a16f18e149c02bfc2b9f1439">getFormats</a> )(void)</td></tr>
+<tr class="memdesc:a52ff98f8a16f18e149c02bfc2b9f1439"><td class="mdescLeft">&#160;</td><td class="mdescRight">Markup formats.  <a href="a00179.html#a52ff98f8a16f18e149c02bfc2b9f1439">More...</a><br /></td></tr>
 <tr class="separator:a52ff98f8a16f18e149c02bfc2b9f1439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af238fb5183ae01c7e7c52a991c72351c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00053.html#ae48d6ebd905f52a025029d4384df4a15">DGUMarkup</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#af238fb5183ae01c7e7c52a991c72351c">new</a> )(void)</td></tr>
+<tr class="memdesc:af238fb5183ae01c7e7c52a991c72351c"><td class="mdescLeft">&#160;</td><td class="mdescRight">New markup.  <a href="a00179.html#af238fb5183ae01c7e7c52a991c72351c">More...</a><br /></td></tr>
+<tr class="separator:af238fb5183ae01c7e7c52a991c72351c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78a8b9706a85b7152e1b34e4531c84de"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a78a8b9706a85b7152e1b34e4531c84de">destroy</a> )(<a class="el" href="a00053.html#ae48d6ebd905f52a025029d4384df4a15">DGUMarkup</a> **oDGUMarkup)</td></tr>
+<tr class="memdesc:a78a8b9706a85b7152e1b34e4531c84de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy markup.  <a href="a00179.html#a78a8b9706a85b7152e1b34e4531c84de">More...</a><br /></td></tr>
+<tr class="separator:a78a8b9706a85b7152e1b34e4531c84de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b1644afdd498c8caef4b870a9cf94c2"><td class="memItemLeft" align="right" valign="top">bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a0b1644afdd498c8caef4b870a9cf94c2">loadFile</a> )(<a class="el" href="a00053.html#ae48d6ebd905f52a025029d4384df4a15">DGUMarkup</a> *oDGUMarkup, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> filePath)</td></tr>
+<tr class="memdesc:a0b1644afdd498c8caef4b870a9cf94c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load markup from a file.  <a href="a00179.html#a0b1644afdd498c8caef4b870a9cf94c2">More...</a><br /></td></tr>
+<tr class="separator:a0b1644afdd498c8caef4b870a9cf94c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaedca7351cb1d8fca1bf8d14efb3b540"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#aaedca7351cb1d8fca1bf8d14efb3b540">getFilePath</a> )(<a class="el" href="a00053.html#ae48d6ebd905f52a025029d4384df4a15">DGUMarkup</a> *oDGUMarkup)</td></tr>
+<tr class="memdesc:aaedca7351cb1d8fca1bf8d14efb3b540"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get file path.  <a href="a00179.html#aaedca7351cb1d8fca1bf8d14efb3b540">More...</a><br /></td></tr>
+<tr class="separator:aaedca7351cb1d8fca1bf8d14efb3b540"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81fbfc32c92bb07d06e91abbe0f10a9a"><td class="memItemLeft" align="right" valign="top">bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a81fbfc32c92bb07d06e91abbe0f10a9a">loadText</a> )(<a class="el" href="a00053.html#ae48d6ebd905f52a025029d4384df4a15">DGUMarkup</a> *oDGUMarkup, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> text)</td></tr>
+<tr class="memdesc:a81fbfc32c92bb07d06e91abbe0f10a9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load markup from a string text.  <a href="a00179.html#a81fbfc32c92bb07d06e91abbe0f10a9a">More...</a><br /></td></tr>
+<tr class="separator:a81fbfc32c92bb07d06e91abbe0f10a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58f17190e6220ba2738b6ff1e06a6e1e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a58f17190e6220ba2738b6ff1e06a6e1e">getText</a> )(<a class="el" href="a00053.html#ae48d6ebd905f52a025029d4384df4a15">DGUMarkup</a> *oDGUMarkup, void *format)</td></tr>
+<tr class="memdesc:a58f17190e6220ba2738b6ff1e06a6e1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get string text.  <a href="a00179.html#a58f17190e6220ba2738b6ff1e06a6e1e">More...</a><br /></td></tr>
+<tr class="separator:a58f17190e6220ba2738b6ff1e06a6e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1f0a1418715b29a86db7daf5092e24d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#ab1f0a1418715b29a86db7daf5092e24d">getValueByPath</a> )(<a class="el" href="a00053.html#ae48d6ebd905f52a025029d4384df4a15">DGUMarkup</a> *oDGUMarkup, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> nodeKeyPath)</td></tr>
+<tr class="memdesc:ab1f0a1418715b29a86db7daf5092e24d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get value by path.  <a href="a00179.html#ab1f0a1418715b29a86db7daf5092e24d">More...</a><br /></td></tr>
+<tr class="separator:ab1f0a1418715b29a86db7daf5092e24d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6ceed870de9328ebd252c05e5d118c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#ac6ceed870de9328ebd252c05e5d118c9">getNodeValue</a> )(<a class="el" href="a00053.html#ae48d6ebd905f52a025029d4384df4a15">DGUMarkup</a> *oDGUMarkup, void *node, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> key)</td></tr>
+<tr class="memdesc:ac6ceed870de9328ebd252c05e5d118c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get node value.  <a href="a00179.html#ac6ceed870de9328ebd252c05e5d118c9">More...</a><br /></td></tr>
+<tr class="separator:ac6ceed870de9328ebd252c05e5d118c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6a90c0d8b09ff902fd046fee0a589b7"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#ae6a90c0d8b09ff902fd046fee0a589b7">setNodeKeyValueByPath</a> )(<a class="el" href="a00053.html#ae48d6ebd905f52a025029d4384df4a15">DGUMarkup</a> *oDGUMarkup, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> nodeKeyPath, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> key, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> value)</td></tr>
+<tr class="memdesc:ae6a90c0d8b09ff902fd046fee0a589b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">set node key value by path  <a href="a00179.html#ae6a90c0d8b09ff902fd046fee0a589b7">More...</a><br /></td></tr>
+<tr class="separator:ae6a90c0d8b09ff902fd046fee0a589b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b071babe8a7e3432cf60062185f15ac"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a1b071babe8a7e3432cf60062185f15ac">nodeArrayIteration</a> )(<a class="el" href="a00053.html#ae48d6ebd905f52a025029d4384df4a15">DGUMarkup</a> *oDGUMarkup, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> nodeArrayKeyPath, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> nodeKeyPath, <a class="el" href="a00053.html#ad305d928e564b63d19ce4aa728c13d51">DGUMUArrayNodeIterationFunction</a> nodeArrayIterationFunction, void *aux)</td></tr>
+<tr class="memdesc:a1b071babe8a7e3432cf60062185f15ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Node array iteration.  <a href="a00179.html#a1b071babe8a7e3432cf60062185f15ac">More...</a><br /></td></tr>
+<tr class="separator:a1b071babe8a7e3432cf60062185f15ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19e57fba3f6b59b3a1f895640c9bb5da"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a19e57fba3f6b59b3a1f895640c9bb5da">nodesIteration</a> )(<a class="el" href="a00053.html#ae48d6ebd905f52a025029d4384df4a15">DGUMarkup</a> *oDGUMarkup, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> nodeKeyPath, <a class="el" href="a00053.html#af5e3efa5f013b329919034d77ce5dd56">DGUMUNodesIterationFunction</a> nodesIterationFunction, void *aux)</td></tr>
+<tr class="memdesc:a19e57fba3f6b59b3a1f895640c9bb5da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nodes iteration.  <a href="a00179.html#a19e57fba3f6b59b3a1f895640c9bb5da">More...</a><br /></td></tr>
+<tr class="separator:a19e57fba3f6b59b3a1f895640c9bb5da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25e603e9e04502dca0fc97e079163547"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a25e603e9e04502dca0fc97e079163547">nodesCount</a> )(<a class="el" href="a00053.html#ae48d6ebd905f52a025029d4384df4a15">DGUMarkup</a> *oDGUMarkup, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> nodeKeyPath)</td></tr>
+<tr class="memdesc:a25e603e9e04502dca0fc97e079163547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nodes count.  <a href="a00179.html#a25e603e9e04502dca0fc97e079163547">More...</a><br /></td></tr>
+<tr class="separator:a25e603e9e04502dca0fc97e079163547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87a58ae0a681ab63967ac17d02acf488"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a87a58ae0a681ab63967ac17d02acf488">nodeArrayCount</a> )(<a class="el" href="a00053.html#ae48d6ebd905f52a025029d4384df4a15">DGUMarkup</a> *oDGUMarkup, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> nodeKeyPath)</td></tr>
+<tr class="memdesc:a87a58ae0a681ab63967ac17d02acf488"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nodes count.  <a href="a00179.html#a87a58ae0a681ab63967ac17d02acf488">More...</a><br /></td></tr>
+<tr class="separator:a87a58ae0a681ab63967ac17d02acf488"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Markup entity. </p>
+<p >Entity for markup </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a78a8b9706a85b7152e1b34e4531c84de" name="a78a8b9706a85b7152e1b34e4531c84de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78a8b9706a85b7152e1b34e4531c84de">&#9670;&nbsp;</a></span>destroy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* DGUMarkupEntity::destroy) (<a class="el" href="a00053.html#ae48d6ebd905f52a025029d4384df4a15">DGUMarkup</a> **oDGUMarkup)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroy markup. </p>
+<p >Destroy a markup</p>
+<p >Example: </p>
+<p >DGUMarkupEntity.destroy(&amp;oDGUMarkup);</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">oDGUMarkup</td><td>Markup to destroy </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaedca7351cb1d8fca1bf8d14efb3b540" name="aaedca7351cb1d8fca1bf8d14efb3b540"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaedca7351cb1d8fca1bf8d14efb3b540">&#9670;&nbsp;</a></span>getFilePath</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a>(* DGUMarkupEntity::getFilePath) (<a class="el" href="a00053.html#ae48d6ebd905f52a025029d4384df4a15">DGUMarkup</a> *oDGUMarkup)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get file path. </p>
+<p >Get loaded file path from a murkup</p>
+<p >Example: </p>
+<p >DGUMarkupEntity.getFilePath(oDGUMarkup);</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">oDGUMarkup</td><td>Markup to get loaded file path </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a52ff98f8a16f18e149c02bfc2b9f1439" name="a52ff98f8a16f18e149c02bfc2b9f1439"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52ff98f8a16f18e149c02bfc2b9f1439">&#9670;&nbsp;</a></span>getFormats</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00175.html">DGUMUFormats</a>(* DGUMarkupEntity::getFormats) (void)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Markup formats. </p>
+<p >Get the formats list</p>
+<p >Example: </p>
+<p >DGUMarkupEntity.Markup()</p>
+<dl class="section return"><dt>Returns</dt><dd>Markup formats list </dd></dl>
+
+</div>
+</div>
+<a id="ac6ceed870de9328ebd252c05e5d118c9" name="ac6ceed870de9328ebd252c05e5d118c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6ceed870de9328ebd252c05e5d118c9">&#9670;&nbsp;</a></span>getNodeValue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a>(* DGUMarkupEntity::getNodeValue) (<a class="el" href="a00053.html#ae48d6ebd905f52a025029d4384df4a15">DGUMarkup</a> *oDGUMarkup, void *node, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> key)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get node value. </p>
+<p >Get node value</p>
+<p >Example: </p>
+<p ><a class="el" href="a00179.html#ac6ceed870de9328ebd252c05e5d118c9" title="Get node value.">DGUMarkupEntity.getNodeValue</a>(oDGUMarkup, node, "key-name");</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">oDGUMarkup</td><td>Markup </td></tr>
+    <tr><td class="paramname">node</td><td>Node </td></tr>
+    <tr><td class="paramname">key</td><td>Node key to get value</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>You should always destroy return pointer to avoid memory leaks </dd></dl>
+
+</div>
+</div>
+<a id="a58f17190e6220ba2738b6ff1e06a6e1e" name="a58f17190e6220ba2738b6ff1e06a6e1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58f17190e6220ba2738b6ff1e06a6e1e">&#9670;&nbsp;</a></span>getText</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a>(* DGUMarkupEntity::getText) (<a class="el" href="a00053.html#ae48d6ebd905f52a025029d4384df4a15">DGUMarkup</a> *oDGUMarkup, void *format)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get string text. </p>
+<p >Get string text from a markup</p>
+<p >Example: </p>
+<p ><a class="el" href="a00179.html#a58f17190e6220ba2738b6ff1e06a6e1e" title="Get string text.">DGUMarkupEntity.getText</a>(oDGUMarkup, <a class="el" href="a00179.html#a52ff98f8a16f18e149c02bfc2b9f1439" title="Markup formats.">DGUMarkupEntity.getFormats()</a>.JSON);</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">oDGUMarkup</td><td>Markup </td></tr>
+    <tr><td class="paramname">Format</td><td>YAML/JSON format</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>You should always destroy return pointer to avoid memory leaks </dd></dl>
+
+</div>
+</div>
+<a id="ab1f0a1418715b29a86db7daf5092e24d" name="ab1f0a1418715b29a86db7daf5092e24d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1f0a1418715b29a86db7daf5092e24d">&#9670;&nbsp;</a></span>getValueByPath</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a>(* DGUMarkupEntity::getValueByPath) (<a class="el" href="a00053.html#ae48d6ebd905f52a025029d4384df4a15">DGUMarkup</a> *oDGUMarkup, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> nodeKeyPath)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get value by path. </p>
+<p >Get node value by path</p>
+<p >Example: </p>
+<p ><a class="el" href="a00179.html#ab1f0a1418715b29a86db7daf5092e24d" title="Get value by path.">DGUMarkupEntity.getValueByPath</a>(oDGUMarkup, "/node/path/key-name");</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">oDGUMarkup</td><td>Markup </td></tr>
+    <tr><td class="paramname">nodeKeyPath</td><td>Node key path to get the value</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>You should always destroy return pointer to avoid memory leaks </dd></dl>
+
+</div>
+</div>
+<a id="a0b1644afdd498c8caef4b870a9cf94c2" name="a0b1644afdd498c8caef4b870a9cf94c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b1644afdd498c8caef4b870a9cf94c2">&#9670;&nbsp;</a></span>loadFile</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool(* DGUMarkupEntity::loadFile) (<a class="el" href="a00053.html#ae48d6ebd905f52a025029d4384df4a15">DGUMarkup</a> *oDGUMarkup, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> filePath)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load markup from a file. </p>
+<p >Load YAML/JSON markup from a file</p>
+<p >Example: </p>
+<p ><a class="el" href="a00179.html#a0b1644afdd498c8caef4b870a9cf94c2" title="Load markup from a file.">DGUMarkupEntity.loadFile</a>(oDGUMarkup, "/path/to/file");</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">oDGUMarkup</td><td>Markup </td></tr>
+    <tr><td class="paramname">filePath</td><td>File path </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a81fbfc32c92bb07d06e91abbe0f10a9a" name="a81fbfc32c92bb07d06e91abbe0f10a9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81fbfc32c92bb07d06e91abbe0f10a9a">&#9670;&nbsp;</a></span>loadText</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool(* DGUMarkupEntity::loadText) (<a class="el" href="a00053.html#ae48d6ebd905f52a025029d4384df4a15">DGUMarkup</a> *oDGUMarkup, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> text)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load markup from a string text. </p>
+<p >Load YAML/JSON markup from a string text</p>
+<p >Example: </p>
+<p ><a class="el" href="a00179.html#a81fbfc32c92bb07d06e91abbe0f10a9a" title="Load markup from a string text.">DGUMarkupEntity.loadText</a>(oDGUMarkup, "string text YAML/JSON");</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">oDGUMarkup</td><td>Markup </td></tr>
+    <tr><td class="paramname">text</td><td>String text YAML/JSON </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af238fb5183ae01c7e7c52a991c72351c" name="af238fb5183ae01c7e7c52a991c72351c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af238fb5183ae01c7e7c52a991c72351c">&#9670;&nbsp;</a></span>new</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00053.html#ae48d6ebd905f52a025029d4384df4a15">DGUMarkup</a> *(* DGUMarkupEntity::new) (void)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>New markup. </p>
+<p >Create a new markup</p>
+<p >Example: </p>
+<p >oDGUMarkup *oDGUMarkup = <a class="el" href="a00179.html#af238fb5183ae01c7e7c52a991c72351c" title="New markup.">DGUMarkupEntity.new()</a>;</p>
+<dl class="section return"><dt>Returns</dt><dd>New markup, or null if it was not possible to reserve the space in memory</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>You should always destroy return pointer to avoid memory leaks </dd></dl>
+
+</div>
+</div>
+<a id="a87a58ae0a681ab63967ac17d02acf488" name="a87a58ae0a681ab63967ac17d02acf488"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87a58ae0a681ab63967ac17d02acf488">&#9670;&nbsp;</a></span>nodeArrayCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* DGUMarkupEntity::nodeArrayCount) (<a class="el" href="a00053.html#ae48d6ebd905f52a025029d4384df4a15">DGUMarkup</a> *oDGUMarkup, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> nodeKeyPath)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Nodes count. </p>
+<p >Get total node array count</p>
+<p >Example: </p>
+<p >int total = <a class="el" href="a00179.html#a25e603e9e04502dca0fc97e079163547" title="Nodes count.">DGUMarkupEntity.nodesCount</a>(oDGUMarkup, "/node/path/key-name");</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">oDGUMarkup</td><td>Markup </td></tr>
+    <tr><td class="paramname">nodeKeyPath</td><td>Node array key path to nodes count</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Total node array count </dd></dl>
+
+</div>
+</div>
+<a id="a1b071babe8a7e3432cf60062185f15ac" name="a1b071babe8a7e3432cf60062185f15ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b071babe8a7e3432cf60062185f15ac">&#9670;&nbsp;</a></span>nodeArrayIteration</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* DGUMarkupEntity::nodeArrayIteration) (<a class="el" href="a00053.html#ae48d6ebd905f52a025029d4384df4a15">DGUMarkup</a> *oDGUMarkup, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> nodeArrayKeyPath, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> nodeKeyPath, <a class="el" href="a00053.html#ad305d928e564b63d19ce4aa728c13d51">DGUMUArrayNodeIterationFunction</a> nodeArrayIterationFunction, void *aux)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Node array iteration. </p>
+<p >Node array iteration</p>
+<p >Example: </p>
+<p ><a class="el" href="a00179.html#a1b071babe8a7e3432cf60062185f15ac" title="Node array iteration.">DGUMarkupEntity.nodeArrayIteration</a>(oDGUMarkup, "/node/array/key/path", "/node/key/path", nodeArrayIterationFunction, typeOrData);</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">oDGUMarkup</td><td>Markup </td></tr>
+    <tr><td class="paramname">nodeArrayKeyPath</td><td>Node array key path </td></tr>
+    <tr><td class="paramname">nodeKeyPath</td><td>Node key path </td></tr>
+    <tr><td class="paramname">nodeArrayIterationFunction</td><td>Node array iteration function </td></tr>
+    <tr><td class="paramname">aux</td><td>Auxiliary type or data </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a25e603e9e04502dca0fc97e079163547" name="a25e603e9e04502dca0fc97e079163547"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25e603e9e04502dca0fc97e079163547">&#9670;&nbsp;</a></span>nodesCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* DGUMarkupEntity::nodesCount) (<a class="el" href="a00053.html#ae48d6ebd905f52a025029d4384df4a15">DGUMarkup</a> *oDGUMarkup, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> nodeKeyPath)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Nodes count. </p>
+<p >Get total nodes count</p>
+<p >Example: </p>
+<p >int total = <a class="el" href="a00179.html#a25e603e9e04502dca0fc97e079163547" title="Nodes count.">DGUMarkupEntity.nodesCount</a>(oDGUMarkup, "/node/path/key-name");</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">oDGUMarkup</td><td>Markup </td></tr>
+    <tr><td class="paramname">nodeKeyPath</td><td>Node key path to nodes count</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Total node count </dd></dl>
+
+</div>
+</div>
+<a id="a19e57fba3f6b59b3a1f895640c9bb5da" name="a19e57fba3f6b59b3a1f895640c9bb5da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19e57fba3f6b59b3a1f895640c9bb5da">&#9670;&nbsp;</a></span>nodesIteration</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* DGUMarkupEntity::nodesIteration) (<a class="el" href="a00053.html#ae48d6ebd905f52a025029d4384df4a15">DGUMarkup</a> *oDGUMarkup, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> nodeKeyPath, <a class="el" href="a00053.html#af5e3efa5f013b329919034d77ce5dd56">DGUMUNodesIterationFunction</a> nodesIterationFunction, void *aux)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Nodes iteration. </p>
+<p >Nodes iteration</p>
+<p >Example: </p>
+<p ><a class="el" href="a00179.html#a19e57fba3f6b59b3a1f895640c9bb5da" title="Nodes iteration.">DGUMarkupEntity.nodesIteration</a>(oDGUMarkup, "/node/key/path", nodesIterationFunction, typeOrData);</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">oDGUMarkup</td><td>Markup </td></tr>
+    <tr><td class="paramname">nodeKeyPath</td><td>Node key path fot iterarion </td></tr>
+    <tr><td class="paramname">nodesIterationFunction</td><td>Nodes iteration function </td></tr>
+    <tr><td class="paramname">aux</td><td>Auxiliary type or data </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae6a90c0d8b09ff902fd046fee0a589b7" name="ae6a90c0d8b09ff902fd046fee0a589b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6a90c0d8b09ff902fd046fee0a589b7">&#9670;&nbsp;</a></span>setNodeKeyValueByPath</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* DGUMarkupEntity::setNodeKeyValueByPath) (<a class="el" href="a00053.html#ae48d6ebd905f52a025029d4384df4a15">DGUMarkup</a> *oDGUMarkup, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> nodeKeyPath, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> key, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> value)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set node key value by path </p>
+<p >set node key value by path</p>
+<p >Example: </p>
+<p ><a class="el" href="a00179.html#ae6a90c0d8b09ff902fd046fee0a589b7" title="set node key value by path">DGUMarkupEntity.setNodeKeyValueByPath</a>(oDGUMarkup, "/node/key/path", "key-name". "name value");</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">oDGUMarkup</td><td>Markup </td></tr>
+    <tr><td class="paramname">nodeKeyPath</td><td>Node key path </td></tr>
+    <tr><td class="paramname">key</td><td>key from node </td></tr>
+    <tr><td class="paramname">value</td><td>Value to set </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="a00053_source.html">DGUMarkup.h</a></li>
 </ul>

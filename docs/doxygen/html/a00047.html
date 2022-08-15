@@ -128,9 +128,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a957757aa7ef735b7a3e9df10f094e600"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a957757aa7ef735b7a3e9df10f094e600">forEachItemFunctionDGUHashTable</a>) (int index, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> key, void *value, void *userData)</td></tr>
-<tr class="memdesc:a957757aa7ef735b7a3e9df10f094e600"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function for items iteration.  <a href="a00047.html#a957757aa7ef735b7a3e9df10f094e600">More...</a><br /></td></tr>
-<tr class="separator:a957757aa7ef735b7a3e9df10f094e600"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a558827c926cdd00f6c4d22972f8d0784"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a558827c926cdd00f6c4d22972f8d0784">forEachItemFunctionDGUHashTable</a>) (int index, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> key, void *value, void *aux)</td></tr>
+<tr class="memdesc:a558827c926cdd00f6c4d22972f8d0784"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function for items iteration.  <a href="a00047.html#a558827c926cdd00f6c4d22972f8d0784">More...</a><br /></td></tr>
+<tr class="separator:a558827c926cdd00f6c4d22972f8d0784"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c2ffdd83eb554a97e47af406b7cf903"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="a00047.html#a9c2ffdd83eb554a97e47af406b7cf903">DGUHashTable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a9c2ffdd83eb554a97e47af406b7cf903">DGUHashTable</a></td></tr>
 <tr class="memdesc:a9c2ffdd83eb554a97e47af406b7cf903"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hash table.  <a href="a00047.html#a9c2ffdd83eb554a97e47af406b7cf903">More...</a><br /></td></tr>
 <tr class="separator:a9c2ffdd83eb554a97e47af406b7cf903"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,21 +164,30 @@ struct <a class="el" href="a00159.html">DGUHashTableEntity</a>&#160;</td><td cla
 
 </div>
 </div>
-<a id="a957757aa7ef735b7a3e9df10f094e600" name="a957757aa7ef735b7a3e9df10f094e600"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a957757aa7ef735b7a3e9df10f094e600">&#9670;&nbsp;</a></span>forEachItemFunctionDGUHashTable</h2>
+<a id="a558827c926cdd00f6c4d22972f8d0784" name="a558827c926cdd00f6c4d22972f8d0784"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a558827c926cdd00f6c4d22972f8d0784">&#9670;&nbsp;</a></span>forEachItemFunctionDGUHashTable</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef bool(* forEachItemFunctionDGUHashTable) (int index, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> key, void *value, void *userData)</td>
+          <td class="memname">typedef bool(* forEachItemFunctionDGUHashTable) (int index, <a class="el" href="a00059.html#a398c94ef2be132b6d19e77d12415e9f3">string</a> key, void *value, void *aux)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Function for items iteration. </p>
 <p >Function definition for iteration with all items from a Hash table <br  />
- When the function returns false, the iteration stops </p>
+ When the function returns false, the iteration stops</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Item index </td></tr>
+    <tr><td class="paramname">key</td><td>Item key </td></tr>
+    <tr><td class="paramname">value</td><td>Item value </td></tr>
+    <tr><td class="paramname">aux</td><td>Auxiliary type or data </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

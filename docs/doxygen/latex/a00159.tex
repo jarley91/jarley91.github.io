@@ -24,9 +24,9 @@ bool($\ast$ \mbox{\hyperlink{a00159_a67405c097cde499f80519f60845be3ab}{item\+Exi
 \begin{DoxyCompactList}\small\item\em Exist item. \end{DoxyCompactList}\item 
 void $\ast$($\ast$ \mbox{\hyperlink{a00159_a47532617148849cf71242eb886dc9cd7}{get\+Value}} )(\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHash\+Table}} $\ast$o\+DGUHash\+Table, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} key)
 \begin{DoxyCompactList}\small\item\em Get item value. \end{DoxyCompactList}\item 
-int($\ast$ \mbox{\hyperlink{a00159_ac29bbccdb710b0b9cb43fed3029d5b58}{get\+Total\+Items}} )(\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHash\+Table}} $\ast$o\+DGUHash\+Table)
+int($\ast$ \mbox{\hyperlink{a00159_a7a95bb06eb4c67fe7d84f5753172e520}{count\+Items}} )(\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHash\+Table}} $\ast$o\+DGUHash\+Table)
 \begin{DoxyCompactList}\small\item\em Get total items. \end{DoxyCompactList}\item 
-void($\ast$ \mbox{\hyperlink{a00159_a9f2280391861034487e975b2f76d1e09}{for\+Each\+Item}} )(\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHash\+Table}} $\ast$o\+DGUHash\+Table, \mbox{\hyperlink{a00047_a957757aa7ef735b7a3e9df10f094e600}{for\+Each\+Item\+Function\+DGUHash\+Table}} for\+Each\+Item\+Function, void $\ast$user\+Data)
+void($\ast$ \mbox{\hyperlink{a00159_a1c7bf4c982329c4d56261ba7f84ea813}{for\+Each\+Item}} )(\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHash\+Table}} $\ast$o\+DGUHash\+Table, \mbox{\hyperlink{a00047_a558827c926cdd00f6c4d22972f8d0784}{for\+Each\+Item\+Function\+DGUHash\+Table}} for\+Each\+Item\+Function, void $\ast$aux)
 \begin{DoxyCompactList}\small\item\em For each item. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -36,6 +36,30 @@ Hash table entity.
 Entity for Hash table 
 
 \doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{a00159_a7a95bb06eb4c67fe7d84f5753172e520}\label{a00159_a7a95bb06eb4c67fe7d84f5753172e520}} 
+\index{DGUHashTableEntity@{DGUHashTableEntity}!countItems@{countItems}}
+\index{countItems@{countItems}!DGUHashTableEntity@{DGUHashTableEntity}}
+\doxysubsubsection{\texorpdfstring{countItems}{countItems}}
+{\footnotesize\ttfamily int($\ast$ DGUHash\+Table\+Entity\+::count\+Items) (\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHash\+Table}} $\ast$o\+DGUHash\+Table)}
+
+
+
+Get total items. 
+
+Get the total of items in a Hash table
+
+Example\+: 
+
+int $\ast$total\+Items = DGUHash\+Table\+Entity.\+count\+Items(o\+DGUHash\+Table);
+
+
+\begin{DoxyParams}{Parameters}
+{\em o\+DGUHash\+Table} & Hash table where get the total items\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The total items 
+\end{DoxyReturn}
 \mbox{\Hypertarget{a00159_a37b9081def1beacd628024ccdd0a0d43}\label{a00159_a37b9081def1beacd628024ccdd0a0d43}} 
 \index{DGUHashTableEntity@{DGUHashTableEntity}!delete@{delete}}
 \index{delete@{delete}!DGUHashTableEntity@{DGUHashTableEntity}}
@@ -80,11 +104,11 @@ DGUHash\+Table\+Entity.\+destroy(\&o\+DGUHash\+Table);
 {\em o\+DGUHash\+Table} & Hash table to destroy \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{a00159_a9f2280391861034487e975b2f76d1e09}\label{a00159_a9f2280391861034487e975b2f76d1e09}} 
+\mbox{\Hypertarget{a00159_a1c7bf4c982329c4d56261ba7f84ea813}\label{a00159_a1c7bf4c982329c4d56261ba7f84ea813}} 
 \index{DGUHashTableEntity@{DGUHashTableEntity}!forEachItem@{forEachItem}}
 \index{forEachItem@{forEachItem}!DGUHashTableEntity@{DGUHashTableEntity}}
 \doxysubsubsection{\texorpdfstring{forEachItem}{forEachItem}}
-{\footnotesize\ttfamily void($\ast$ DGUHash\+Table\+Entity\+::for\+Each\+Item) (\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHash\+Table}} $\ast$o\+DGUHash\+Table, \mbox{\hyperlink{a00047_a957757aa7ef735b7a3e9df10f094e600}{for\+Each\+Item\+Function\+DGUHash\+Table}} for\+Each\+Item\+Function, void $\ast$user\+Data)}
+{\footnotesize\ttfamily void($\ast$ DGUHash\+Table\+Entity\+::for\+Each\+Item) (\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHash\+Table}} $\ast$o\+DGUHash\+Table, \mbox{\hyperlink{a00047_a558827c926cdd00f6c4d22972f8d0784}{for\+Each\+Item\+Function\+DGUHash\+Table}} for\+Each\+Item\+Function, void $\ast$aux)}
 
 
 
@@ -94,7 +118,7 @@ Iteration for each item in a Hash table
 
 Example\+: 
 
-DGUHash\+Table\+Entity.\+for\+Each\+Item(o\+DGUHash\+Table, for\+Each\+Item\+Function, user\+Data);
+DGUHash\+Table\+Entity.\+for\+Each\+Item(o\+DGUHash\+Table, for\+Each\+Item\+Function, aux);
 
 
 \begin{DoxyParams}{Parameters}
@@ -102,33 +126,9 @@ DGUHash\+Table\+Entity.\+for\+Each\+Item(o\+DGUHash\+Table, for\+Each\+Item\+Fun
 \hline
 {\em for\+Each\+Item\+Function} & Function for iteration with each item \\
 \hline
-{\em user\+Data} & User data to use on the function for iteration with each item \\
+{\em aux} & User data to use on the function for iteration with each item \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{a00159_ac29bbccdb710b0b9cb43fed3029d5b58}\label{a00159_ac29bbccdb710b0b9cb43fed3029d5b58}} 
-\index{DGUHashTableEntity@{DGUHashTableEntity}!getTotalItems@{getTotalItems}}
-\index{getTotalItems@{getTotalItems}!DGUHashTableEntity@{DGUHashTableEntity}}
-\doxysubsubsection{\texorpdfstring{getTotalItems}{getTotalItems}}
-{\footnotesize\ttfamily int($\ast$ DGUHash\+Table\+Entity\+::get\+Total\+Items) (\mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHash\+Table}} $\ast$o\+DGUHash\+Table)}
-
-
-
-Get total items. 
-
-Get the total of items in a Hash table
-
-Example\+: 
-
-int $\ast$total\+Items = DGUHash\+Table\+Entity.\+get\+Total\+Items(o\+DGUHash\+Table);
-
-
-\begin{DoxyParams}{Parameters}
-{\em o\+DGUHash\+Table} & Hash table where get the total items\\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-The total items 
-\end{DoxyReturn}
 \mbox{\Hypertarget{a00159_a47532617148849cf71242eb886dc9cd7}\label{a00159_a47532617148849cf71242eb886dc9cd7}} 
 \index{DGUHashTableEntity@{DGUHashTableEntity}!getValue@{getValue}}
 \index{getValue@{getValue}!DGUHashTableEntity@{DGUHashTableEntity}}

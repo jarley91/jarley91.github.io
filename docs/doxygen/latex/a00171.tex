@@ -28,9 +28,9 @@ void($\ast$ \mbox{\hyperlink{a00171_a17b4585798d58d6c5b852c5509fed033}{set\+Type
 \begin{DoxyCompactList}\small\item\em Set type. \end{DoxyCompactList}\item 
 void($\ast$ \mbox{\hyperlink{a00171_ae17528a47a54e8e45d4cc6dc4d6c0a9b}{set\+Level}} )(\mbox{\hyperlink{a00062_aaa6a2ab602733132b5a14993305b0625}{DGULog}} $\ast$o\+DGULog, void $\ast$level)
 \begin{DoxyCompactList}\small\item\em Set level. \end{DoxyCompactList}\item 
-void($\ast$ \mbox{\hyperlink{a00171_a1ea5e3383024ec2d4c3165791ce5eaec}{write\+Log}} )(\mbox{\hyperlink{a00062_aaa6a2ab602733132b5a14993305b0625}{DGULog}} $\ast$o\+DGULog, void $\ast$level, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} source, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} function, int line, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} message,...)
+void($\ast$ \mbox{\hyperlink{a00171_a5dc1ff1efe67f04acc38037380d6255a}{write\+Log}} )(void $\ast$level, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} source, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} function, int line, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} message,...)
 \begin{DoxyCompactList}\small\item\em Write log. \end{DoxyCompactList}\item 
-void($\ast$ \mbox{\hyperlink{a00171_a2c5260251c2fa56712d2ea388f100159}{write\+Log\+Message}} )(\mbox{\hyperlink{a00062_aaa6a2ab602733132b5a14993305b0625}{DGULog}} $\ast$o\+DGULog, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} message)
+void($\ast$ \mbox{\hyperlink{a00171_a1bcb76d31fd7ec4c699fb2af74b8c168}{write\+Message}} )(\mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} message)
 \begin{DoxyCompactList}\small\item\em Write message. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -71,14 +71,14 @@ DGULog\+Entity.\+destroy(\&o\+DGULog);
 
 Log levels. 
 
-Get the list log levels
+Get the log levels list
 
 Example\+: 
 
 \mbox{\hyperlink{a00171_a13f06f812dfdc88435fb0a1e2a7b4a8b}{DGULog\+Entity.\+get\+Leves()}}
 
 \begin{DoxyReturn}{Returns}
-List log levels 
+Log levels list 
 \end{DoxyReturn}
 \mbox{\Hypertarget{a00171_a5bbac717b2c98e2400e0769b5cd05d01}\label{a00171_a5bbac717b2c98e2400e0769b5cd05d01}} 
 \index{DGULogEntity@{DGULogEntity}!getTypes@{getTypes}}
@@ -90,14 +90,14 @@ List log levels
 
 Log types. 
 
-Get the list types for log print
+Get the types list for log print
 
 Example\+: 
 
 \mbox{\hyperlink{a00171_a5bbac717b2c98e2400e0769b5cd05d01}{DGULog\+Entity.\+get\+Types()}}
 
 \begin{DoxyReturn}{Returns}
-List log types 
+Log types list 
 \end{DoxyReturn}
 \mbox{\Hypertarget{a00171_ae3f0ea77fc0007eca34cde13e540c853}\label{a00171_ae3f0ea77fc0007eca34cde13e540c853}} 
 \index{DGULogEntity@{DGULogEntity}!new@{new}}
@@ -216,22 +216,22 @@ DGULog\+Entity.\+set\+Type(o\+DGULog, type);
 {\em type} & Type \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{a00171_a1ea5e3383024ec2d4c3165791ce5eaec}\label{a00171_a1ea5e3383024ec2d4c3165791ce5eaec}} 
+\mbox{\Hypertarget{a00171_a5dc1ff1efe67f04acc38037380d6255a}\label{a00171_a5dc1ff1efe67f04acc38037380d6255a}} 
 \index{DGULogEntity@{DGULogEntity}!writeLog@{writeLog}}
 \index{writeLog@{writeLog}!DGULogEntity@{DGULogEntity}}
 \doxysubsubsection{\texorpdfstring{writeLog}{writeLog}}
-{\footnotesize\ttfamily void($\ast$ DGULog\+Entity\+::write\+Log) (\mbox{\hyperlink{a00062_aaa6a2ab602733132b5a14993305b0625}{DGULog}} $\ast$o\+DGULog, void $\ast$level, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} source, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} function, int line, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} message,...)}
+{\footnotesize\ttfamily void($\ast$ DGULog\+Entity\+::write\+Log) (void $\ast$level, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} source, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} function, int line, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} message,...)}
 
 
 
 Write log. 
 
-Write log with the defined configuration, if it is not defined, the default configuration will be used
+Write log with YAML/\+JSON file configuration defined, if it is not defined, the default configuration will be used
 
 Example\+: 
 
-\mbox{\hyperlink{a00171_a1ea5e3383024ec2d4c3165791ce5eaec}{DGULog\+Entity.\+write\+Log}}(o\+DGULog, DGULog\+Private\+Entity.\+get\+Leves().Info, DGULFile, DGULFunction, DGULLine, \char`\"{}\+Info \%s\char`\"{}, \char`\"{}value log\char`\"{}); ~\newline
- \mbox{\hyperlink{a00171_a1ea5e3383024ec2d4c3165791ce5eaec}{DGULog\+Entity.\+write\+Log}}(NULL, DGULog\+Private\+Entity.\+get\+Leves().Error, DGULFile, DGULFunction, DGULLine, \char`\"{}\+Error \%s\char`\"{}, \char`\"{}value log\char`\"{});
+\mbox{\hyperlink{a00171_a5dc1ff1efe67f04acc38037380d6255a}{DGULog\+Entity.\+write\+Log}}(o\+DGULog, \mbox{\hyperlink{a00171_a13f06f812dfdc88435fb0a1e2a7b4a8b}{DGULog\+Entity.\+get\+Leves()}}.INFO, DGULFile, DGULFunction, DGULLine, \char`\"{}\+Info \%s\char`\"{}, \char`\"{}value log\char`\"{}); ~\newline
+ \mbox{\hyperlink{a00171_a5dc1ff1efe67f04acc38037380d6255a}{DGULog\+Entity.\+write\+Log}}(\mbox{\hyperlink{a00171_a13f06f812dfdc88435fb0a1e2a7b4a8b}{DGULog\+Entity.\+get\+Leves()}}.ERROR, DGULFile, DGULFunction, DGULLine, \char`\"{}\+Error \%s\char`\"{}, \char`\"{}value log\char`\"{});
 
 
 \begin{DoxyParams}{Parameters}
@@ -253,11 +253,11 @@ Example\+:
 \begin{DoxySeeAlso}{See also}
 \mbox{\hyperlink{a00187_a36b874dd512ebbf51ce7d45b7dc99d6f}{DGUString\+Entity.\+format}} for message and values 
 \end{DoxySeeAlso}
-\mbox{\Hypertarget{a00171_a2c5260251c2fa56712d2ea388f100159}\label{a00171_a2c5260251c2fa56712d2ea388f100159}} 
-\index{DGULogEntity@{DGULogEntity}!writeLogMessage@{writeLogMessage}}
-\index{writeLogMessage@{writeLogMessage}!DGULogEntity@{DGULogEntity}}
-\doxysubsubsection{\texorpdfstring{writeLogMessage}{writeLogMessage}}
-{\footnotesize\ttfamily void($\ast$ DGULog\+Entity\+::write\+Log\+Message) (\mbox{\hyperlink{a00062_aaa6a2ab602733132b5a14993305b0625}{DGULog}} $\ast$o\+DGULog, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} message)}
+\mbox{\Hypertarget{a00171_a1bcb76d31fd7ec4c699fb2af74b8c168}\label{a00171_a1bcb76d31fd7ec4c699fb2af74b8c168}} 
+\index{DGULogEntity@{DGULogEntity}!writeMessage@{writeMessage}}
+\index{writeMessage@{writeMessage}!DGULogEntity@{DGULogEntity}}
+\doxysubsubsection{\texorpdfstring{writeMessage}{writeMessage}}
+{\footnotesize\ttfamily void($\ast$ DGULog\+Entity\+::write\+Message) (\mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} message)}
 
 
 
@@ -267,7 +267,7 @@ Write log message
 
 Example\+: 
 
-\mbox{\hyperlink{a00171_a2c5260251c2fa56712d2ea388f100159}{DGULog\+Entity.\+write\+Log\+Message}}(o\+DGULog, \char`\"{}message\char`\"{});
+\mbox{\hyperlink{a00171_a1bcb76d31fd7ec4c699fb2af74b8c168}{DGULog\+Entity.\+write\+Message}}(o\+DGULog, \char`\"{}message\char`\"{});
 
 
 \begin{DoxyParams}{Parameters}

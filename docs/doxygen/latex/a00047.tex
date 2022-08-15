@@ -10,7 +10,7 @@ struct \mbox{\hyperlink{a00159}{DGUHash\+Table\+Entity}}
 \doxysubsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
-typedef bool($\ast$ \mbox{\hyperlink{a00047_a957757aa7ef735b7a3e9df10f094e600}{for\+Each\+Item\+Function\+DGUHash\+Table}}) (int index, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} key, void $\ast$value, void $\ast$user\+Data)
+typedef bool($\ast$ \mbox{\hyperlink{a00047_a558827c926cdd00f6c4d22972f8d0784}{for\+Each\+Item\+Function\+DGUHash\+Table}}) (int index, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} key, void $\ast$value, void $\ast$aux)
 \begin{DoxyCompactList}\small\item\em Function for items iteration. \end{DoxyCompactList}\item 
 typedef struct \mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHash\+Table}} \mbox{\hyperlink{a00047_a9c2ffdd83eb554a97e47af406b7cf903}{DGUHash\+Table}}
 \begin{DoxyCompactList}\small\item\em Hash table. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -48,15 +48,27 @@ Copyright (c) 2022
 
 Hash table. 
 
-Type definition for Hash table \mbox{\Hypertarget{a00047_a957757aa7ef735b7a3e9df10f094e600}\label{a00047_a957757aa7ef735b7a3e9df10f094e600}} 
+Type definition for Hash table \mbox{\Hypertarget{a00047_a558827c926cdd00f6c4d22972f8d0784}\label{a00047_a558827c926cdd00f6c4d22972f8d0784}} 
 \index{DGUHashTable.h@{DGUHashTable.h}!forEachItemFunctionDGUHashTable@{forEachItemFunctionDGUHashTable}}
 \index{forEachItemFunctionDGUHashTable@{forEachItemFunctionDGUHashTable}!DGUHashTable.h@{DGUHashTable.h}}
 \doxysubsubsection{\texorpdfstring{forEachItemFunctionDGUHashTable}{forEachItemFunctionDGUHashTable}}
-{\footnotesize\ttfamily typedef bool($\ast$ for\+Each\+Item\+Function\+DGUHash\+Table) (int index, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} key, void $\ast$value, void $\ast$user\+Data)}
+{\footnotesize\ttfamily typedef bool($\ast$ for\+Each\+Item\+Function\+DGUHash\+Table) (int index, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} key, void $\ast$value, void $\ast$aux)}
 
 
 
 Function for items iteration. 
 
 Function definition for iteration with all items from a Hash table ~\newline
- When the function returns false, the iteration stops 
+ When the function returns false, the iteration stops
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Item index \\
+\hline
+{\em key} & Item key \\
+\hline
+{\em value} & Item value \\
+\hline
+{\em aux} & Auxiliary type or data \\
+\hline
+\end{DoxyParams}

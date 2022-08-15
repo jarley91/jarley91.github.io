@@ -3,36 +3,25 @@
 {\ttfamily \#include $<$stdbool.\+h$>$}\newline
 {\ttfamily \#include \char`\"{}DGUString.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}DGUMarkup.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}DGULog.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}DGUHash\+Table.\+h\char`\"{}}\newline
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{a00175}{DGUMUFormats}}
-\item 
+\begin{DoxyCompactList}\small\item\em Formats list. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{a00179}{DGUMarkup\+Entity}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Markup entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{a00053_a810bad82126591d8a885112ecc4c398f}\label{a00053_a810bad82126591d8a885112ecc4c398f}} 
-typedef struct \mbox{\hyperlink{a00175}{DGUMUFormats}} {\bfseries DGUMUFormats}
-\item 
-\mbox{\Hypertarget{a00053_a6ef47141b90a8ee6cd867fae8bda4452}\label{a00053_a6ef47141b90a8ee6cd867fae8bda4452}} 
-typedef struct DGUMUDocument {\bfseries DGUMUDocument}
-\item 
-\mbox{\Hypertarget{a00053_aa883f9ab94b30a870ecf9f7d508fbb65}\label{a00053_aa883f9ab94b30a870ecf9f7d508fbb65}} 
-typedef struct DGUMUNode {\bfseries DGUMUNode}
-\item 
-\mbox{\Hypertarget{a00053_ac7b0066a2ed698b09b7ec49fbdf5f01e}\label{a00053_ac7b0066a2ed698b09b7ec49fbdf5f01e}} 
-typedef bool($\ast$ {\bfseries array\+Iteration\+DGUMUFunction}) (void $\ast$node, void $\ast$aux)
-\item 
-\mbox{\Hypertarget{a00053_a0ca580a5d41055bdb5649bb9c16c5ada}\label{a00053_a0ca580a5d41055bdb5649bb9c16c5ada}} 
-typedef bool($\ast$ {\bfseries properties\+Iteration\+DGUMUFunction}) (\mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} key, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} value, void $\ast$aux)
-\item 
-\mbox{\Hypertarget{a00053_ae48d6ebd905f52a025029d4384df4a15}\label{a00053_ae48d6ebd905f52a025029d4384df4a15}} 
-typedef struct DGUMarkup {\bfseries DGUMarkup}
-\end{DoxyCompactItemize}
+typedef struct \mbox{\hyperlink{a00175}{DGUMUFormats}} \mbox{\hyperlink{a00053_a810bad82126591d8a885112ecc4c398f}{DGUMUFormats}}
+\begin{DoxyCompactList}\small\item\em Formats list. \end{DoxyCompactList}\item 
+typedef bool($\ast$ \mbox{\hyperlink{a00053_ad305d928e564b63d19ce4aa728c13d51}{DGUMUArray\+Node\+Iteration\+Function}}) (void $\ast$node, void $\ast$aux)
+\begin{DoxyCompactList}\small\item\em Function for node array iteration. \end{DoxyCompactList}\item 
+typedef bool($\ast$ \mbox{\hyperlink{a00053_af5e3efa5f013b329919034d77ce5dd56}{DGUMUNodes\+Iteration\+Function}}) (\mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} key, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} value, void $\ast$aux)
+\begin{DoxyCompactList}\small\item\em Function for nodes iteration. \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{a00053_ae48d6ebd905f52a025029d4384df4a15}{DGUMarkup}} \mbox{\hyperlink{a00053_ae48d6ebd905f52a025029d4384df4a15}{DGUMarkup}}
+\begin{DoxyCompactList}\small\item\em Markup. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
@@ -54,3 +43,68 @@ Jarley Vargas Damian (\href{mailto:jarley91@gmail.com}{\texttt{ jarley91@gmail.\
 \begin{DoxyCopyright}{Copyright}
 Copyright (c) 2022 
 \end{DoxyCopyright}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{a00053_ae48d6ebd905f52a025029d4384df4a15}\label{a00053_ae48d6ebd905f52a025029d4384df4a15}} 
+\index{DGUMarkup.h@{DGUMarkup.h}!DGUMarkup@{DGUMarkup}}
+\index{DGUMarkup@{DGUMarkup}!DGUMarkup.h@{DGUMarkup.h}}
+\doxysubsubsection{\texorpdfstring{DGUMarkup}{DGUMarkup}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{a00053_ae48d6ebd905f52a025029d4384df4a15}{DGUMarkup}} \mbox{\hyperlink{a00053_ae48d6ebd905f52a025029d4384df4a15}{DGUMarkup}}}
+
+
+
+Markup. 
+
+Type definition for markup \mbox{\Hypertarget{a00053_ad305d928e564b63d19ce4aa728c13d51}\label{a00053_ad305d928e564b63d19ce4aa728c13d51}} 
+\index{DGUMarkup.h@{DGUMarkup.h}!DGUMUArrayNodeIterationFunction@{DGUMUArrayNodeIterationFunction}}
+\index{DGUMUArrayNodeIterationFunction@{DGUMUArrayNodeIterationFunction}!DGUMarkup.h@{DGUMarkup.h}}
+\doxysubsubsection{\texorpdfstring{DGUMUArrayNodeIterationFunction}{DGUMUArrayNodeIterationFunction}}
+{\footnotesize\ttfamily typedef bool($\ast$ DGUMUArray\+Node\+Iteration\+Function) (void $\ast$node, void $\ast$aux)}
+
+
+
+Function for node array iteration. 
+
+Function definition for iteration with all nodes array from a markup ~\newline
+ When the function returns false, the iteration stops
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & Current node \\
+\hline
+{\em aux} & Auxiliary type or data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{a00053_a810bad82126591d8a885112ecc4c398f}\label{a00053_a810bad82126591d8a885112ecc4c398f}} 
+\index{DGUMarkup.h@{DGUMarkup.h}!DGUMUFormats@{DGUMUFormats}}
+\index{DGUMUFormats@{DGUMUFormats}!DGUMarkup.h@{DGUMarkup.h}}
+\doxysubsubsection{\texorpdfstring{DGUMUFormats}{DGUMUFormats}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{a00175}{DGUMUFormats}} \mbox{\hyperlink{a00175}{DGUMUFormats}}}
+
+
+
+Formats list. 
+
+Formats list for markup \mbox{\Hypertarget{a00053_af5e3efa5f013b329919034d77ce5dd56}\label{a00053_af5e3efa5f013b329919034d77ce5dd56}} 
+\index{DGUMarkup.h@{DGUMarkup.h}!DGUMUNodesIterationFunction@{DGUMUNodesIterationFunction}}
+\index{DGUMUNodesIterationFunction@{DGUMUNodesIterationFunction}!DGUMarkup.h@{DGUMarkup.h}}
+\doxysubsubsection{\texorpdfstring{DGUMUNodesIterationFunction}{DGUMUNodesIterationFunction}}
+{\footnotesize\ttfamily typedef bool($\ast$ DGUMUNodes\+Iteration\+Function) (\mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} key, \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} value, void $\ast$aux)}
+
+
+
+Function for nodes iteration. 
+
+Function definition for iteration with nodes from a markup ~\newline
+ When the function returns false, the iteration stops
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Node key \\
+\hline
+{\em value} & Node value \\
+\hline
+{\em aux} & Auxiliary type or data \\
+\hline
+\end{DoxyParams}
