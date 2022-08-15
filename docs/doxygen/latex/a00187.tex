@@ -14,8 +14,6 @@ String entity.
 \item 
 \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}}($\ast$ \mbox{\hyperlink{a00187_a2becd0118fe3eae963c5a82e415745a7}{new}} )(\mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} string\+Value)
 \begin{DoxyCompactList}\small\item\em New string. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}}($\ast$ \mbox{\hyperlink{a00187_a361d583b08d3d41150ebf1d9dac16d81}{new\+Empty}} )(void)
-\begin{DoxyCompactList}\small\item\em New string empty. \end{DoxyCompactList}\item 
 void($\ast$ \mbox{\hyperlink{a00187_aaf8ee3747abf146df7af7749f8d56ad3}{destroy}} )(\mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} $\ast$string\+To\+Destroy)
 \begin{DoxyCompactList}\small\item\em Destroy string. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}}($\ast$ \mbox{\hyperlink{a00187_ac39d1564f784e4419d3eb24f9087aa79}{trim}} )(\mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}} string\+Value)
@@ -298,28 +296,6 @@ string new\+String = \mbox{\hyperlink{a00187_a2becd0118fe3eae963c5a82e415745a7}{
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 New string, or null if it was not possible to reserve the space in memory
-\end{DoxyReturn}
-\begin{DoxyNote}{Note}
-You should always destroy return pointer to avoid memory leaks 
-\end{DoxyNote}
-\mbox{\Hypertarget{a00187_a361d583b08d3d41150ebf1d9dac16d81}\label{a00187_a361d583b08d3d41150ebf1d9dac16d81}} 
-\index{DGUStringEntity@{DGUStringEntity}!newEmpty@{newEmpty}}
-\index{newEmpty@{newEmpty}!DGUStringEntity@{DGUStringEntity}}
-\doxysubsubsection{\texorpdfstring{newEmpty}{newEmpty}}
-{\footnotesize\ttfamily \mbox{\hyperlink{a00059_a398c94ef2be132b6d19e77d12415e9f3}{string}}($\ast$ DGUString\+Entity\+::new\+Empty) (void)}
-
-
-
-New string empty. 
-
-Create a new string empty
-
-Example\+: 
-
-string new\+String = \mbox{\hyperlink{a00187_a361d583b08d3d41150ebf1d9dac16d81}{DGUString\+Entity.\+new\+Empty()}};
-
-\begin{DoxyReturn}{Returns}
-New string with empty value
 \end{DoxyReturn}
 \begin{DoxyNote}{Note}
 You should always destroy return pointer to avoid memory leaks 

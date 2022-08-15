@@ -10,7 +10,6 @@ var a00187 =
     [ "isEquals", "a00187.html#aad2e1d24524c1ac66d853ae5b3a56f79", null ],
     [ "length", "a00187.html#a493a0878cf8327ccfd3d9a8f9d9922a1", null ],
     [ "new", "a00187.html#a2becd0118fe3eae963c5a82e415745a7", null ],
-    [ "newEmpty", "a00187.html#a361d583b08d3d41150ebf1d9dac16d81", null ],
     [ "removeChars", "a00187.html#a3bb6d61ed19343fe94868c1c82781804", null ],
     [ "replace", "a00187.html#a27dafdcb67390b12b88cdb036790fd22", null ],
     [ "toInteger", "a00187.html#a8862c482df865aa6a225348ba4a87c07", null ],
